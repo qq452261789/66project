@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<style type="text/css">
+			.is_edit {
+				background: pink;
+			}
+			
+			.is_createddiv {
+				text-align: center;
+			}
+		</style>
+		<script src="jquery-1.12.0.js" type="text/javascript">
+		</script>
+	</head>
+
+	<body>
+		<button id="btn">点击一下创建块</button>
+		<label>
+        请改变颜色
+        <input id = "color" type="text" />
+    </label>
+		<label>
+        请改变粗细
+        <input id = "bwide" type="text" />
+    </label>
+		<label>
+        请改变边线透明度
+        <input id = "bopacity" type="text" />
+    </label>
+		<button id="submit">发布</button>
+
+		<script type="text/javascript">
+	
+
+				
+				
+
+			var btn = document.getElementById("btn");
+			var color = document.getElementById("color");
+			var bwide = document.getElementById("bwide");
+			var bopacity = document.getElementById("bopacity");
+			var submit = document.getElementById("submit");
+			var disX = 0,
+				disY = 0;
+
+			function fnSetCookie(Name, Value, outtime) {
+				var dDate = new Date()
+				dDate.setDate(dDate.getDate() + outtime);
+				document.cookie = Name + "=" + Value + ";expires" + dDate;
+			}
+
+			function fnCheckCookie(Name) {
+				var scrit = "";
+				var aCookie = document.cookie.split("; ");
+				for(i = 0; i < aCookie.length; i++) {
+					var aCook = aCookie[i].split("=");
+					if(aCook[0] == Name) {
+						scrit = aCook[1]
+					}
+				}
+				return scrit;
+				console.log(scrit)
+			}
+
+			function Box() {
+				this.w = "120px";
+				this.h = "120px";
+				this.col = "red";
+				this.txt = "hello world";
+				this.borderw = "3px";
+				this.borders = "solid";
+				this.bordercol = "black";
+				this.borderra = "10px"
+				this.contenteditable = "true";
+				this.textalign = "center";
+				this.position = "absolute";
+				this.bopacity = "rgba(0,0,0,1)";
+			}
+			var newbox = new Box();
+			console.log(newbox);
+			var box;
+			var nodes = [];
+			var infor = [];
+			btn.onclick = function() {
+				
+				//点击的时候默认先创建的元素可编辑其他元素不可编辑
+				//获取创建的div元素
+				var adiv = document.getElementsByClassName('is_createddiv');
+				
+				for(var i =0 ;i< adiv.length;i++){
+					adiv[i].removeAttribute("class","is_edit") ;
+					adiv[i].setAttribute("class","is_createddiv") ;
+				}
+				
+				
+				//设置新创建的div默认元素
+				
+				box = document.createElement("div");
+				nodes.push("div");
+				box.style.backgroundOrigin = "content-box";
+				box.style.width = newbox.w;
+				box.style.height = newbox.h;
+				box.style.backgroundColor = newbox.col;
+				box.innerHTML = newbox.txt;
+				box.style.borderWidth = newbox.borderw;
+				box.style.borderStyle = newbox.borders;
+				box.style.borderColor = newbox.bordercol;
+				box.style.borderRadius = newbox.borderra;
+				box.style.textAlign = newbox.textalign;
+				box.style.position = newbox.position;
+				box.setAttribute("contenteditable", newbox.contenteditable);
+				//创建之后添加一个类 is_createddiv
+				
+				box.className =  "is_createddiv is_edit";
+				
+				
+				document.body.appendChild(box);
+				
+				box.onmousedown = function(e) {
+					var e = e || window.event;
+					disX = e.clientX - this.offsetLeft; //鼠标相对box边界偏移值
+					disY = e.clientY - this.offsetTop; //鼠标相对box边界偏移值
+					document.onmousemove = function(e) {
+						var e = e || window.event;
+						newbox.ox = (e.clientX - disX);
+						newbox.oy = (e.clientY - disY);
+						box.style.left = newbox.ox + 'px';
+						box.style.top = newbox.oy + 'px';
+
+					};
+					document.onmouseup = function() {
+						document.onmousemove = null;
+					};
+					return false;
+				};
+			}
+			
+			
+			//console.log(adiv.length)
+			
+			color.onblur = function() {
+				newbox.col = color.value;
+				box.style.backgroundColor = newbox.col;
+			}
+			bwide.onblur = function() {
+				newbox.borderw = bwide.value;
+				box.style.borderWidth = newbox.borderw;
+			}
+			bopacity.onblur = function() {
+				newbox.bopacity = "rgba(0,0,0," + bopacity.value + ")";
+				box.style.borderColor = newbox.bopacity;
+				console.log(newbox.bopacity);
+			}
+			submit.onclick = function() {
+				
+				//获取创建的div元素
+				var adiv = document.getElementsByClassName('is_createddiv');
+				
+				console.log(adiv.length);
+				
+				//  获取新盒子的css 属性  以及内容 newbox；
+				
+				newbox.col = color.value;
+				box.style.backgroundColor = newbox.col;
+				newbox.borderw = bwide.value;
+				box.style.borderWidth = newbox.borderw;
+
+				newbox.bopacity = "rgba(0,0,0," + bopacity.value + ")";
+				box.style.borderColor = newbox.bopacity;
+
+				infor.push(nodes);
+				infor.push(newbox);
+				
+			}
+				
+				/*var box_meseeges = {
+					"box_meseeges_col": color.value,
+					"box_meseeges_borderw": bwide.value,
+					"box_meseeges_bopacity": bopacity.value,
+					"box_meseeges_contenner": box.innerText,
+					"box_meseeges_left": box.offsetLeft,
+					"box_meseeges_top": box.offsetTop,
+
+				}　
+
+				var last = JSON.stringify(box_meseeges);
+				console.log(last);
+
+				fnSetCookie("box", last, 2);
+				console.log(document.cookie);*/
+			/*function setCookie("box", box_meseeges, 2) {　　　　
+					var exdate = new Date();　　　　
+					exdate.setDate(exdate.getDate() + expiredays);　　　　
+					document.cookie = box + "=" + escape(value) + ((expiredays == null) ? "" : ";expires=" + exdate.toGMTString());　　
+				}
+
+			}*/
+		</script>
+	</body>
+
+</html>

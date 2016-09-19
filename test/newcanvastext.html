@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+         *{
+            padding:0;
+            margin:0;
+         }  
+         span{
+            width:10px;
+            height:10px;
+            background-color:black;
+            opacity:0.2;
+            position:absolute;
+            bottom:0;
+            right:0;
+         } 
+         .b{
+            position:absolute;
+            left:500px;
+            top: 200px;
+         }
+        </style>
+    </head>
+    <body>
+    <div class="bdsharebuttonbox b">
+    	<a href="#" class="bds_more" data-cmd="more"></a>
+    	<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    	<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    	<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+    	<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+    	<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    </div>
+    <button id = "btn">点击一下创建div标签</button>
+    <button id="btn1">点击一下创建p标签</button>
+    <button id="btn2">点击创建图片</button>
+    <label >
+        请改变颜色
+        <input type="color" value="#000000" id="color">
+    </label>
+    <label >
+        请改变粗细
+        <input id = "bwide" type="text" />
+    </label>
+    <label >
+        请改变边线透明度
+        <input id = "bopacity" type="text" />
+    </label>
+    <button id="submit">发布</button>
+    <button>保存</button>
+    <!-- <script type="text/javascript" src="jquery-3.1.0.min.js"></script> -->
+    <script type="text/javascript">
+    var btn = document.getElementById("btn");
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    var color = document.getElementById("color");
+    var bwide = document.getElementById("bwide");
+    var bopacity = document.getElementById("bopacity");
+    var submit = document.getElementById("submit");
+    var disX = 0, disY = 0;
+    var top_index = 0;//寻找事件处理对象的标志位
+    var top_ele = 1;//当前定位到的模块
+    //设置cookie 
+    function setCookie(name,value,days) {
+        var nowTime = (new Date()).getTime();//当前的时间戳
+        var expiresDay = new Date(nowTime + days * 24 * 60 * 60 * 1000);
+        document.cookie = name + "=" + value + "; expires=" + expiresDay;
+    }
+    //清除cookie 
+    function clearCookie(name) {
+        setCookie(name,"",-1);//清除cookie就是设置为过期时间
+    }
+    //清除所有cookie
+    function clearCookieall(){
+        var cookies = document.cookie.split("; ");
+        var lens = cookies.length;
+        for(var i = 0;i < lens;i++){
+            clearCookie(cookies[i].split("=")[0]);
+        }
+    }
+    clearCookieall();
+    //储存所用模块信息的构造函数
+    function Box() {
+    this.w = "120px";
+    this.h = "120px";
+    this.col = "#fff";
+    this.txt = "hello world";
+    this.borderw = "3px";
+    this.borders = "solid";
+    this.bordercol = "black";
+    this.borderra = "20%"
+    this.contenteditable = "true";
+    this.textalign = "center";
+    this.position = "absolute";
+    this.bopacity = "rgba(0,0,0,1)";
+    }
+    //储存所有p标签信息
+    function Pbox(){
+    this.w = "200px";
+    this.h = "30px";
+    this.col = "#fff";
+    this.txt = "hello world";
+    this.borderw = "3px";
+    this.borders = "solid";
+    this.bordercol = "black";
+    this.borderra = "0"
+    this.contenteditable = "true";
+    this.textalign = "center";
+    this.position = "absolute";
+    this.bopacity = "rgba(0,0,0,1)";
+    }
+    //储存所有img标签信息
+    function Img(){
+    this.w = "200px";
+    this.h = "200px";
+    this.src = "228.jpg";
+    this.position = "absolute";
+    }
+    var index = -1;//给创建的各个模块定位
+    var index_pbox = 0;//创建的p标签个数
+    var nodes = [];//储藏节点信息的数组
+    var objs = [];//储藏所有构造函数信息的数组
+    var infor = [];//储藏所有信息的数组
+    var infors;//储藏所有信息数组的json格式
+    //点击生成按钮，生成模块，并且赋予基础信息
+    btn.onclick = function(){
+            index++;//每生成一个模块标志位+1
+            var box = document.createElement("div");
+            var obj = new Box();
+            objs.push(obj);//将该块的综合信息压入数组
+            nodes.push("div");//将该块的标签信息压入数组
+            box.style.width = objs[index].w;
+            box.style.height = objs[index].h;
+            box.style.backgroundColor = objs[index].col;
+            box.innerHTML = objs[index].txt;
+            box.style.borderWidth = objs[index].borderw;
+            box.style.borderStyle = objs[index].borders;
+            box.style.borderColor = objs[index].bordercol;
+            box.style.borderRadius = objs[index].borderra;
+            box.style.textAlign = objs[index].textalign;
+            box.style.position = objs[index].position;
+            box.setAttribute("contenteditable",objs[index].contenteditable);
+            box.setAttribute("id",index);
+            box.setAttribute("class","p" + index);
+            var span = document.createElement("span");
+            box.appendChild(span);
+            document.body.appendChild(box);
+     }
+     //点击生成按钮，生成p标签模块，并且赋予基础信息
+     btn1.onclick = function(){
+            index++;//每生成一个模块标志位+1
+            index_pbox++;
+            var box = document.createElement("p");
+            var obj = new Pbox();
+            objs.push(obj);//将该块的综合信息压入数组
+            nodes.push("p");//将该块的标签信息压入数组
+            box.style.width = objs[index].w;
+            box.style.backgroundColor = objs[index].col;
+            box.innerHTML = objs[index].txt;
+            box.style.borderWidth = objs[index].borderw;
+            box.style.borderStyle = objs[index].borders;
+            box.style.borderColor = objs[index].bordercol;
+            box.style.borderRadius = objs[index].borderra;
+            box.style.textAlign = objs[index].textalign;
+            box.style.position = objs[index].position;
+            box.style.lineHeight = objs[index].h;
+            box.setAttribute("contenteditable",objs[index].contenteditable);
+            box.setAttribute("id",index);//id为序号
+            box.setAttribute("class","p" + index);//class名为p + 序号
+            document.body.appendChild(box);
+     }
+     btn2.onclick = function(){
+            index++;//每生成一个模块标志位+1
+            var box = document.createElement("div");
+            var obj = new Img();
+            objs.push(obj);//将该块的综合信息压入数组
+            nodes.push("img");//将该块的标签信息压入数组
+            box.style.width = objs[index].w;
+            box.style.height = objs[index].h;        
+            box.style.position = objs[index].position;
+            box.style.backgroundImage = "url(" + objs[index].src + ")";
+            box.style.backgroundSize = objs[index].w + " " + objs[index].h;
+            box.setAttribute("id",index);
+            box.setAttribute("class","p" + index);
+            var span = document.createElement("span");
+            box.appendChild(span);
+            document.body.appendChild(box);
+     }
+    document.addEventListener("click",function(e){           
+            var e = e || window.event;
+            target = e.target;
+            var classname = target.className;            
+            if(target.className.indexOf("p") > -1){//如果点击事件的事件目标是创建的模块       
+            var idx = classname.substring(1);//事件目标的classname包含模块的定位信息
+            var ele = document.getElementById(idx); //获取选取的模块
+            top_ele = ele;//将当前选取的模块给到全局变量，这样的话就可以自由对元素进行操作
+            top_index = idx;//将当前的模块的序号给到全局变量，这样的话就可以自由获取信息。      
+                ele.onmousedown = function (e){
+                    var e = e || window.event;
+                    disX = e.clientX - this.offsetLeft; //鼠标相对box边界偏移值
+                    disY = e.clientY - this.offsetTop;  //鼠标相对box边界偏移值
+                    document.onmousemove = function (e){
+                        var e = e || window.event;
+                        objs[idx].ox =  (e.clientX - disX);
+                        objs[idx].oy =  (e.clientY - disY);
+                        ele.style.left = objs[idx].ox + 'px';
+                        ele.style.top = objs[idx].oy + 'px';
+                    };
+                    document.onmouseup = function (){
+                        document.onmousemove = null;  
+                    };
+                };
+            }
+},false)
+    document.addEventListener("click",function(){
+                if(top_ele != 1){  
+                objs[top_index].txt = top_ele.innerText;
+                console.log(objs[top_index].txt);
+            }
+    },false)
+    // 发布
+    submit.onclick = function(){
+        infor.push(nodes);
+        infor.push(objs);
+        infors = JSON.stringify(infor);
+        setCookie("mm",infors,3);
+        alert("网页发布成功！")
+    }
+    //颜色改变
+    color.onchange = function(){
+        objs[top_index].col = color.value;
+        top_ele.style.backgroundColor = objs[top_index].col;
+    }
+    //边界宽度改变
+    bwide.onblur = function(){
+        objs[top_index].borderw = bwide.value;
+        top_ele.style.borderWidth = objs[top_index].borderw;
+    }
+    //边框透明度改变
+    bopacity.onblur = function(){
+        objs[top_index].bopacity = "rgba(0,0,0," + bopacity.value +")";
+        top_ele.style.borderColor = objs[top_index].bopacity;
+    }
+    //调节模块的大小 使用事件
+    document.addEventListener("click",function(e){
+        var e = e || e.event;
+        var target = e.target;
+        if(target.tagName == "SPAN"){
+            target.onmousedown = function(e) {
+            var e = e || window.event;
+            disX = e.clientX;
+            disY = e.clientY;
+            var divpos = target.parentNode.getBoundingClientRect();
+            document.onmousemove = function(e) {
+                var e = e || window.event;
+                changeX = e.clientX - disX;
+                changeY = e.clientY - disY;
+                var a = divpos.width + changeX + "px";
+                var b = divpos.height + changeY + "px";
+                target.parentNode.style.width = a ;
+                target.parentNode.style.height = b ;
+                objs[top_index].w = a;//将当前的模块宽度信息存入对象
+                objs[top_index].h = b;//将当前的模块高度信息存入对象
+                target.parentNode.style.backgroundSize = a + " " + b;
+            }
+            document.onmouseup = function() {
+                document.onmousemove = null;
+            }
+            e.cancelBubble = true;
+        }                        
+        }
+    },false)
+    </script>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+    </body>
+</html>

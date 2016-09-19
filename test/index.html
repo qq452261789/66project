@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery-1.12.0.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				//点击创建元素
+
+				var $box, $_span;
+				var $btn = $('#btn');
+
+				$btn.click(function() {
+					$box = $("<div></div>");
+					$_span = $("<span></span>");
+
+					var $span_left = $box.offset().left;
+					var $span_top = $box.offset().top;
+
+					$box.addClass('is_createddiv')
+					$box.css({
+						"width": "120px",
+						"height": "120px",
+						"background": "red",
+						"border-style": "solid",
+						"border-color": "#333",
+						"border-radius": "5px",
+						"text-align": "center",
+						"position": "absolute",
+						"left": "30px",
+						"top": "20px"
+					});
+					$_span.css({
+						"width": "5px",
+						"height": "5px",
+						"background": "#333",
+						"position": "absolute",
+						"left": $span_left,
+						"top": $span_top,
+						"display": "none"
+					});
+
+					draggle($box);
+
+					$(document.body).append($box);
+					$(document.body).append($_span);
+
+					var $span_left = $box.offset().left;
+					var $span_top = $box.offset().top;
+
+					$box.click(function() {
+
+						$_span.css({
+							"width": "10px",
+							"height": "5px",
+							"background": "blue",
+							"position": "absolute",
+							"left": $span_left,
+							"top": $span_top,
+							"display": "block"
+						});
+						$(document.body).append($_span);
+					});
+
+					span_draggle($_span)
+
+				});
+				//拖拽span 拉伸div	
+				span_draggle($_span);
+
+				function span_draggle(obj) {
+					var span_mousex = 0,
+						span_mousey = 0;
+					var spanLeft, spanTop, changex, changey
+					obj.mousedown(function(e) {
+						var spanoffset = $(this).offset();
+						spanLeft = parseInt(spanoffset.left, 10);
+						spanTop = parseInt(spanoffset.top, 10);
+						span_mousex = e.pageX;
+						span_mousey = e.pageY;
+						//console.log(e.pageX);
+						$(this).bind('mousemove', span_dragElement);
+					});
+					$(document).mouseup(function() {
+						obj.unbind('mousemove');
+
+					});
+
+					function span_dragElement(event) {
+						changex = event.pageX - span_mousex;
+						changey = event.pageY - span_mousey;
+						//console.log(changex);
+
+						var left = spanLeft + changex;
+						var top = spanTop + changex;
+						$(this).css({
+							'top': top,
+							'left': left,
+							'position': 'absolute'
+						});
+						var newwidth = (120 + changex);
+						var newheight = (120 + changey);
+						$box.css({
+							"width": newwidth,
+							"height": "120px",
+							"background": "red",
+							"border-style": "solid",
+							"border-color": "#333",
+							"border-radius": "5px",
+							"text-align": "center",
+							"position": "absolute",
+
+						});
+						return false;
+					}
+
+				}
+				//创建的元素拖拽
+				function draggle(obj) {
+					var mousex = 0,
+						mousey = 0;
+					var divLeft, divTop;
+
+					obj.mousedown(function(e) {
+						var offset = $(this).offset();
+						divLeft = parseInt(offset.left, 10);
+						divTop = parseInt(offset.top, 10);
+						mousey = e.pageY;
+						mousex = e.pageX;
+						console.log(mousex, mousey)
+						$(this).bind('mousemove', dragElement);
+					});
+
+					function dragElement(event) {
+						var left = divLeft + (event.pageX - mousex);
+						var top = divTop + (event.pageY - mousey);
+
+						console.log(event.pageX, event.pageY)
+						$(this).css({
+							'top': top,
+							'left': left,
+							'position': 'absolute'
+						});
+						return false;
+					}
+					$(document).mouseup(function() {
+						obj.unbind('mousemove');
+						var $span_left = $box.offset().left;
+						var $span_top = $box.offset().top;
+						$_span.css({
+							"width": "10px",
+							"height": "5px",
+							"background": "blue",
+							"position": "absolute",
+							"left": $span_left,
+							"top": $span_top,
+							"display": "block"
+						});
+					});
+				}
+			})			
+		</script>
+	</head>
+
+	<body>
+
+		<button id="btn" type="button">创建一个div</button>
+		
+	</body>
+
+</html>

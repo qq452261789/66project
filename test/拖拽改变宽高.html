@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<style type="text/css">
+			.span {
+				position: absolute;
+				right: -5px;
+				bottom: -5px;
+				height: 10px;
+				width: 10px;
+				background-color: black;
+				border-radius: 50%;
+			}
+			
+			.div {
+				position: absolute;
+				width: 200px;
+				height: 200px;
+				border-radius: 100px;
+				background-color: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<button type="button" id="btn">创建一个div</button>
+
+		<span class="span"></span>
+
+		<script type="text/javascript">
+			var btn = document.getElementById("btn")
+
+			btn.onclick = function() {
+					is_creatediv = document.createElement("div");
+					span = document.createElement("span");
+					is_creatediv.className = "div";
+					span.className = "span";
+
+					is_creatediv.appendChild(span);
+					document.body.appendChild(is_creatediv);
+					//创建的div实行拖拽韩式
+					tergle(is_creatediv, span)
+
+					//	var is_editdiv = document.getElementsByClassName('div');
+					var is_editdiv = document.getElementsByClassName('div');
+					
+					document.onclick = function(ev) {
+						var ev = ev || window.event;
+						var target = ev.target || ev.srcElement;
+						if(target.nodeName.toLowerCase() == "div") {
+							target.style.background = "blue";
+						}
+					}.onmouseout = function(ev) {
+						var ev = ev || window.event;
+						var target = ev.target || ev.srcElement;
+						//alert(target.innerHTML);
+						if(target.nodeName.toLowerCase() == "div") {
+							target.style.background = "";
+						}
+					}
+				}
+				//拖拽函数
+
+			function tergle(boj, bojchild) {
+				boj.onmousedown = function(e) {
+					var e = e || window.event
+					disx = e.clientX - this.offsetLeft
+					disy = e.clientY - this.offsetTop
+					document.onmousemove = function(e) {
+						var e = e || window.event
+						boj.style.left = (e.clientX - disx) + "px"
+						boj.style.top = (e.clientY - disy) + "px"
+					}
+					document.onmouseup = function() {
+						document.onmousemove = null
+					}
+					return false;
+				};
+
+				bojchild.onmousedown = function(e) {
+					var e = e || window.event
+					disX = e.clientX
+					disY = e.clientY
+					var divpos = boj.getBoundingClientRect();
+
+					document.onmousemove = function(e) {
+						var e = e || window.event
+						changeX = e.clientX - disX
+						changeY = e.clientY - disY
+						boj.style.width = (divpos.width + changeX) + "px"
+						boj.style.height = (divpos.height + changeY) + "px"
+					}
+					document.onmouseup = function() {
+						document.onmousemove = null
+					}
+					e.cancelBubble = true;
+				}
+
+			}
+
+			/*div.onmousedown = function(e) {
+				var e = e || window.event
+				disx = e.clientX - this.offsetLeft
+				disy = e.clientY - this.offsetTop
+				document.onmousemove = function(e) {
+					var e = e || window.event
+					div.style.left = (e.clientX - disx) + "px"
+					div.style.top = (e.clientY - disy) + "px"
+				}
+				document.onmouseup = function() {
+					document.onmousemove = null
+				}
+				return false;
+			}
+			span.onmousedown = function(e) {
+				var e = e || window.event
+				disX = e.clientX
+				disY = e.clientY
+				var divpos = div.getBoundingClientRect();
+				console.log(divpos)
+				document.onmousemove = function(e) {
+					var e = e || window.event
+					changeX = e.clientX - disX
+					changeY = e.clientY - disY
+					div.style.width = (divpos.width + changeX) + "px"
+					div.style.height = (divpos.height + changeY) + "px"
+				}
+				document.onmouseup = function() {
+					document.onmousemove = null
+				}
+				e.cancelBubble = true;
+			}*/
+		</script>
+	</body>
+
+</html>

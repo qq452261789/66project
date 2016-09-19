@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		#nav{
+			position: relative;
+			height: 35px;
+			width: 800px;
+			background: blue;
+		}
+		span{
+			position: absolute;
+			right: -5px;
+			bottom: -5px;
+			height: 10px;
+			width: 10px;
+			border-radius:5px ;
+			background: red;
+		}
+		a{
+			color:#fff;
+			font-family: "微软雅黑";
+			font-weight: 800;
+		}
+	</style>
+	<body>
+		<div id="nav">
+			<a id="a" href="https://www.baidu.com">百度1</a>
+			<a href="https://www.baidu.com">百度2</a>
+			<a href="https://www.baidu.com">百度3</a>
+			<a href="https://www.baidu.com">百度4</a>
+			<span></span>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var nav =document.getElementById("nav");
+		var span = nav.getElementsByTagName("span")[0]
+		//var a =nav.getElementsByTagName("a");
+		
+		var a =document.getElementsByTagName("a");
+		
+		nav.onmouseover = function(){
+			nav.style.background = "red";
+			for(var i = 0 ;i<a.length;i++){
+				a[i].setAttribute("contenteditable","true");
+			}			
+		}
+		nav.onmouseleave = function(){
+			nav.style.background = "blue";
+			a.removeAttribute("contenteditable","true");			
+		};
+		document.addEventListener("click",function(e){
+			var e = e || window.event;
+			a.setAttribute("contenteditable","true")
+			
+		})
+		
+		
+		
+		tergle(nav, span) 
+		function tergle(boj, bojchild) {
+				boj.onmousedown = function(e) {
+					var e = e || window.event
+					disx = e.clientX - this.offsetLeft
+					disy = e.clientY - this.offsetTop
+					document.onmousemove = function(e) {
+						var e = e || window.event
+						boj.style.left = (e.clientX - disx) + "px"
+						boj.style.top = (e.clientY - disy) + "px"
+					}
+					document.onmouseup = function() {
+						document.onmousemove = null
+					}
+					return false;
+				};
+
+				bojchild.onmousedown = function(e) {
+					var e = e || window.event
+					disX = e.clientX
+					disY = e.clientY
+					var divpos = boj.getBoundingClientRect();
+
+					document.onmousemove = function(e) {
+						var e = e || window.event
+						changeX = e.clientX - disX
+						changeY = e.clientY - disY
+						boj.style.width = (divpos.width + changeX) + "px"
+						boj.style.height = (divpos.height + changeY) + "px"
+					}
+					document.onmouseup = function() {
+						document.onmousemove = null
+					}
+					e.cancelBubble = true;
+				}
+
+			}
+	</script>
+</html>

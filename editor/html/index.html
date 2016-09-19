@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>66编辑器</title>
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<script src="../js/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div id="header">
+			<!--导航部分-->
+			<h1><a href="http://66made.com" target="_blank"></a></h1>
+
+			<div id="in_page" class="left">
+				<!--默认显示的首页-->
+				<div id="in_page_1">
+					<span id="">
+						
+					</span>
+					<span id="">
+						页数：首页
+					</span>
+					<span id="">
+						
+					</span>
+				</div>
+
+				<!--点击的时候出现搜索框-->
+				<div id="in_page_2">
+					<span id="">
+						
+					</span>
+
+					<input type="text" name="" id="" value="" placeholder="find a page" />
+				</div>
+			</div>
+
+			<div id="status" class="left">
+				<span id="">
+					当前
+				</span>
+				<span id="">
+					工具
+				</span>
+				<span id="">
+					帮助
+				</span>
+				<span id="">
+					升级
+				</span>
+			</div>
+
+			<!--点击编辑器消失病预览网页-->
+			<div id="controller">
+				<span id="">
+					<!--123-->
+				</span>
+			</div>
+
+			<div id="edit">
+				<!--1-->
+				<span id="">
+					
+				</span>
+				<!--2-->
+				<span id="">
+					
+				</span>
+				<!--3-->
+				<span id="">
+					
+				</span>
+				<!--4-->
+				<span id="">
+					
+				</span>
+				<!--5-->
+				<span id="">
+					预览
+				</span>
+				<!--6-->
+				<span id="">
+					保存
+				</span>
+				<!--7-->
+				<span id="">
+					发布
+				</span>
+			</div>
+		</div>
+
+		<div id="nav_edict" class="clearfix">
+			<!--导航编辑器头部-->
+			<div id="nav_edict_h" class="clearfix">
+				<p>
+					<!--小三角-->
+				</p>
+				<span>
+					网页
+				</span>
+				<span id="">
+					?
+				</span>
+				<span id="closs_nav_edict">
+					x
+				</span>
+			</div>
+			<!--导航编辑器超链接-->
+			<div id="nav_edict_c">
+				<ul>
+					<li>
+						<p href="">
+							首页
+						</p>
+						<span>
+							<!--背景图  home-->
+						</span>
+						<div id="">
+							<!--背景图  圆形-->
+						</div>
+						<div id="">
+							...
+						</div>
+					</li>
+					<li>
+						<p href="">
+							服务
+						</p>
+						<span>
+							<!--背景图  1-->
+						</span>
+						<div id="">
+							<!--背景图  圆形-->
+						</div>
+						<div id="">
+							...
+						</div>
+					</li>
+					<li>
+						<p href="">
+							我们的工作
+						</p>
+						<span>
+							<!--超链接背景图-->
+						</span>
+						<div id="">
+							<!--背景图  圆形-->
+						</div>
+						<div id="">
+							...
+						</div>
+					</li>
+					<li>
+						<p href="">
+							关于我们
+						</p>
+						<span>
+							<!--超链接背景图-->
+						</span>
+
+						<div id="">
+							<!--背景图  圆形-->
+						</div>
+						<div id="">
+							...
+						</div>
+					</li>
+					<li>
+						<p href="">
+							联系我们
+						</p>
+						<span>
+							<!--超链接背景图-->
+						</span>
+						<div id="">
+							<!--背景图  圆形-->
+						</div>
+						<div id="">
+							...
+						</div>
+					</li>
+					<li>
+						<p href="">
+							网上订购
+						</p>
+						<span>
+							<!--超链接背景图-->
+						</span>
+						<div id="">
+							<!--背景图  圆形-->
+						</div>
+						<div id="">
+							...
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!--添加页面-->
+			<div id="nav_edict_f" class="clearfix">
+				<!--添加页面input框-->
+				<div id="add_page" class="clearfix">
+					<button type="button">+  添加页面</button>
+				</div>
+				<!--添加页面 隐藏框-->
+				<div id="add_page_box" class="clearfix">
+					<div id="for_page" class="clearfix">
+						<div id="closs_page_box">
+							x
+						</div>
+						<span id="" class="left">
+							<!-- 页面 背景-->
+						</span>
+						<div id="" class="left  clearfix">
+							<p>页面</p>
+							<p>添加了新的页面</p>
+						</div>
+					</div>
+					<div id="for_link" class="clearfix">
+						<span id="" class="left">
+							<!-- 页面 背景-->
+						</span>
+						<div id="" class="left  clearfix">
+							<p>链接</p>
+							<p>链接添加到您的菜单</p>
+						</div>
+					</div>
+					<div id="for_top" class="clearfix">
+						<span id="" class="left">
+							<!-- 页面 背景-->
+						</span>
+						<div id="" class="left  clearfix">
+							<p>菜单头</p>
+							<p>一个不可点击标题下包的网页和链接</p>
+						</div>
+					</div>
+					<div id="jiantou_1">
+						<!-- 箭头提示-->
+					</div>					
+				</div>
+			</div>
+			<div id="change_page" class="clearfix">
+				<span id="for_car" class="left">
+					<!-- 页面 背景 小汽车-->
+				</span>
+				<p class="left">
+					页面转换
+				</p>
+				<p class="left" id="show_pos">
+					出在
+				</p>
+				<!--出在弹框-->
+				<div id="out_page" class="clearfix">
+					<div id="out_page_a">
+						<span>
+							网页转换
+						</span>
+						<span id="">
+							?    <!--帮助-->
+						</span>
+						<span id="closs_out_page" >
+							x    <!--关闭-->
+						</span>
+					</div>
+					<div id="out_page_b" class="clearfix">
+						<div id="" class="clearfix">
+							<span id="">
+								<img src="../images/danxian.png"/>
+							</span>
+							<cite>
+								无
+							</cite>
+								
+						</div>
+						<div id="" class="clearfix">
+							<span id="">
+								<img class="_heng"  src="../images/heng_1.png"/>
+							</span>
+							<cite>
+								横向
+							</cite>
+						</div>
+						<div id="" class="clearfix">
+							<span id="">
+								<img class="_chuizhi" src="../images/chuizhi_1.png"/>
+							</span>
+							<cite>
+								垂直
+							</cite>
+						</div>
+						<div id="" class="clearfix">
+							<span id="">
+								<img class="tanru" src="../images/tanchutanchu.png"/>
+							</span>
+							<cite>
+								谈入谈出
+							</cite>
+						</div>
+						<div id="" class="clearfix">
+							<span id="">
+								<img src="../images/chuzai_1.png"/>
+							</span>
+							<cite>
+								出在
+							</cite>
+						</div>
+					</div>
+					<!--提示  小箭头-->
+					<div id="jiant_2">
+						<img src="../images/jiantou_2.png"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--编辑器代码部分-->
+		<ul id="edit_ul" class="clearfix">
+			<li>
+				<div id="bg_1" class="left">
+					<!--默认背景-->
+				</div>
+				<p class="action  left">
+					背景设置
+				</p>
+				<!--背景设置 隐藏框-->
+				<div id="for_bg" class="clearfix">
+					<div id="for_bg_a" class="clearfix">
+						<p class="left">页面背景</p>
+						<span id="" class="left">
+							?
+						</span>
+						<span id="" class="left">
+							X
+						</span>
+					</div>
+					<div id="for_bg_b" class="clearfix">
+						<img src="../images/bg_top.png"/>
+						<div class="clearfix" id="for_bg_b_a">
+							<!--设置-->
+							<button type="button"></button>
+							<!--播放-->
+							<button type="button"></button>
+						</div>
+					</div>
+					<div id="for_bg_b_b">
+						<div id="" class="btn_div left ">
+							<button type="button">
+							颜色
+						</button>
+						</div>
+						<div id="" class="btn_div left clearfix">
+							<button type="button ">
+								图片
+							</button>
+						</div>
+						<div id="" class="btn_div left clearfix">
+							<button type="button">
+								视频
+							</button>	
+						</div>
+					</div>
+					<div id="for_bg_b_c">
+						<p>
+							选择页面背景
+						</p>
+						<span id="_tishi">
+							<!--感叹号   提示 -->
+						</span>
+						<div id="bg_tishi">
+							<p>令人惊赞的图片和视频背景，完美的任何页面</p>
+							<div id="">
+								<!--提示小角标-->
+							</div>
+						</div>
+						<div id="for_border">
+							<!--线条-->
+						</div>
+					</div>
+					<div id="for_bg_b_d" class="clearfix">
+						<ul id="for_bg_img" class="clearfix">
+							<li>
+								<img src="../images/bg_img_1.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_2.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_3.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_4.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_5.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_6.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_1.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_2.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_3.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_4.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_5.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_6.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_1.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_2.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_3.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_4.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_5.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_6.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_1.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_2.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_3.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_4.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_5.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_6.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_1.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_2.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_3.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_4.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_5.png"/>
+							</li>
+							<li>
+								<img src="../images/bg_img_6.png"/>
+							</li>
+						</ul>
+					</div>
+				</div>
+			
+		</div>
+			</li>
+			<li>
+				<div id="bg_2" class="left"></div>
+				<p class="action left">
+					添加元素
+				</p>
+			</li>
+			<li>
+				<div id="bg_3" class="left"></div>
+				<p class="action left">
+					应用市场
+				</p>
+			</li>
+			<li>
+				<div id="bg_4" class="left"></div>
+				<p class="action left">
+					我的上传
+				</p>
+			</li>
+			<li>
+				<div id="bg_5" class="left"></div>
+				<p class="action left">
+					开始写博客
+				</p>
+			</li>
+		</ul>
+		
+		<div id="edit_text" class="clearfix">
+			<!--文本编辑框第一部分-->
+			<div id="edit_text_h" class="clearfix">
+				<span id="">
+					?
+				</span>
+				<span id="">
+					&nbsp;
+				</span>
+				<span id="">
+					x
+				</span>
+			</div>
+			<!--文本编辑框第二部份-->
+			<div id="edit_text_c" class="clearfix">
+				<span id="">
+						<!--复制-->
+						<img src="../images/copy_1.png"/>
+					</span>
+				<span id="">
+						<!--粘贴-->
+						<img src="../images/past_1.png"/>
+					</span>
+				<span id="">
+						<img src="../images/copy_2.png"/>
+					</span>
+				<!--删除-->
+				<span id="">
+						<img src="../images/del_1.png"/>
+					</span>
+			</div>
+			<!--文本编辑框第三部份-->
+			<div id="edit_text_s" class="clearfix">
+				<span id="">
+						<!--安排-->
+						<img src="../images/anpai_1.png"/>
+						<img src="../images/sanjiao_r.png"/>
+						
+						<!--安排弹窗-->
+						<div id="" class="clearfix">
+							
+							<cite>
+								<!--弹窗出现 第一个-->
+							</cite>
+							
+							<cite>
+								<!--弹窗出现 第2个-->
+							</cite>
+							
+							<cite>
+								<!--弹窗出现 第3个-->
+							</cite>
+							
+							<cite>
+								<!--弹窗出现 第4个-->
+							</cite>
+							
+						</div>
+						
+					</span>
+				<span id="">
+						<!--对齐-->
+						<img src="../images/line_right.png"/>						
+						<img src="../images/sanjiao_r.png"/>
+						<!--文本对齐 弹窗-->
+						<div id="" class="clearfix">
+							<cite>
+								<!--对齐出现 第一个 左对齐-->
+							</cite>
+							
+							<cite>
+								<!--对齐出现 第二个 居中对齐-->
+							</cite>
+							
+							<cite>
+								<!--对齐出现 第三个 右对齐-->
+							</cite>
+							
+							<cite>
+								<!--对齐出现 第四个 右水平对齐-->
+							</cite>
+							<cite>
+								<!--对齐出现 第五个 水平对齐-->	
+							</cite>
+							<cite>
+								<!--对齐出现 第六个 左水平对齐-->	
+							</cite>
+						</div>
+					</span>
+
+				<!--分布-->
+				<span id="">
+						<img src="../images/line_center.png"/>
+						<img src="../images/sanjiao_r.png"/>
+						<!--分布弹窗-->
+						<div id="">
+							<cite>
+								<!--垂直分布-->
+							</cite>
+							<cite>
+								<!--楼梯分布-->
+							</cite>
+							<cite>
+								<!--水平分布-->
+							</cite>
+						</div>
+					</span>
+				<!--比配大小-->
+				<span id="">
+						<img src="../images/line_dingyi.png"/>
+						<img src="../images/sanjiao_r.png"/>
+							<!--比配弹窗-->
+						<div id="">
+							<cite>
+								<!--比配弹窗 1-->
+							</cite>
+							<cite>
+								<!--比配弹窗 2-->
+							</cite>
+							<cite>
+								<!--比配弹窗 3-->
+							</cite>
+						</div>
+					</span>
+			</div>
+			<!--文本编辑框第四部份    旋转角度-->
+			<div id="edit_text_t" class="clearfix">
+				<span id="">
+					
+				</span>
+				<p>
+					<a href="javascript:void(0)">
+						0
+					</a>
+					<sup id="">
+						。
+					</sup>
+				</p>
+			</div>
+
+			<!--文本编辑框第五部份    尺度-->
+			<div id="edit_text_f" class="clearfix">
+				<div class="clearfix">
+					尺寸
+				</div>
+				<div class="clearfix">
+					<span id="">
+						W :
+					</span>
+					<i id="">
+						900
+					</i>
+				</div>
+				<div class="clearfix">
+					<span id="">
+						H :
+					</span>
+					<i id="">
+						800
+					</i>
+				</div>
+			</div>
+			<!--文本编辑框第6部份    位置信息-->
+			<div id="edit_text_x" class="clearfix">
+				<div>
+					位置
+				</div>
+				<div class="clearfix">
+					<span id="">
+						X :
+					</span>
+					<i id="">
+						50
+					</i>
+				</div>
+				<div class="clearfix">
+					<span id="">
+						Y :
+					</span>
+					<i id="">
+						800
+					</i>
+				</div>
+			</div>
+			<!--文本编辑框第尾部    显示所有也页数-->
+			<div id="edit_text_l" class="clearfix">
+				<div>
+					显示所有页
+				</div>
+				<div>
+
+					<span id="">
+						<!--点击隐藏所有页-->
+					</span>
+					<span id="">
+						<!--点击显示所有页-->
+					</span>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="../js/index.js" type="text/javascript"></script>
+</html>
