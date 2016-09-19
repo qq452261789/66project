@@ -660,6 +660,7 @@ h1 a{
 	width: 48px;
 	background: url(../images/bg_1_2.png) no-repeat;
 }
+/*主编辑器部分    第一部分    背景 样式*/
 #for_bg{
 	width: 350px;
 	padding-left: 63px;
@@ -669,6 +670,7 @@ h1 a{
 	left: 0;
 	top: 0;
 	z-index: 10;
+	display: none;
 }
 #for_bg_a{
 	background: #f0f3f5;
@@ -826,29 +828,82 @@ h1 a{
 	bottom: -15px;
 }
 #for_bg_b_d{
-	height: 432px;
+	height: 373px;
 	overflow-y:scroll;
 	padding-left:20px ;
+	padding-bottom: 60px;
 	background: #fff;
 	border-bottom: 1px solid #f1f1f1;
 }
+#for_bg_img{
+
+}
 #for_bg_img li{
 	float: left;
-	margin-right: 14px;
+	position: relative;
+	width: 90px;
+	height: 60px;
+}
+#for_bg_img .margin_30{	
+	margin:0 21px 0 21px
+}
+#for_bg_img li .bg_name{	
+	display: none;
+}
+#for_bg_b_f{
+	height: 65px;
+	padding-left: 20px;	
+	position: absolute;
+	left: 20px;
+	bottom: 0px;
+	width: 313px;
+	
+}
+#for_bg_b_f_a{
+	height: 65px;
+	width: 313px;	
+	background: #fff;
+	position: absolute;
+	left: 63px;
+	top: 0;
+	opacity:.8;
+	filter: alpha(opacity=80);
+}
+#for_bg_b_f p{
+	width: 180px;
+	height: 40px;
+	position: absolute;
+	left: 110px;
+	top: 18px;
+	background: url(../images/qita_1.png) no-repeat;
+	z-index: 18;
+	text-align: center;line-height: 40px;
 }
 
 
 
 
-
-
-
-
+/*  主编辑器  第二部分  添加元素样式*/
 #bg_2 {
 	height: 48px;
 	width: 48px;
 	background: url(../images/bg_2.png) no-repeat;
 }
+
+#edit_ul li:nth-of-type(2):hover #bg_2 {
+	height: 48px;
+	width: 48px;
+	background: url(../images/bg_2_2.png) no-repeat;
+}
+#for_add{
+	height: 773px;
+	width: 285px;
+	background: url(../images/add_1.png) no-repeat;
+	top: 55px;
+	display: none;
+}
+
+
 
 #bg_3 {
 	height: 48px;

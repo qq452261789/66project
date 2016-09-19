@@ -80,31 +80,56 @@ $(function() {
 		})
 	})
 
-	var $edit_ul = $("#edit_ul");
-	var $edit_li = $edit_ul.find("li");
 
-	$edit_li.mouseover(function() {
-
-		$(this).find("p").css({
-			"display": "block"
-		})
-
-	}).mouseleave(function() {
-		$(this).children("p").css({
-			"display": "none"
-		})
-	});
-
-	/*设置 ：背景图框的li  margin*/
-	var $for_bg_img = $("#for_bg_img");
-	var  $for_bg_img_li = $for_bg_img.find("li");
-	console.log( $for_bg_img_li.length);
+	/*设置 ：鼠标已入放大读片*/
+//	var $for_bg_img = $("#for_bg_img");
+//	var  $for_bg_img_li = $for_bg_img.find("li");
+//	$for_bg_img_li.mouseenter(function(){
+//		
+//		var _img = $(this).find("img").eq(0);
+//		var _src = _img.attr("src");		
+//		var $bg_img_a = $("<img />");
+//		var _left = $(this).offset().left + $(this).width() +10;
+//		var _top = $(this).offset().top-30;
+//		var bg_name_value = $(this).find(".bg_name").html();
+//		$bg_img_a.css({
+//			"width":"100%",
+//			"height":"140px"
+//		})
+//		$bg_img_a.attr("src",_src);
+//		var bg_name = $("</p>");
+//		bg_name.html(bg_name_value);
+//		
+//		var $bg_div = $("<div>");
+//		$bg_div.addClass("remove_div");
+//		$bg_div.css({
+//			"width": "230px",
+//			"height": "160px",
+//			"padding": "10px",
+//			"position": "absolute",
+//			"left": _left,
+//			"top":_top,
+//			"zIndex": 15,
+//			"background": "#fff",
+//			"border":"solid 1px #f1f1f1",
+//			"line-height":"20px"
+//		})
+//		
+//		$bg_div.append($bg_img_a);
+//		$bg_div.append(bg_name);
+//		$("body").append($bg_div)		
+//	}).mouseleave(function(){
+//		var remove_div_1 = $(".remove_div") ;
+//		remove_div_1.remove()
+//		
+//	})
+	
 	
 
 	var $edit_text_c = $("#edit_text_s");
 	var $edit_text_c_span = $edit_text_c.children("span");
 	$edit_text_c_span.mouseenter(function() {
-		$(this).children("img").eq(1).attr("src", "../images/sanjiao_r_2.png")
+		$(this).children("img").eq(1).attr("src", "../images/sanjiao_r_2.png");
 
 	}).mouseleave(function() {
 		$(this).children("img").eq(1).attr("src", "../images/sanjiao_r.png")
