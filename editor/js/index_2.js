@@ -1,88 +1,120 @@
 
-var edit_li = document.querySelectorAll("#edit_ul>li")
-var action = document.getElementsByClassName("action")
-console.log(edit_li)
-console.log(action)
-for(var i = 0; i < edit_li.length; i++) {
-	edit_li[i].index = i;
-	edit_li[i].onmouseover = function() {
-		for(var j = 0; j < action.length; j++) {
-			action[j].style.display = "none"
+	var edit_li = document.querySelectorAll("#edit_ul>li")
+	var action = document.getElementsByClassName("action")
+	console.log(edit_li)
+	console.log(action)
+	for(var i = 0; i < edit_li.length; i++) {
+		edit_li[i].index = i;
+		edit_li[i].onmouseover = function() {
+			for(var j = 0; j < action.length; j++) {
+				action[j].style.display = "none"
+			}
+			action[this.index].style.display = "block"
 		}
-		action[this.index].style.display = "block"
+		edit_li[i].onmouseleave = function() {
+			action[this.index].style.display = "none"
+		}
 	}
-	edit_li[i].onmouseleave = function() {
-		action[this.index].style.display = "none"
-	}
-}
 
-var for_bg = document.getElementById("for_bg");
-var closs_for_bg = document.getElementById("closs_for_bg");
+	var for_bg = document.getElementById("for_bg");
+	var closs_for_bg = document.getElementById("closs_for_bg");
 	edit_li[0].onclick = function() {
 		for_bg.style.display = "block";
 	}
 	closs_for_bg.onclick = function(e) {
 		for_bg.style.display = "none";
-		e.cancelBubble = true
+		e.cancelBubble = true ;
+	}
+	
+	var for_add =document.getElementById("for_add");
+	var closs_add =document.getElementById("closs_add");
+	
+	edit_li[1].onclick = function() {
+		for_add.style.display = "block";
+	}
+	closs_add.onclick = function(e) {
+		for_add.style.display = "none";
+		e.cancelBubble = true ;
 	}
 	
 
 	/*设置 ：鼠标已入放大读片*/
 	var for_bg_img_li = document.querySelectorAll("#for_bg_img>li");
-	
-	for(var k = 0 ;k<for_bg_img_li.length;k++){
-		for_bg_img_li[k].index = k;
-		
+	var for_bg_b_d  =document.getElementById("for_bg_b_d");
+	for(var k = 0 ;k<for_bg_img_li.length;k++){		
+		for_bg_img_li[k].index = k;		
 		for_bg_img_li[k].onmouseover =function(){
+			/*创建img元素并赋值*/
+			var _src = for_bg_img_li[this.index].querySelector("img").getAttribute("src");			
+			var _big_img = document.createElement("img");
+			_big_img.setAttribute("src",_src);			
+			_big_img.style.width = "100%";
+			_big_img.style.height = 140+"px";
+			/*创建p元素并赋值*/
+			var _big_p = document.createElement("p");
+			var _P_val = for_bg_img_li[this.index].querySelector("div").innerHTML;
+			_big_p.innerHTML = _P_val			
+			var _img_box = document.createElement("div");
+			/*设置创建的合作的位置*/
+			var _top= for_bg_img_li[this.index].offsetTop+10 - for_bg_b_d.scrollTop + "px";			
+			var _left = for_bg_img_li[this.index].offsetLeft + for_bg_img_li[this.index].offsetWidth+80+"px";
 			
-			console.log(for_bg_img_li[this.index].firstChild);
+			/* 设置创建的盒子的样式*/
+			_img_box.setAttribute("id","_img_box");
+			_img_box.setAttribute("class","_img_box");
+			_img_box.style.width = 230+"px";
+			_img_box.style.height = 160+"px";
+			_img_box.style.background = "#fff";
+			_img_box.style.padding = 10+"px";
+			_img_box.style.position = "absolute";
+			_img_box.style.left = _left;
+			_img_box.style.top = _top;
+			_img_box.style.zIndex = 15;
+			_img_box.style.border = "solid 1px #f1f1f1";
+			_img_box.style.lineHeight =20+"px";			
+			/*添加创建的元素*/
+			_img_box.appendChild(_big_img);
+			_img_box.appendChild(_big_p);
+			document.body.appendChild(_img_box);	
+		}
+		for_bg_img_li[k].onmouseout = function(){
+			document.getElementById("_img_box").remove();
 		}
 	}
 	
-//	$for_bg_img_li.mouseenter(function(){		
-//		var _img = $(this).find("img").eq(0);
-//		var _src = _img.attr("src");		
-//		var $bg_img_a = $("<img />");
-//		var _left = $(this).offset().left + $(this).width() +10;
-//		var _top = $(this).offset().top-30;
-//		var bg_name_value = $(this).find(".bg_name").html();
-//		$bg_img_a.css({
-//			"width":"100%",
-//			"height":"140px"
-//		})
-//		$bg_img_a.attr("src",_src);
-//		var bg_name = $("</p>");
-//		bg_name.html(bg_name_value);
-//		
-//		var $bg_div = $("<div>");
-//		$bg_div.addClass("remove_div");
-//		$bg_div.css({
-//			"width": "230px",
-//			"height": "160px",
-//			"padding": "10px",
-//			"position": "absolute",
-//			"left": _left,
-//			"top":_top,
-//			"zIndex": 15,
-//			"background": "#fff",
-//			"border":"solid 1px #f1f1f1",
-//			"line-height":"20px"
-//		})
-//		
-//		$bg_div.append($bg_img_a);
-//		$bg_div.append(bg_name);
-//		$("body").append($bg_div)		
-//	}).mouseleave(function(){
-//		var remove_div_1 = $(".remove_div") ;
-//		remove_div_1.remove()
-//		
-//	})
 
+	/*鼠标滑入显示隐藏背景小提示*/
+	var _tishi = document.getElementById("_tishi");
+	var bg_tishi = document.getElementById("bg_tishi");
+	
+	_tishi.onmouseover = function(){
+		bg_tishi.style.display = "block"
+	}
+	_tishi.onmouseout = function(){
+		bg_tishi.style.display = "none"
+	}
+	
+	
+	var d_edit_text = document.getElementById("d_edit_text");
+	var edit_text = document.getElementById("edit_text")
+	d_edit_text.onmousedown = function(e) {
+			var e = e || window.event
+			disX = e.clientX
+			disY = e.clientY
+			var divpos = edit_text.getBoundingClientRect();
 
-
-
-
-
+			document.onmousemove = function(e) {
+				var e = e || window.event
+				changeX = e.clientX - disX
+				changeY = e.clientY - disY
+				edit_text.style.left = (divpos.left + changeX) + "px"
+				edit_text.style.top = (divpos.top + changeY) + "px"
+			}
+			document.onmouseup = function() {
+				document.onmousemove = null
+			}
+			e.cancelBubble = true;
+		}
 
 
 

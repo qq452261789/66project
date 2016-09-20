@@ -4,9 +4,12 @@
 	width: 100%;
 	height: 50px;
 	margin: 0 auto;
-	background: #F1F1F1;
+	background: #fff;
 	position: relative;
 	font-size: 14px;
+	-webkit-box-shadow:  3px 3px 3px  #d8d8d8;
+    -moz-window-shadow: ;:  3px 3px 3px #d8d8d8;
+    box-shadow:  3px 3px 3px  #d8d8d8;
 }
 
 h1 {
@@ -33,6 +36,7 @@ h1 a{
 	display: block;
 	height: 50px;
 	width: 230px;
+	cursor: pointer;
 }
 #in_page_1 span {
 	display: block;
@@ -79,6 +83,7 @@ h1 a{
 	height: 50px;
 	line-height: 50px;
 	width: 230px;
+	cursor: pointer;
 }
 #in_page_2 span{
 	display: block;
@@ -111,6 +116,7 @@ h1 a{
 	height: 50px;
 	width: 60px;
 	text-align: center;
+	cursor: pointer;
 }
 #status span:hover {
 	color: #3399cc
@@ -124,7 +130,7 @@ h1 a{
 #controller {
 	width: 130px;
 	height: 15px;
-	background: #ccffff;
+	background: #eaf7ff;
 	float: left;
 	border-bottom: 1px solid #f1f1f1;
 	border-bottom-left-radius: 5px;
@@ -137,6 +143,7 @@ h1 a{
 	width: 100%px;
 	height: 15px;
 	background: url(../images/shang_1.png) no-repeat center;
+	cursor: pointer;
 }
 
 #edit {
@@ -153,6 +160,7 @@ h1 a{
 	float: left;
 	padding: 0 5px;
 	border-left: 1px #b0b1be solid ;
+	cursor: pointer;
 }
 
 #edit span:nth-of-type(1) {
@@ -209,16 +217,18 @@ h1 a{
 	height: 800px;
 	z-index: 10;
 	display: none;
+	background: #fff;
+	box-shadow: 0px 0px 3px #d8d8d8;
 }
 #nav_edict_h {
 	width: 260px;
-	background: #3399ff;
 	position: relative;
 	height: 55px;
 	line-height: 55px;
 	padding: 0 20px;	
 	border-top-left-radius: 10px;	
 	border-top-right-radius: 10px;
+	background: #3899ec;
 	}
 #nav_edict_h p{
 	height: 7px;
@@ -231,6 +241,15 @@ h1 a{
 #nav_edict_h span{
 	display: block;
 	float: left;
+	opacity: 0.6;
+	filter:alpha(Opacity=60);
+	-moz-opacity:0.6;
+	}
+#nav_edict_h span:hover{
+	
+	opacity: 1;
+	filter:alpha(Opacity=100);
+	-moz-opacity:1;
 	}
 #nav_edict_h span:nth-of-type(1) {
 	color: #fff;
@@ -251,16 +270,14 @@ h1 a{
 	margin-top: 15px;
 	height: 25px;
 	width: 25px;
-	color: #fff;
-	
+	color: #fff;	
 	font-size:18px ;
 	line-height: 20px;
 	text-align: center;
-	background:url(../images/yuan_1.png) no-repeat;
+	background:url(../images/yuan_4.png) no-repeat;
+	
 	}
-#nav_edict_h span:nth-of-type(2):hover,#nav_edict_h span:nth-of-type(3):hover{
-	background: url(../images/yuan_2.png) no-repeat;;
-}
+
 
 #nav_edict_c{
 	min-height: 600px;
@@ -269,7 +286,7 @@ h1 a{
 	width: 258px;
 	border: solid 1px #f1f1f1;
 	padding: 0 20px;
-	background: #f2f2f2;
+	background: #f0f3f5;
 }
 #nav_edict_c ul{
 	padding-top: 20px;
@@ -282,12 +299,16 @@ h1 a{
 	line-height: 40px;	
 	margin-bottom: 15px;
 	position: relative;
+	box-shadow: 0px 0px 5px #d8d8d8;
+	-webkit-box-shadow: 0px 0px 5px #d8d8d8;
+    -moz-window-shadow: ;:  0px 0px 5px #d8d8d8;
+	
 }
 #nav_edict_c li:nth-of-type(1){
-	background: #ccffff;
+	background: #d3edff;
 }
 #nav_edict_c li:hover{
-	background: #ccffff;
+	background: #d3edff;
 }
 
 #nav_edict_c li p{
@@ -352,7 +373,6 @@ h1 a{
 	height:45px;
 	padding-top:10px ;
 	padding-left: 32px;
-	background: #f0f3f5;
 	border-bottom: 1px solid #d9e1e8;
 	border-top: 1px solid #d9e1e8;		
 	position: relative;
@@ -499,13 +519,12 @@ h1 a{
 
 
 #change_page{
-	padding-top:15px;
+	padding-top:30px;
 	padding-left:20px;
 	height: 40px;
 	position: relative;
 	line-height: 25px;
 	font-size: 15px;
-	background: #f0f3f5;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;		
 }
@@ -639,6 +658,8 @@ h1 a{
 	margin-bottom: 15px;
 	min-width: 48px;	
 	position: relative;
+	background: #fff;
+	cursor: pointer;
 }
 #edit_ul li .action{
 	position: relative;
@@ -660,20 +681,78 @@ h1 a{
 	width: 48px;
 	background: url(../images/bg_1_2.png) no-repeat;
 }
-/*主编辑器部分    第一部分    背景 样式*/
-#for_bg{
-	width: 350px;
-	padding-left: 63px;
-	height: 723px;
-	position: absolute;
-	background: url(../images/bg_bg.png) no-repeat;
-	left: 0;
-	top: 0;
-	z-index: 10;
+
+
+
+
+
+/*  主编辑器  第二部分  添加元素样式*/
+#bg_2 {
+	height: 48px;
+	width: 48px;
+	background: url(../images/bg_2.png) no-repeat;
+}
+
+#edit_ul li:nth-of-type(2):hover #bg_2 {
+	height: 48px;
+	width: 48px;
+	background: url(../images/bg_2_2.png) no-repeat;
+}
+
+#bg_3 {
+	height: 48px;
+	width: 48px;
+	background: url(../images/bg_3.png) no-repeat;
+}
+
+#bg_4 {
+	height: 48px;
+	width: 48px;
+	background: url(../images/bg_4.png) no-repeat;
+}
+
+#bg_5 {
+	height: 48px;
+	width: 48px;
+	background: url(../images/bg_5.png) no-repeat;
+}
+
+.action {
 	display: none;
 }
+
+/*主编辑器部分    第一部分   添加 背景 样式*/
+#for_bg{
+	width: 350px;
+	padding-left: 10px;
+	height: 723px;
+	position: fixed;
+	left: 65px;
+	top: 75px;
+	z-index: 10;
+	display: none;
+	box-shadow: 0px 0px 5px #d8d8d8;
+	-webkit-box-shadow: 0px 0px 5px #d8d8d8;
+    -moz-window-shadow: ;:  0px 0px 5px #d8d8d8;
+	border-radius: 10px;
+}
+#_for_small_bg{
+	width: 10px;
+	background: #f8a238;
+	position: absolute;
+	left:0 ;
+	top: 0;
+	height: 723px;
+}
+#_for_small_bg_2{
+	position: absolute;
+	left: -57px;
+	top: 0;
+	width: 63px;
+	height: 65px;
+	background: url(../images/bg_bg_1.png) no-repeat;
+}
 #for_bg_a{
-	background: #f0f3f5;
 	height: 55px;
 	line-height: 55px;
 	padding-left: 20px;
@@ -696,8 +775,7 @@ h1 a{
 }
 #for_bg_a span:nth-of-type(1){	
 	background: url(../images/yuan_2.png);
-	margin-left: 180px;
-	
+	margin-left: 180px;	
 }
 #for_bg_a span:nth-of-type(1):hover{
 	background: url(../images/yuan_1.png);
@@ -705,11 +783,11 @@ h1 a{
 	filter: alpha(opacity=100);	
 }
 #for_bg_a span:nth-of-type(2){	
-	background: url(../images/yuan_2.png);	
+	background: url(../images/yuan_3.png);	
 	margin-left: 20px;	
 }
 #for_bg_a span:nth-of-type(2):hover{
-	background: url(../images/yuan_1.png);
+	background: url(../images/yuan_3.png);
 	opacity: 1;
 	filter: alpha(opacity=100);	
 }
@@ -784,7 +862,6 @@ h1 a{
 	padding-top:20px ;
 	line-height: 0;
 	padding-left:20px ;
-	background: #f0f3f5;
 	line-height: 20px;
 	font-size: 16px;
 	position: relative;
@@ -835,17 +912,17 @@ h1 a{
 	background: #fff;
 	border-bottom: 1px solid #f1f1f1;
 }
-#for_bg_img{
 
-}
 #for_bg_img li{
 	float: left;
 	position: relative;
 	width: 90px;
 	height: 60px;
+	margin-bottom: 10px;
 }
 #for_bg_img .margin_30{	
-	margin:0 21px 0 21px
+	margin-left: 20px;
+	margin-right:20px ;
 }
 #for_bg_img li .bg_name{	
 	display: none;
@@ -864,7 +941,7 @@ h1 a{
 	width: 313px;	
 	background: #fff;
 	position: absolute;
-	left: 63px;
+	left: 10px;
 	top: 0;
 	opacity:.8;
 	filter: alpha(opacity=80);
@@ -880,54 +957,164 @@ h1 a{
 	text-align: center;line-height: 40px;
 }
 
-
-
-
-/*  主编辑器  第二部分  添加元素样式*/
-#bg_2 {
-	height: 48px;
-	width: 48px;
-	background: url(../images/bg_2.png) no-repeat;
-}
-
-#edit_ul li:nth-of-type(2):hover #bg_2 {
-	height: 48px;
-	width: 48px;
-	background: url(../images/bg_2_2.png) no-repeat;
-}
+/* 主编辑器          添加元素框    css 样式*/
 #for_add{
-	height: 773px;
-	width: 285px;
-	background: url(../images/add_1.png) no-repeat;
-	top: 55px;
+	height: 843px;
+	width: 440px;
+	top: 75px;
+	left: 67px;
+	position: fixed;	
+	z-index: 15;
+	display: none;
+	background: #fff;
+	box-shadow: 0px 0px 5px #d8d8d8;
+	-webkit-box-shadow: 0px 0px 5px #d8d8d8;
+    -moz-window-shadow: ;:  0px 0px 5px #d8d8d8;
+	border-radius: 10px;
+	
+}
+#_small_bg{
+	width: 63px;
+	height: 106px;
+	position: absolute;
+	left: -60px;
+	top: 35px;
+	background: url(../images/jia_1.png) no-repeat;
+}
+#for_add_nav{
+	width: 75px;
+	padding-top:10px ;
+	height: 833px;
+	float: left;
+	background: #3696e8;
+	padding-left:15px ;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+#for_add_nav div{
+	line-height: 30px;
+	color: #fff;	
+	width: 55px;
+	height: 30px;
+	text-align: center;
+	margin-bottom: 10px;	
+}
+#for_add_nav div:nth-of-type(1){
+	background: url(../images/add_text_bg.png) no-repeat;
+}
+#for_add_nav div:hover{
+	background: url(../images/add_text_bg.png) no-repeat;
+}
+#for_add_box{
+	width: 349px;
+	background: #fff;
+	height: 841px;
+	float: left;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	position: relative;
+	border: 1px solid #f1f1f1;
+	border-left: none;
+}
+
+#for_add_box_1 span{
+	display: block;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top:18px;
+	z-index: 19;
+}
+#for_add_box_1 #help{
+	left: 260px;
+	background: url(../images/help_1.png);	
+}
+#for_add_box_1 #closs_add{
+	left: 300px;
+	background: url(../images/yuan_3.png) ;
+}
+#for_add_box_1 span:hover{
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+#for_add_box .for_add_box{
+	width: ;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 350px;
+	height: 833px;
 	display: none;
 }
-
-
-
-#bg_3 {
-	height: 48px;
-	width: 48px;
-	background: url(../images/bg_3.png) no-repeat;
+#for_add_box #for_add_box_a{
+	
+	display: block;
 }
 
-#bg_4 {
-	height: 48px;
-	width: 48px;
-	background: url(../images/bg_4.png) no-repeat;
+#for_add_box .bass_height{
+	height: 33px;
+	border-bottom:  1px solid #d9e1e8;
+	padding-top: 20px;
+	padding-left:20px ;
+	font-size: 16px;	
 }
-
-#bg_5 {
-	height: 48px;
-	width: 48px;
-	background: url(../images/bg_5.png) no-repeat;
+#for_add_box .bass_height_2{
+	padding-top: 10px;
+	padding-left:20px ;
+	font-size: 16px;
+	height: 33px;
+	line-height: 30px;
+	color: #395671;	
+	font-size: 16px;
+	position: relative;
+	
 }
-
-.action {
-	display: none;
+#for_add_box ._gantan{
+	width: 25px;
+	height: 25px;
+	background: url(../images/gandan_1.png) no-repeat;
+	position: absolute;
+	left: 305px;
+	top: 18px;
 }
-
-
+._line_1{
+	width: 313px;
+	height: 2px;
+	border-bottom: 1px solid #8092a4;
+}
+#div_title{
+	padding-left: 20px;
+	padding-top:10px ;
+	width: 293px;
+}
+#div_title h2{
+	font-size: 30px;
+	line-height: 50px;
+	font-weight:normal;
+}
+#div_title h4{
+	font-size: 20px;
+	line-height: 30px;
+	font-weight:normal;
+}
+#div_title .family_normal{
+	font-size:16px ;
+	line-height: 28px;
+	padding: 5px 0;
+}
+#div_title .change_font_family{
+	font-family: "宋体";
+	font-size:16px ;
+	line-height: 28px;
+	padding: 5px 0;
+}
+#english_title{
+	padding: 18px 20px 0 20px;
+}
+#english_title div{
+	margin-bottom: 18px;
+}
 
 /*文本编辑框样式*/
 #edit_text{
@@ -935,19 +1122,22 @@ h1 a{
 	position: absolute;
 	right: 80px;
 	top: 60px;
-	background:#e0dddd;
+	background:#fff;
+	opacity: .8;
+	filter:alpha(Opacity=80);
+	-moz-opacity:.8;
 	padding-bottom: 10px;
-	/*opacity: .5;
-	filter:alpha(Opacity=50);
-	-moz-opacity:0.5;*/
+	box-shadow: 0px 0px 5px #d8d8d8;
+	-webkit-box-shadow: 0px 0px 5px #d8d8d8;
+    -moz-window-shadow: ;:  0px 0px 5px #d8d8d8;
 	border-radius: 10px;
 }
-/*#edit_text:hover{
-	background: #e4dfdf;
+#edit_text:hover{
 	opacity: 1;
 	filter:alpha(Opacity=100);
 	-moz-opacity:1;
-}*/
+}
+
 #edit_text_h{
 	height: 30px;
 	line-height: 30px;
