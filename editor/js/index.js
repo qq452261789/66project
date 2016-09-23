@@ -65,14 +65,15 @@ $(function() {
 			"display": "none"
 		})
 	})
-		
-		
-	var $edit_text_c = $("#edit_text_s");
-	var $edit_text_c_span = $edit_text_c.children("span");
+	
+	var $edit_text_c =$("#edit_text_c");
+	var $edit_text_c_span = $edit_text_c.find("span");
 	$edit_text_c_span.mouseenter(function() {
 		$(this).children("img").eq(1).attr("src", "../images/sanjiao_r_2.png");
 
 	}).mouseleave(function() {
 		$(this).children("img").eq(1).attr("src", "../images/sanjiao_r.png")
-	})
+	})	
+		
+	
 })
