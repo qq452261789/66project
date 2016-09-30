@@ -6,6 +6,7 @@
 		<title>66编辑器</title>
 		<link rel="stylesheet" type="text/css" href="../css/index.css" />
 		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/user_web.css"/>
 		<script src="../js/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
@@ -17,14 +18,14 @@
 			<div id="in_page" class="left">
 				<!--默认显示的首页-->
 				<div id="in_page_1">
-					<span id="">
-						
+					<span id="in_page_1_bg_1">
+						<!--页数背景   1-->
 					</span>
-					<span id="">
+					<span id="in_page_1_bg_2">
 						页数：首页
 					</span>
-					<span id="">
-						
+					<span id="in_page_1_bg_3">
+						<!--页数背景   2-->
 					</span>
 				</div>
 
@@ -48,12 +49,204 @@
 				<span id="">
 					帮助
 				</span>
-				<span id="">
+				<span id="_upgrade">
 					升级
-				</span>
+				</span>				
 			</div>
-
-			<!--点击编辑器消失病预览网页-->
+			<!--状态栏弹窗部分-->
+			<div id="alert_status" class="clearfix">		
+				<!--当前弹框-->
+				<div id="_for_now" class="status_alert clearfix">
+					<div id="_for_now_left" class="left clearfix">
+						<span id="" class="">
+							
+						</span>
+						<p class="_for_now_left_p2">
+							保存
+						</p>
+						<p class="_for_now_left_p2">
+							预览
+						</p>
+						<p class="_for_now_left_p4">
+							得到反馈
+						</p>
+						<p class="_for_now_left_p2">
+							发布
+						</p>
+						<p class="_for_now_left_p7">
+							查看发布的网站
+						</p>
+						<p class="_for_now_left_p3">
+							链接域
+						</p>
+						<p class="_for_now_left_p2">
+							升级
+						</p class="_for_now_left_p1">
+						<div id="edit_phone">
+							<p class="_for_now_left_p4">
+								手机编辑
+							</p>
+						</div>
+						<p class="_for_now_left_p4">
+							图像锐化
+						</p>
+						<p class="_for_now_left_p5">
+							我的仪表板
+						</p>
+						<p class="_for_now_left_p4">
+							网站管理
+						</p>
+						<p class="_for_now_left_p4">
+							网站历史
+						</p>
+						<p class="_for_now_left_p5">
+							退出编辑器
+						</p>
+					</div>
+					<div id="_for_now_right" class="left clearfix">
+						<ul id="_for_now_right_ul" class="clearfix">
+							<li>
+								<span id="" class="for_save_span">
+									
+								</span>
+								<p class="_for_now_right_p1">
+									保存你的工作
+								</p>
+								<p class="_for_now_right_p2">
+									来吧，保存您到目前为止所做的工作。
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--工具弹窗-->
+				<div id="_for_tool" class="status_alert clearfix">
+					<div id="_for_tool_left" class="left clearfix">
+						<span id="">
+							<!--头部背景图-->
+						</span>
+						<p>
+							<label for="">
+								<input type="checkbox" checked="checked" name="" id="" value="" /> 
+								工具栏
+							</label>
+						</p>
+						<p>
+							<label for="">
+								<input type="checkbox" name="" id="" value="" /> 
+								统治者
+							</label>
+						</p>	
+						<p>
+							<label for="">
+								<input type="checkbox" checked="checked" name="" id="" value="" /> 
+								网格线
+							</label>
+						</p>
+						<p class="_for_tool_left_last_p">
+							<label for="">
+								<input type="checkbox" checked="checked" name="" id="" value="" /> 
+								捕捉到对象
+							</label>
+						</p>
+					</div>
+					<div id="_for_tool_right" class="clearfix left">
+						<ul id="_for_tool_right_ul" class="clearfix">
+							<li class="clearfix">
+								<span id="" class="__for_tool_right_span">
+									<!--头部背景图-->
+								</span>
+								<div id="">
+									<p class="_for_tool_right_p_1">
+										工具栏
+									</p>
+									<p class="_for_tool_right_p_2">
+										使用工具栏轻松搞定你的网页对齐，定位和大小完美的所有元素。
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--帮助弹窗-->
+				<div id="_for_help" class="status_alert clearfix">
+					<div id="_for_help_left" class="left clearfix">
+						<span id="" class="_for_help_left_span">
+							<!--头部小箭头-->
+						</span>
+						<p class="_for_help_left_1">
+							编辑器支持中心
+						</p>
+						<p class="_for_help_left_2">
+							键盘快捷键
+						</p>
+						<div id="" class="_for_help_left_div">
+							<p class="_for_help_left_3">
+								链接域
+							</p>
+							<p class="_for_help_left_4">
+								快速在网上找到（SEO）
+							</p>
+						</div>
+						<div id="" class="_for_help_left_div_2">
+							<p class="_for_help_left_5">
+							给予反馈
+						</p>
+						</div>
+						<p class="_for_help_left_6">
+							使用条款
+						</p>
+						<p class="_for_help_left_7">
+							隐私政策
+						</p>
+					</div>
+					<div id="_for_help_right" class="left clearfix">
+						<ul id="_for_help_right_ul" class="clearfix">
+							<li>
+								<span class="_for_help_right_span_1">
+									
+								</span>
+								<p class="_for_help_right_p_1">
+								 	所以你需要的帮助
+								</p>
+								<p  class="_for_help_right_p_2">
+									一步一步的帮助让您的网站顺利建立和运行。
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--升级弹窗-->
+				<div id="_for_upgrade" class="status_alert clearfix">
+					<div id="_for_upgrade_left" class="left clearfix">
+						<div class="_for_upgrade_left_div_1">
+							升级到无限的年限和储存！
+						</div>
+						<p class="_for_upgrade_left_p">
+							获取一个免费域名链接到您的网站
+						</p>
+						<p class="_for_upgrade_left_p">
+							享受无限的贷款和额外的储存空间
+						</p>
+						<p class="_for_upgrade_left_p">
+							链接谷歌Analytics（分析）
+						</p>
+						<p class="_for_upgrade_left_p">
+							删除66科技品牌广告
+						</p>
+						<div id="" class="_for_upgrade_left_div_2">
+							去升级，通过节省您的网站启动
+						</div>
+						<div id="save_to_web">
+							保存到站点
+						</div>
+					</div>
+					<div id="_for_upgrade_right" class="left clearfix">
+						
+					</div>
+				</div>
+				<!--点击编辑器消失病预览网页-->
+			</div>
 			<div id="controller">
 				<span id="">
 					<!--123-->
@@ -86,12 +279,12 @@
 					预览
 				</span>
 				<!--7-->
-				<span id="">
+				<span id="publish_web">
 					发布
 				</span>
 			</div>
 		</div>
-
+		
 		<div id="nav_edict" class="clearfix">
 			<!--导航编辑器头部-->
 			<div id="nav_edict_h" class="clearfix">
@@ -102,7 +295,7 @@
 					网页
 				</span>
 				<span id="">
-					?
+					
 				</span>
 				<span id="closs_nav_edict">
 					<!--关闭按钮-->
@@ -110,7 +303,7 @@
 			</div>
 			<!--导航编辑器超链接-->
 			<div id="nav_edict_c">
-				<ul>
+				<ul id="nav_edict_c_ul">
 					<li>
 						<p href="">
 							首页
@@ -121,7 +314,7 @@
 						<div id="">
 							<!--背景图  圆形-->
 						</div>
-						<div id="">
+						<div id="" class="show_small_nav_edit">
 							...
 						</div>
 					</li>
@@ -135,7 +328,7 @@
 						<div id="">
 							<!--背景图  圆形-->
 						</div>
-						<div id="">
+						<div id="" class="show_small_nav_edit">
 							...
 						</div>
 					</li>
@@ -149,7 +342,7 @@
 						<div id="">
 							<!--背景图  圆形-->
 						</div>
-						<div id="">
+						<div id="" class="show_small_nav_edit">
 							...
 						</div>
 					</li>
@@ -164,7 +357,7 @@
 						<div id="">
 							<!--背景图  圆形-->
 						</div>
-						<div id="">
+						<div id="" class="show_small_nav_edit">
 							...
 						</div>
 					</li>
@@ -178,7 +371,7 @@
 						<div id="">
 							<!--背景图  圆形-->
 						</div>
-						<div id="">
+						<div id="" class="show_small_nav_edit">
 							...
 						</div>
 					</li>
@@ -192,24 +385,22 @@
 						<div id="">
 							<!--背景图  圆形-->
 						</div>
-						<div id="">
+						<div id="" class="show_small_nav_edit">
 							...
 						</div>
 					</li>
 				</ul>
+			
 			</div>
 			<!--添加页面-->
 			<div id="nav_edict_f" class="clearfix">
 				<!--添加页面input框-->
 				<div id="add_page" class="clearfix">
-					<button type="button">+  添加页面</button>
+					<button id="add_page_btn" type="button">+  添加页面</button>
 				</div>
 				<!--添加页面 隐藏框-->
 				<div id="add_page_box" class="clearfix">
 					<div id="for_page" class="clearfix">
-						<div id="closs_page_box">
-							x
-						</div>
 						<span id="" class="left">
 							<!-- 页面 背景-->
 						</span>
@@ -258,10 +449,10 @@
 							网页转换
 						</span>
 						<span id="">
-							?    <!--帮助-->
+							  <!--帮助-->
 						</span>
 						<span id="closs_out_page">
-							x    <!--关闭-->
+							    <!--关闭-->
 						</span>
 					</div>
 					<div id="out_page_b" class="clearfix">
@@ -314,43 +505,155 @@
 				</div>
 			</div>
 		</div>
-
+		
+	<!--小导航编辑部分    弹窗-->
+		<a id="small_nav_edit">
+			<span id="">
+				<!--小箭头提示-->
+			</span>
+			<p class="small_nav_edit_p_1 small_nav_edit_bg_1 small_nav_edit_p">
+				页面信息
+			</p>
+			<p class="small_nav_edit_p_2 small_nav_edit_bg_1 small_nav_edit_p">
+				布局
+			</p>
+			<p class="small_nav_edit_p_3 small_nav_edit_bg_1 small_nav_edit_p">
+				权限
+			</p>
+			<p class="small_nav_edit_p_4 small_nav_edit_bg_1 small_nav_edit_p">
+					网页收索引擎优化
+			</p>
+			<div id="" class="under_line_p small_nav_edit_p">
+				<!--分界线-->
+			</div>
+			<p class="small_nav_edit_p_5 small_nav_edit_bg_2 small_nav_edit_p">
+				设置
+			</p>
+			<p class="small_nav_edit_p_6 small_nav_edit_bg_3 small_nav_edit_p">
+				改名
+			</p>
+			<p class="small_nav_edit_p_7 small_nav_edit_bg_4 small_nav_edit_p">
+				重复
+			</p>
+			<p class="small_nav_edit_p_8 small_nav_edit_bg_5 small_nav_edit_p">
+				隐藏
+			</p>
+			<p class="small_nav_edit_p_9 small_nav_edit_bg_6 small_nav_edit_p">
+				删除
+			</p>
+		</a>	
+		<!--发布弹窗-->
+		<div id="publish_alert">
+			<div id="publish_mask">
+				<!--遮罩层-->
+			</div>
+			<div id="publish_control">
+				<div id="publish_control_top">
+					<span id="closs_publish">
+						<!--关闭发布弹窗-->
+					</span>
+					<p class="publish_control_top_p_1">
+						在您发布网站之前，请选择一个域
+					</p>
+					<p class="publish_control_top_p_2">
+						您选择的域将是您的网站地址
+					</p>
+				</div>
+				<div id="free_domain" class="domain">
+					<span id="domain_selected_1" class="domain_selected">
+						<!--选中背景和默认背景-->
+					</span>
+					<p class="domain_p_1">
+						免费获得made.66dache.com域
+					</p>
+					<div id="user_domain">
+						<span id="user_domain_bg">
+							<!--小背景-->
+						</span>
+						<div id="user_domain_val">
+							<p id="user_domain_name" class="left">
+							http://xiaomoyi.made.66dache.com/
+							</p>
+							<input id="user_domain_id" class="left" value="mysite">
+								
+							</input>
+						</div>						
+					</div>
+				</div>
+				<div id="customer_domain" class="domain">
+					<span id="domain_selected_2" class="domain_selected">
+						<!--选中背景和默认背景-->
+					</span>
+					<p class="customer_domain_p_1">
+						链接到自己的定制域名
+					</p>
+					<p class="customer_domain_p_2">
+						例如链接到http://www.66made.com
+					</p>
+				</div>
+				<div id="sure_save">
+					保存并确认
+				</div>
+			</div>
+		</div>
+		<!--保存弹窗-->	
+		<div id="save_alert">
+			<div id="sever_mask">
+			<!--保存弹窗遮罩层-->
+			</div>
+			<div id="save_alert_content">
+				<div id="save_alert_content_top">
+					保存你的工作
+					<span id="closs_save_alert" class="">
+						
+					</span>
+				</div>
+				<div id="save_alert_content_center">
+					<p>
+						当你创建你的网站，这是一个好主意，定 期保存您的工作。
+					</p>
+				</div>
+				<div id="save_web">
+					确认保存
+				</div>
+			</div>
+		</div>
 		<!--编辑器代码部分-->
 		<ul id="edit_ul" class="clearfix">
-			<li>
+			<li class="edit_ul_li_1">
 				<p class="action  left" id="p">
 					背景设置
 				</p>
 				<!--背景设置 隐藏框-->
 			</li>
-			<li>
+			<li  class="edit_ul_li_2">
 				
 				<p class="action left">
 					添加元素
 				</p>
 			</li>
-			<li>
+			<li  class="edit_ul_li_3">
 				
 				<p class="action left">
 					应用市场
 				</p>
 			</li>
-			<li>
+			<li  class="edit_ul_li_4">
 				
 				<p class="action left">
 					我的上传
 				</p>
 			</li>
-			<li>
+			<li  class="edit_ul_li_4">
 			
 				<p class="action left">
-					开始写博客
+					编写博客
 				</p>
 			</li>
-			<li>
+			<li  class="edit_ul_li_6">
 				
 				<p class="action left">
-					预订
+					服务预订
 				</p>
 			</li>
 		</ul>
@@ -364,10 +667,10 @@
 			</div>
 			<div id="for_bg_a" class="clearfix">
 				<p class="left">页面背景</p>
-				<span id="" class="left">
-					?  <!--帮助--> 
+				<span id="bg_help" class="left">
+					  <!--帮助--> 
 				</span>
-				<span id="closs_for_bg" class="left">
+				<span id="closs_for_bg" class="left closs_edit">
 					<!--关闭框-->		
 				</span>
 			</div>
@@ -704,19 +1007,18 @@
 			<!--添加内容隐藏框-->
 			<div id="for_add_box" class="clearfix left">
 				<!--头部公共部分-->
-				<div id="for_add_box_1">
-					<span id="help">							
-						<!--帮助-->
-					</span>
-					<span id="closs_add">
+				<p id="for_add_box_1">
+					<span id="closs_add" class="closs_edit">
 						<!--关闭按钮-->
 					</span>
-				</div>
+				</p>
 				<!--添加文本 1-->
-				<div id="for_add_box_a" class="for_add_box clearfix">
-
+				<div id="for_add_box_a" class="for_add_box clearfix">					
 					<div id="" class="bass_height">
 						添加文本
+						<span id="text_help" class="help_bg">							
+						<!--帮助-->
+						</span>
 					</div>
 					<div id="overflow_y_2">
 						<div id="" class="bass_height_2">
@@ -780,6 +1082,9 @@
 				<div id="for_add_box_b" class="for_add_box clearfix">
 					<div id="" class="bass_height">
 						添加图片
+						<span id="img_help" class="help_bg">
+							
+						</span>
 					</div>
 					<div id="overflow_y" class="overflow_y">
 						<div id="" class="bass_height_2">
@@ -924,6 +1229,9 @@
 				<div id="for_add_box_c" class="for_add_box clearfix">
 					<div id="" class="bass_height">
 						添加画廊
+						<span id="more_img_help" class="help_bg">
+							
+						</span>
 					</div>
 					<!--设置滚动条-->
 					<div id="" class="_h_716 overflow_y">
@@ -1367,6 +1675,9 @@
 				<div id="for_add_box_d" class="for_add_box clearfix">
 					<div id="" class="bass_height">
 						添加幻灯片
+						<span id="silder_help" class="help_bg">
+							
+						</span>
 					</div>
 					<!--设置滚动条-->
 					<div id="" class="overflow_y">
@@ -1540,9 +1851,159 @@
 						</div>
 					</div>
 				</div>
-				<!--按键      5-->
+				<!--按钮      5-->
 				<div id="for_add_box_e" class="for_add_box clearfix">
-					添加按键
+					<div id="" class="bass_height">
+						添加按钮
+						<span id="silder_button" class="help_bg">
+							
+						</span>
+					</div>
+					<div id="" class="_h_716 overflow_y clearfix" >
+						<div id="" class="bass_height_2">
+							<p class="">
+								主题按钮
+							</p>
+							<div id="" class="_gantan">
+								<!--提示-->
+							</div>
+							<div class="_line_1">
+								<!--背景线-->
+							</div>
+						</div>
+						<div id="theme_btn" class="add_bass_title">
+							<div id="" class="theme_btn_1">
+								按钮
+							</div>
+							<div id="" class="theme_btn_2">
+								按钮
+							</div>
+							<div id="" class="theme_btn_3">
+								按钮
+							</div>
+							<div id="" class="theme_btn_4">
+								按钮
+							</div>
+						</div>
+						<div id="" class="bass_height_2">
+							<p class="">
+								文本按钮
+							</p>
+							<div id="" class="_gantan">
+								<!--提示-->
+							</div>
+							<div class="_line_1">
+								<!--背景线-->
+							</div>
+						</div>
+						<div id="text_btn" class="add_bass_title">
+							<div id="" class="text_btn_box_1">
+								<div id="" class="text_btn_1">
+									联系我们
+								</div>
+								<div id="" class="text_btn_2">
+									阅读更多
+								</div>
+							</div>
+							<div id="" class="text_btn_box_2">
+								<div id="" class="text_btn_3">
+									发售
+								</div>
+								<div id="" class="text_btn_4">
+									前往
+								</div>
+								<div id="" class="text_btn_5">
+									商店
+								</div>
+							</div>
+							<div id="" class="text_btn_box_3 clearfix">
+								<div id="" class="text_btn_box_3_left left">
+									<div id="" class="text_btn_6">
+										发现更多
+									</div>
+									<div id="" class="text_btn_box_3_left_center">
+										<div id="" class="text_btn_7">
+											捐赠
+										</div>
+										<div id="" class="text_btn_8">
+											点击
+										</div>
+									</div>
+									<div id="" class="text_btn_9">
+										阅读更多
+									</div>
+								</div>
+								<div id="" class="text_btn_box_3_right right">
+									<div id="" class="text_btn_10">
+										继续
+									</div>
+									<div id="" class="text_btn_11">
+										登入
+									</div>
+								</div>
+							</div>
+							<div id="" class="text_btn_box_4">
+								<div id="" class="text_btn_12">
+									我尝试
+								</div>
+								<div id="" class="text_btn_13">
+									去商店
+								</div>
+							</div>
+							<div id="" class="text_btn_box_5">
+								<div id="" class="text_btn_box_5_left left">
+									<div id="" class="text_btn_14">
+										商店	
+									</div>
+								</div>
+								<div id="" class="text_btn_box_5_right right">
+									<div id="" class="text_btn_box_5_right_top">
+										<div id="" class="text_btn_15">
+											下载
+										</div>
+										<div id="" class="text_btn_16">
+											在线订购
+										</div>
+									</div>
+									<div id="" class="text_btn_box_5_right_buttom">
+										<div id="" class="text_btn_17">
+											点击这里
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="" class="bass_height_2">
+							<p class="">
+								图标按钮
+							</p>
+							<div id="" class="_gantan">
+								<!--提示-->
+							</div>
+							<div class="_line_1">
+								<!--背景线-->
+							</div>
+						</div>
+						<div id="img_btn" class="add_bass_title">
+							
+						</div>
+						<div id="" class="bass_height_2">
+							<p class="">
+								相关应用
+							</p>
+							<div id="" class="_gantan">
+								<!--提示-->
+							</div>
+							<div class="_line_1">
+								<!--背景线-->
+							</div>
+						</div>
+						
+						<div id="more_btn" class="add_bass_title">
+							
+						</div>
+					</div>
+						
 				</div>
 				<!--框      6-->
 				<div id="for_add_box_f" class="for_add_box clearfix">
@@ -1596,21 +2057,299 @@
 		</div>
 		<!--应用市场-->
 		<div id="for_market" class="clearfix edit">
-
+			<span id="for_market_bg_a">
+				<!--左边小背景图-->
+			</span>
+			<div id="for_market_a">
+				<p>
+					66应用市场
+				</p>
+				<span id="for_market_help">
+					
+				</span>
+				<span id="for_market_closs" class="closs_edit">
+					
+				</span>
+			</div>
+			<div id="for_market_b" class="clearfix overflow_y">
+				<div id="for_market_b_1">
+					<div id=" " class="market_assortment">
+						分类
+					</div>
+					<div id=" " class="market_input_div">
+						<input type="text" name="" id="market_input" placeholder="你想去添加您的网站？" value="" />
+						<input type="button" name="" id="market_btn" value="" />					
+					</div>
+				</div>
+				<div id="for_market_b_2" class="clearfix">
+					<span id="closs_for_market_b_2">
+						<!--关闭按钮-->
+					</span>
+					<div id="market_app_div_1" class="clearfix">
+						<p class="market_app_title_1">
+							5个强大的应用程序为您的企业
+						</p>
+						<p class="market_app_title_2">
+							没有合适的应用？<a href="#">找到适合的应用服务网站</a>
+						</p>
+					</div>
+					<div id="market_app_div_2" class="clearfix">
+						<p class="market_install_app">
+							安装
+						</p>
+						<div id="bookings_bg">
+							
+						</div>
+						<p id="market_bookings">
+							66科技预定
+						</p>
+						<p id="market_open_app">
+							打开应用							
+						</p>
+					</div>
+					<div id="for_market_b_3" class="clearfix">
+						<div id="market_app_list_a" class="market_app_list">
+							<span id="" class="market_app_list_span market_app_list_span_1">
+								<!--生成魔术表单背景-->
+							</span>
+							<p class="market_app_list_p">
+								魔术表单生成器
+							</p>
+							<div id="add_to_web_a" class="add_to_web">
+								 + 添加到网站
+							</div>
+							<div id="" class="add_record clearfix">
+								<div id="add_record_left" class="left">
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<p class="left">
+										(119)
+									</p>
+								</div>
+								<div id="" class="right">
+									<p id="" class="updown_record">
+										153790
+									</p>
+								</div>
+							</div>
+						</div>
+						<div id="market_app_list_b" class="market_app_list">
+							<span id="" class="market_app_list_span market_app_list_span_2 ">
+								<!--生成注释背景-->
+							</span>
+							<p class="market_app_list_p">
+								注释
+							</p>
+							<div id="add_to_web_b" class="add_to_web">
+								 + 添加到网站
+							</div>
+							<div id="" class="add_record clearfix">
+								<div id="add_record_left" class="left">
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<p class="left">
+										(5200)
+									</p>
+								</div>
+								<div id="" class="right">
+									<p id="" class="updown_record">
+										153790
+									</p>
+								</div>
+							</div>
+						</div>
+						<div id="market_app_list_c" class="market_app_list">
+							<span id="" class="market_app_list_span market_app_list_span_3 ">
+								<!--faceb弹窗样式背景-->
+							</span>
+							<p class="market_app_list_p">
+								facebook的弹出式一样
+							</p>
+							<div id="add_to_web_c" class="add_to_web">
+								 + 添加到网站
+							</div>
+							<div id="" class="add_record clearfix">
+								<div id="add_record_left" class="left">
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<p class="left">
+										(889)
+									</p>
+								</div>
+								<div id="" class="right">
+									<p id="" class="updown_record">
+										1520790
+									</p>
+								</div>
+							</div>
+						</div>
+						<div id="market_app_list_d" class="market_app_list">
+							<span id="" class="market_app_list_span market_app_list_span_4">
+								<!--生成注释背景-->
+							</span>
+							<p class="market_app_list_p">
+								获得66订户
+							</p>
+							<div id="add_to_web_b" class="add_to_web">
+								 + 添加到网站
+							</div>
+							<div id="" class="add_record clearfix">
+								<div id="add_record_left" class="left">
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<p class="left">
+										(850)
+									</p>
+								</div>
+								<div id="" class="right">
+									<p id="" class="updown_record">
+										193360
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
 		</div>
 		<!--我的上传-->
 		<div id="for_upload" class="clearfix edit">
-
+			<span id="for_upload_small_bg">
+				<!--小背景-->
+			</span>
+			<div id="for_upload_top">
+				我的上传
+				<span id="uploa_help">
+					<!--上传帮助-->
+				</span>
+				<span id="uploa_closs" class="closs_edit">
+					<!--上传关闭-->
+				</span>
+			</div>
+			<div id="upload_img" class="upload_div clearfix">
+				图片
+				<span class="small_prompt"></span>
+			</div>
+			<div id="upload_video" class="upload_div clearfix">
+				影片
+				<span class="small_prompt"></span>
+			</div>
+			<div id="upload_song" class="upload_div clearfix">
+				单曲
+				<span class="small_prompt"></span>
+			</div>
+			<div id="upload_file" class="upload_div clearfix">
+				文件
+				<span class="small_prompt"></span>
+			</div>
 		</div>
 		<!--博客-->
 		<div id="for_boke" class="clearfix edit">
-
+			<span id="for_boke_small_bg">
+				
+			</span>
+			<div id="boke_left" class="left">
+				<p class="boke_left_p_1">
+					博客管理
+				</p>
+				<p class="boke_left_p_2">
+					博客网页
+				</p>
+				<p class="boke_left_p_3">
+					添加博客元素
+				</p>
+				<p class="boke_left_p_4">
+					了解更多
+				</p>
+			</div>
+			<div id="boke_right" class="left">
+				<div id="boke_manage">
+					博客管理
+					<span id="boke_help">
+						<!--博客帮助-->
+					</span>
+					<span id="closs_boke" class="closs_edit">
+						<!--关闭博客按钮-->
+					</span>
+				</div>
+				<div id="" class="boke_manage_bg">
+					<!--背景图-->
+					
+				</div>
+				<p class="boke_right_p_1">
+					你想做点什么？
+				</p>
+				<p  class="boke_right_p_2">
+					添加新的博客文章
+				</p>
+				<p class="boke_right_p_3">
+					管理博客
+				</p>
+			</div>
 		</div>
-		<!--预约-->
-		<div id="for_bookings" class="clearfix edit">
-
+		<!--预定-->
+		<div id="for_reserve" class="clearfix edit">
+			<span id="for_reserve_small_bg">
+				
+			</span>
+			<span id="closs_reserve" class="closs_edit">
+				<!--关闭预定按钮-->
+			</span>
 		</div>
-
 		<!--文本编辑器部分-->
 		<div id="edit_text" class="clearfix">
 			<!--文本编辑框第一部分-->
@@ -1812,7 +2551,64 @@
 				</div>
 			</div>
 		</div>
-		<!--四条参考线-->
+		
+		<!--添加文本帮助弹窗-->	
+		<div id="add_text_help_alert">
+			<div id="add_text_help_top">
+				<p>
+					编辑帮助
+				</p>
+				<span id="closs_add_text_help_alert">
+					<!--关闭文本弹窗按钮-->
+				</span>
+			</div>
+			<div id="add_text_help_second">
+				<div id="add_text_help_input_box">
+					<input type="text" name="" id="" value="" placeholder="在这里输入您的问题" />
+				</div>
+			</div>
+			<div id="add_text_help_three">
+				<div id="help_text_edit_1">
+					<p class="help_text_edit_1_p_1">
+						文本			
+					</p>
+					<p class="help_text_edit_1_p_2">
+						开始写您的网页内容！
+					</p>
+				</div>
+				
+				<div id="help_text_edit_2">
+					<p class="help_text_edit_2_p_1">
+						编辑文本	:		
+					</p>
+					<ul>
+						<li>
+							输入自己的文本
+						</li>
+						<li>
+							改变字体
+						</li>
+						<li>
+							改变大小
+						</li>
+					</ul>
+				</div>
+				<div id="help_text_edit_3">
+					<p class="help_text_edit_3_p_1">
+						动画：
+					</p>
+					<ul>
+						<li>
+							为你的文本制作动画
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+			
+			
+			
+		<!--基本参考线-->
 		<div id="">
 			<div id="line_1">
 				<!--第一条  左边界线-->
@@ -1821,18 +2617,66 @@
 				<!--第2条 右边界先-->
 			</div>
 			<div id="line_3">
-				<!-- 第三条   上边界 -->
+				
 			</div>
 			<div id="line_4">
 				<!--第4条-->
 			</div>
-		</div>
-		<div id="_nav">
 			
+			<div id="line_5">
+				<!--导航拉伸线-->
+				<!-- 第三条   上边界 -->
+				<div id="line_nav">
+					<!---->
+				</div>
+			</div>
+		</div>
+		
+			
+			
+		<!--客户编辑框内容部分-->
+		<div id="user_nav">
+			<div id="user_nav_center">
+				<div id="user_nav_log" class="left">
+					<a href="#">
+						<img src="../images/img/log_2.jpg"/>
+					</a>
+				</div>
+				<div id="_nav_box" class="right" >
+					<a href="#">
+						首页
+					</a>
+					<a href="#">
+						服务
+					</a>
+					<a href="#">
+						我们的工作
+					</a>
+					<a href="#">
+						关于我们
+					</a>
+					<a href="#">
+						联系我们
+					</a>
+					<a href="#">
+						网上订购	
+					</a>
+				</div>
+			</div>				
+		</div>
+		<div id="user_banner">
+			<div id="">
+				
+			</div>
+		</div>
+		<div id="user_main">
+			<div id="">
+				
+			</div>
 		</div>
 	</body>
+	<script type="text/javascript" src="../js/main.js"></script>
 	<script src="../js/index.js" type="text/javascript"></script>
 	<script type="text/javascript" src="../js/index_2.js"></script>
-	
 
 </html>

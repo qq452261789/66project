@@ -1,8 +1,121 @@
+	
+	/*点击显示隐藏导航编辑器*/
+	var in_page_1 = document.getElementById("in_page_1");
+	var in_page_2 = document.getElementById("in_page_2");
+	var nav_edict = document.getElementById("nav_edict");
+	
+	in_page_1.onclick =function(e){
+		this.style.display = "none";
+		in_page_2.style.display = "block";
+		nav_edict.style.display = "block";
+		if(e.preventDefault) {
+    		e.preventDefault();
+    		e.stopPropagation();
+	  	}else{
+    		e.returnValue = false;
+    		e.cancelBubble = true;
+	  	}
+	}
+	
+	/*关闭导航编辑快*/
+	var closs_nav_edict =document.getElementById("closs_nav_edict") ;
+	var nav_edict_c_ul_li =document.querySelectorAll("#nav_edict_c_ul>li");
+	var show_small_nav_edit = getClass("div","show_small_nav_edit");
+	var small_nav_edit =document.getElementById("small_nav_edit");
 
-	var edit_li = document.querySelectorAll("#edit_ul>li");
-	var action = document.getElementsByClassName("action");
-	console.log(edit_li)
-	console.log(action)
+	small_nav_edit.style.display = "none"
+
+
+	closs_nav_edict.onclick = function (e){
+		in_page_1.style.display = "block";
+		in_page_2.style.display = "none";
+		nav_edict.style.display = "none";
+		small_nav_edit.style.display = "none";
+		if(e.preventDefault) {
+    		e.preventDefault();
+    		e.stopPropagation();
+	  	}else{
+    		e.returnValue = false;
+    		e.cancelBubble = true;
+	  	}
+	}
+	
+	for(var num_a = 0 ;num_a<show_small_nav_edit.length;num_a++){		
+		show_small_nav_edit[num_a].index = num_a;
+		
+		show_small_nav_edit[num_a].onclick =function(){	
+			for(var num_a = 0 ;num_a<show_small_nav_edit.length;num_a++){
+				show_small_nav_edit[num_a].style.display ="none";
+				show_small_nav_edit[num_a].removeAttribute("id","is_show") ;
+			}						
+			show_small_nav_edit[this.index].style.display ="block";
+			show_small_nav_edit[this.index].setAttribute("id","is_show") ;
+			
+			var abcs = nav_edict_c_ul_li[this.index].offsetTop;	
+			small_nav_edit.style.top =abcs+ 125 +"px";
+			small_nav_edit.style.display ="block";	
+			
+		}
+	}
+	for(var num_b = 0 ;num_b<nav_edict_c_ul_li.length;num_b++){	
+		nav_edict_c_ul_li[num_b].index = num_b ;
+		nav_edict_c_ul_li[num_b].onmouseover = function (){
+			for(var num_a = 0 ;num_a<show_small_nav_edit.length;num_a++){
+				show_small_nav_edit[this.index].style.display ="none"
+			}
+			show_small_nav_edit[this.index].style.display ="block"
+			
+		}
+		nav_edict_c_ul_li[num_b].onmouseout = function (){
+			for(var num_a = 0 ;num_a<show_small_nav_edit.length;num_a++){
+				show_small_nav_edit[this.index].style.display ="none";
+			}
+			document.getElementById("is_show").style.display ="block";			
+		}
+	}
+	
+	/*拖拽span拉伸导航宽高*/
+	var  line_nav  = document.getElementById("line_nav");
+	var line_5 = document.getElementById("line_5")
+	var user_nav =document.getElementById("user_nav");
+	
+	line_nav.onmousedown = function(e){
+		var e = e ||window.event;
+		var nav_h1 = e.clientY ;
+		var nav_height = user_nav.getBoundingClientRect();
+		var line_5_top =line_5.getBoundingClientRect();
+		
+		document.onmousemove = function(e) {
+			var e = e || window.event ;
+			var change_h  = e.clientY - nav_h1 ;
+			user_nav.style.height = (nav_height.height +change_h) +"px";
+			line_5.style.top =( line_5_top.top +change_h) + "px"
+		}
+		document.onmouseup = function() {
+			document.onmousemove = null ;
+		}
+		e.cancelBubble = true;
+	}
+	
+	
+	
+
+
+
+
+
+
+
+
+
+	/*点击出现隐藏相应的编辑框*/
+	var edit_ul =document.getElementById("edit_ul");
+	var edit_li = document.querySelectorAll("#edit_ul>li");	
+	var action = edit_ul.getElementsByTagName("p");
+	var edit =document.querySelectorAll("body>.edit");
+	//var closs_edit = document.querySelectorAll("body > .closs_edit");
+	var closs_edit=  getClass("span", "closs_edit") ;
+	
 	for(var i = 0; i < edit_li.length; i++) {
 		edit_li[i].index = i;
 		edit_li[i].onmouseover = function() {
@@ -18,29 +131,130 @@
 			edit_li[this.index].style.width =48+"px";
 		}
 	}
+	
+	/*点击li 显示相应的编辑器*/
+	for(var num_edit= 0;num_edit<edit_li.length;num_edit++){
+		edit_li[num_edit].onclick = function() {
+			for(var num_edit= 0;num_edit<edit_li.length;num_edit++){
+				edit[num_edit].style.display = "none";
+			}
+			edit[this.index].style.display = "block";
+		}	
+	}
+	/*遍历span 关闭编辑器弹窗*/
+	for(var num_span= 0;num_span<closs_edit.length;num_span++){
+		closs_edit[num_span].onclick = function(e) {
+			for(var num_edit= 0;num_edit<edit.length;num_edit++){
+				edit[num_edit].style.display = "none";
+			}
+			if(e.preventDefault) {
+	    		e.preventDefault();
+	    		e.stopPropagation();
+		  	}else{
+	    		e.returnValue = false;
+	    		e.cancelBubble = true;
+		  	}
+		}	
+	}
+	
+	
+	
+	
+	
+	/*当前 ，工具，帮助。升级弹窗*/
+	var status_span = document.querySelectorAll("#status>span");
+	var status_alert = document.querySelectorAll("#alert_status>.status_alert");
+	var lens = status_span.length;
+	var ox,oy,ow,oh;
+	for(var i = 0;i < lens;i++){
+		status_span[i].index = i;
+	}
+	document.addEventListener("mousemove",function(e){
+		var e = e || e.event;
+		var target = e.target || e.srcElement;
+		
 
-	var for_bg = document.getElementById("for_bg");
-	var closs_for_bg = document.getElementById("closs_for_bg");
-	edit_li[0].onclick = function() {
-		for_bg.style.display = "block";
+		if(target.tagName == "SPAN" && target.parentNode.id == "status"){
+			for(var i = 0;i < lens;i++){
+				status_alert[i].style.display = "none";
+			}
+			status_alert[target.index].style.display = "block";
+			wl_flag = true;
+		}
+		if(target.className == "status_alert" && target.parentNode.id == "alert_status"){	
+			alert(123)
+		  
+		}
+	},false)
+	document.addEventListener("click",function(e){
+		var e = e || e.event;
+		var target = e.target || e.srcElement;
+		if(target.tagName != "SPAN" && target.parentNode.id != "status"){
+			for(var i = 0;i < lens;i++){
+				status_alert[i].style.display = "none";
+			}
+			
+		}
+	},false)
+	if(document.getElementById("add_page_box").style.display ="block"){
+		document.addEventListener("click",function(e){
+			var e = e || e.event;
+			var target = e.target || e.srcElement;
+			var add_page_box =document.getElementById("add_page_box");
+			if(target.id != "add_page_btn" & target.className != add_page_box.childNodes.className ){
+				document.getElementById("add_page_box").style.display ="none";
+			}
+		},false)
 	}
-	closs_for_bg.onclick = function(e) {
-		for_bg.style.display = "none";
-		e.cancelBubble = true ;
+	if(document.getElementById("add_page_box").style.display ="none"){
+		document.addEventListener("click",function(e){
+			var e = e || e.event;
+			var target = e.target || e.srcElement;
+			//console.log(target.id)
+			if(target.id == "add_page_btn"){
+				
+				document.getElementById("add_page_box").style.display ="block";
+			}
+		},false)
 	}
 	
-	var for_add =document.getElementById("for_add");
-	var closs_add =document.getElementById("closs_add");
-	
-	edit_li[1].onclick = function() {
-		for_add.style.display = "block";
+	/*发布弹窗*/
+	var publish =document.getElementById("publish_web");
+	var publish_alert = document.getElementById("publish_alert");
+	var closs_publish = document.getElementById("closs_publish");
+	publish.onclick= function(){
+		publish_alert.style.display= "block"
 	}
-	closs_add.onclick = function(e) {
-		for_add.style.display = "none";
-		e.cancelBubble = true ;
+	closs_publish.onclick= function(){
+		publish_alert.style.display= "none"
 	}
 	
-
+	/*文本帮助弹窗*/
+	var text_help = document.getElementById("text_help");
+	var add_text_help_alert =document.getElementById("add_text_help_alert");
+	var closs_add_text_help_alert  = document.getElementById("closs_add_text_help_alert")
+	text_help.onclick = function(){
+		add_text_help_alert.style.display= "block"
+		if(e.preventDefault) {
+    		e.preventDefault();
+    		e.stopPropagation();
+	  	}else{
+    		e.returnValue = false;
+    		e.cancelBubble = true;
+	  	}
+	}
+	closs_add_text_help_alert.onclick = function(){
+		add_text_help_alert.style.display= "none";
+		if(e.preventDefault) {
+    		e.preventDefault();
+    		e.stopPropagation();
+	  	}else{
+    		e.returnValue = false;
+    		e.cancelBubble = true;
+	  	}
+	}
+	
+	
 	/*设置 ：鼠标已入放大读片*/
 	var for_bg_img_li = document.querySelectorAll("#for_bg_img>li");
 	var for_bg_b_d  =document.getElementById("for_bg_b_d");
@@ -58,9 +272,12 @@
 			var _P_val = for_bg_img_li[this.index].querySelector("div").innerHTML;
 			_big_p.innerHTML = _P_val			
 			var _img_box = document.createElement("div");
+			var _window_top = document.body.scrollTop | document.documentElement.scrollTop;
+
 			/*设置创建的合作的位置*/
-			var _top= for_bg_img_li[this.index].offsetTop+10 - for_bg_b_d.scrollTop + "px";			
-			var _left = for_bg_img_li[this.index].offsetLeft + for_bg_img_li[this.index].offsetWidth+86+"px";
+			var _top= for_bg_img_li[this.index].offsetTop - for_bg_b_d.scrollTop+_window_top +5 +"px";	
+			console.log(for_bg_img_li[this.index].offsetTop,_top)
+			var _left = for_bg_img_li[this.index].offsetLeft + for_bg_img_li[this.index].offsetWidth+82+"px";
 			
 			/* 设置创建的盒子的样式*/
 			_img_box.setAttribute("id","_img_box");
@@ -74,7 +291,12 @@
 			_img_box.style.top = _top;
 			_img_box.style.zIndex = 15;
 			_img_box.style.border = "solid 1px #f1f1f1";
-			_img_box.style.lineHeight =20+"px";			
+			_img_box.style.lineHeight =20+"px";	
+			_img_box.style.borderRadius =8+"px";
+			_img_box.style.boxShadow ="0px 0px 5px #d8d8d8";
+			_img_box.style.webkitBoxShadow="0px 0px 5px #d8d8d8";
+			_img_box.style.MozWindowShadow="0px 0px 5px #d8d8d8";
+
 			/*添加创建的元素*/
 			_img_box.appendChild(_big_img);
 			_img_box.appendChild(_big_p);
@@ -97,21 +319,39 @@
 		bg_tishi.style.display = "none"
 	}
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*拖拽字体编辑框*/
 	var d_edit_text = document.getElementById("d_edit_text");
-	var edit_text = document.getElementById("edit_text")
+	var edit_text = document.getElementById("edit_text") ;
 	d_edit_text.onmousedown = function(e) {
-			var e = e || window.event
-			disX = e.clientX
-			disY = e.clientY
+			var e = e || window.event ;
+			disX = e.clientX ;
+			disY = e.clientY ;
 			var divpos = edit_text.getBoundingClientRect();
 
 			document.onmousemove = function(e) {
-				var e = e || window.event
-				changeX = e.clientX - disX
-				changeY = e.clientY - disY
-				edit_text.style.left = (divpos.left + changeX) + "px"
-				edit_text.style.top = (divpos.top + changeY) + "px"
+				var e = e || window.event ;
+				changeX = e.clientX - disX ; 
+				changeY = e.clientY - disY ;
+				edit_text.style.left = (divpos.left + changeX) + "px" ;
+				edit_text.style.top = (divpos.top + changeY) + "px" ;
 			}
 			document.onmouseup = function() {
 				document.onmousemove = null
@@ -127,11 +367,7 @@
 	show_all_page_span[1].onclick =function(){
 		show_all_page.style.background = "url(../images/page_num_2.png) no-repeat"
 	}
-	
-	
-	
-	
-	
+		
 	
 	
 	
@@ -176,7 +412,7 @@
 		/*点击店家文本导航（for_add_nav_div）    显示相应的快*/
 		var for_add_nav_div = document.querySelectorAll("#for_add_nav>div") ;
 		
-		var for_add_box_div =document.getElementsByClassName("for_add_box");
+		var for_add_box_div =document.querySelectorAll("#for_add_box>div") ;
 		
 		for(var i_num = 0;i_num<for_add_nav_div.length;i_num++){
 			for_add_nav_div[i_num].index = i_num;
