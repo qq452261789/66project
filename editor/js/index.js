@@ -12,7 +12,60 @@ $(function() {
 			//console.log($add_page_box.focus())
 	});
 	
-
+	/*手机，pc端 模型弹窗消失隐藏*/
+	var $phone_mode = $("#phone_mode");
+	var $phone_alert = $("#phone_alert");
+	
+	$phone_mode.click(function(){
+		$phone_alert.css({"display":"block"}).focus();
+	})
+	$phone_alert.click(function(){
+		 $(this).show();
+		 $(this).focus();
+	})
+	$phone_alert.blur(function(){
+		 $(this).hide();
+	 });	 
+	
+	
+	
+	/*状态栏弹窗消失隐藏*/
+	var status_span = $("#status").find("span");	
+	var status_alert = $(".status_alert");	
+	
+	status_span.mouseenter(function(){
+		var status_span_indx = $(this).index() ;	
+		status_alert.eq($(this).index()).css({
+			"display":"block"
+		}).siblings().hide()
+		status_alert.eq($(this).index()).focus();
+	});
+	status_span.click(function(){
+		var status_span_indx = $(this).index() ;	
+		status_alert.eq($(this).index()).css({
+			"display":"block"
+		}).siblings().hide()
+		status_alert.eq($(this).index()).focus();
+	})
+	status_alert.click(function(){
+		 $(this).show();
+		 $(this).focus();
+	})
+	status_alert.blur(function(){
+		 $(this).hide();
+	 });	 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*页面掉转点击显示隐藏*/
 	var $show_pos = $("#show_pos");
 	var $out_page = $("#out_page");
@@ -37,5 +90,18 @@ $(function() {
 		$(this).children("img").eq(1).attr("src", "../images/sanjiao_r.png")
 	})	
 		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 })

@@ -1,0 +1,56 @@
+/* 
+* @Author: An_dy
+* @Date:   2016-10-05 11:17:04
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-10-05 17:30:51
+*/
+#project_content_box{
+    width: 100%;
+}
+#project_content_box .project_content{
+    width:980px;
+    margin: 0 auto;
+}
+#project_content_box .project_content .project_title h2{
+    text-align: center;
+    font-size: 40px;
+    color: #6EA4CA;
+}
+#project_content_box .project_content .project_title div{
+    margin:0 auto;
+    width:50px;
+    height: 3px;
+    background-color: #6EA4CA;
+}
+#project_content_box .project_content .project_list{
+    margin-top: 80px;
+}
+#project_content_box .project_content .project_list li{
+    margin-top: 80px;
+}
+#project_content_box .project_content .project_list li:nth-child(1){
+    margin-top: 0;
+}
+#project_content_box .project_content .project_list li div:nth-of-type(1){
+    margin-right: 40px;
+    width: 300px;
+    height:188px;
+    overflow:hidden;
+    vertical-align: middle;
+}
+#project_content_box .project_content .project_list li div:nth-of-type(2){
+    width: 627px;
+}
+#project_content_box .project_content .project_list li div:nth-of-type(2) p:nth-of-type(1){
+    width:100%;
+    font-size: 18px;
+    line-height: 17px;
+    color:#39729B;
+}
+#project_content_box .project_content .project_list li div:nth-of-type(2) p:nth-of-type(2){
+    width:100%;
+    height:136px;
+    margin-top: 20px;
+    font-size: 16px;
+    color:#0C3C60; 
+}

@@ -23,8 +23,6 @@
 	var show_small_nav_edit = getClass("div","show_small_nav_edit");
 	var small_nav_edit =document.getElementById("small_nav_edit");
 
-	small_nav_edit.style.display = "none"
-
 
 	closs_nav_edict.onclick = function (e){
 		in_page_1.style.display = "block";
@@ -39,6 +37,18 @@
     		e.cancelBubble = true;
 	  	}
 	}
+	
+	var $choice_mobile_span1 = $(".choice_mobile_span1");
+	var $choice_mobile_span2 = $(".choice_mobile_span2");
+	var $choice_mobile = $(".choice_mobile");
+	
+	$choice_mobile_span1.click(function(){
+		$choice_mobile.css({"background":" url(../images/choice_mobile_bg_2.png) 1px 20px no-repeat"})
+	})
+	$choice_mobile_span2.click(function(){
+		$choice_mobile.css({"background":" url(../images/choice_mobile_bg.png) 1px 20px no-repeat"})
+	})
+	
 	
 	for(var num_a = 0 ;num_a<show_small_nav_edit.length;num_a++){		
 		show_small_nav_edit[num_a].index = num_a;
@@ -162,40 +172,30 @@
 	
 	
 	/*当前 ，工具，帮助。升级弹窗*/
-	var status_span = document.querySelectorAll("#status>span");
-	var status_alert = document.querySelectorAll("#alert_status>.status_alert");
-	var lens = status_span.length;
-	var ox,oy,ow,oh;
-	for(var i = 0;i < lens;i++){
-		status_span[i].index = i;
-	}
-	document.addEventListener("mousemove",function(e){
-		var e = e || e.event;
-		var target = e.target || e.srcElement;
-		
-
-		if(target.tagName == "SPAN" && target.parentNode.id == "status"){
-			for(var i = 0;i < lens;i++){
-				status_alert[i].style.display = "none";
-			}
-			status_alert[target.index].style.display = "block";
-			wl_flag = true;
-		}
-		if(target.className == "status_alert" && target.parentNode.id == "alert_status"){	
-			alert(123)
-		  
-		}
-	},false)
-	document.addEventListener("click",function(e){
-		var e = e || e.event;
-		var target = e.target || e.srcElement;
-		if(target.tagName != "SPAN" && target.parentNode.id != "status"){
-			for(var i = 0;i < lens;i++){
-				status_alert[i].style.display = "none";
-			}
-			
-		}
-	},false)
+//	var status_span = document.querySelectorAll("#status>span");
+//	var status_alert = document.querySelectorAll("#alert_status>.status_alert");
+//	var lens = status_span.length;	
+//	for(var i = 0;i < lens;i++){
+//		status_span[i].index = i;
+//	}
+//	document.addEventListener("mousemove",function(e){
+//		var e = e || e.event;
+//		var target = e.target || e.srcElement;
+//		
+//
+//		if(target.tagName == "SPAN" && target.parentNode.id == "status"){
+//			for(var i = 0;i < lens;i++){
+//				status_alert[i].style.display = "none";
+//			}
+//			status_alert[target.index].style.display = "block";
+//			wl_flag = true;
+//		}
+//		if(target.className == "status_alert" && target.parentNode.id == "alert_status"){	
+//			alert(123)
+//		  
+//		}
+//	},false);
+//	
 	if(document.getElementById("add_page_box").style.display ="block"){
 		document.addEventListener("click",function(e){
 			var e = e || e.event;
@@ -218,6 +218,18 @@
 		},false)
 	}
 	
+	/*保存网页工作弹窗*/
+	var save_web_status = document.getElementById("save_web_status");
+	var save_alert = document.getElementById("save_alert");
+	var closs_save_alert =document.getElementById("closs_save_alert");
+	
+	save_web_status.onclick = function(){
+		save_alert.style.display = "block"
+	}
+	closs_save_alert.onclick = function(){
+		save_alert.style.display = "none"
+	}
+	
 	/*发布弹窗*/
 	var publish =document.getElementById("publish_web");
 	var publish_alert = document.getElementById("publish_alert");
@@ -228,6 +240,9 @@
 	closs_publish.onclick= function(){
 		publish_alert.style.display= "none"
 	}
+	
+	
+	
 	
 	/*文本帮助弹窗*/
 	var text_help = document.getElementById("text_help");

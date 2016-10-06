@@ -1,0 +1,37 @@
+/* 
+* @Author: An_dy
+* @Date:   2016-10-05 17:47:45
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-10-05 18:31:57
+*/
+
+$(document).ready(function(){
+    $(".service_list>li").bind("mouseenter",function(){
+        $(this).find(".service_img").stop().slideUp();
+    })
+    $(".service_list>li").bind("mouseleave",function(){
+        $(this).find(".service_img").stop().slideDown();
+    })
+    // $(".service_list>li").hover(
+    //     function(){
+    //        $(this).find(".service_img").slideUp();
+           
+                
+    //     },function(){
+    //        $(this).find(".service_img").slideDown();
+          
+    //     }
+    // )
+    $(".service_list_text").hover(
+        function(){
+            $(this).parentNode.css({
+                overflow:"visible"
+           });
+        },
+        function(){
+             $(this).clossparent.css({
+                overflow:"hidden"
+           });
+        }
+    )
+});

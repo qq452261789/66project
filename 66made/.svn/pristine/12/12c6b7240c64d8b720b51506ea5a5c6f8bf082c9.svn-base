@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../css/public/base.css" />
+		<link rel="stylesheet" href="../../css/model-1/header.css" />
+		<link rel="stylesheet" href="../../css/model-1/index.css" />
+	</head>
+
+	<body>
+		<div id="header_box">
+			<div id="header">
+				<div id="log" class="left clearfix edit_text">
+					JAMES <span id="">CONSULTING</span>
+				</div>
+				<div id="nav" class="right clearfix">
+					<a href="about.html" class="edit_text">
+						关于
+					</a>
+					<a href="services.html" class="edit_text">
+						服务
+					</a>
+					<a href="projects.html" class="edit_text">
+						项目
+					</a>
+					<a href="clients.html" class="edit_text">
+						客户
+					</a>
+					<a href="#" class="edit_text">
+						联系
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="banner_box">
+			<div id="banner_bg">
+				<!--白色条背景-->
+			</div>
+			<div id="banner">
+				<div id="banner_main">
+					<p class="banner_main_p1 edit_text">
+						开放创新战略
+					</p>
+					<p class="banner_main_p2 edit_text">
+						实现增长
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="main_box">
+			<div id="main">
+				<div id="main_service" class="main_small_box clearfix">
+					<p class="edit_text mian_title">
+						服务
+					</p>
+					<p class="edit_text mian_article">
+						此处可以添加文字。点击“编辑文本”或双击“添加内容”。
+					</p>
+					<a href="#">
+						更多信息
+					</a>
+				</div>
+				<div id="main_project" class="main_small_box clearfix">
+					<p class="edit_text mian_title">
+						项目
+					</p>
+					<p class="edit_text  mian_article">
+						此处可以添加文字。点击“编辑文本”或双击“添加内容”。
+					</p>
+					<a href="#">
+						更多信息
+					</a>
+				</div>
+				<div id="main_clients" class="main_small_box clearfix">
+					<p class="edit_text mian_title">
+						客户
+					</p>
+					<p class="edit_text  mian_article">
+						此处可以添加文字。点击“编辑文本”或双击“添加内容”。
+					</p>
+					<a href="#">
+						更多信息
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="about_box">
+			<div id="about">
+				<div id="about_title">
+					关于我们
+				</div>
+				<div id="about_article" class="edit_text">
+					这里可以编辑段落文本。随意拖放到任意页面。
+					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
+					让用户更多的了解你。告诉你的访客和竞争对手的不同。
+				</div>
+				<a id="about_href" href="#" class="about_more">
+					阅读更多
+				</a>
+			</div>
+		</div>
+		<div id="contact_box">
+			<div id="contact">
+				<div id="contact_title">
+					联系我们
+				</div>
+				<div id="contact_title_main">
+					<div id="map_box" class="left">
+						<img class="edit_img" src="../../images/model-1/active/map.png"/>
+					</div>
+					<div id="contact_maseeges" class="right">
+						<div id="company_info">
+							<p class="edit_text ">
+								地址：天河区珠江新城华夏路49号
+							</p>
+							<p class="edit_text">
+								电话：020-87096175
+							</p>
+						</div>
+						<div id="user_info" class="clearfix">
+							<p>
+								<input type="text" name="user_name" id="user_name" placeholder="姓名" value="" />	
+							</p>
+							<p>
+								<input type="email" name="user_email" id="user_email" placeholder="邮箱" value="" />
+							</p>
+							<p>
+								<input type="text" name="user_them" id="user_them" placeholder="主题" value="" />
+							</p>
+							<div id="">
+								<textarea name="" rows="" cols=""></textarea>
+							</div>
+							<button id="user_send" type="button">
+								发送
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer_box">
+			<div id="footer" class="clearfix">
+				<div id="" class="left clearfix">
+					<a href="javascript:void(0)" class="edit_text footer_a1">
+						2016  陆陆科技 
+					</a>
+					<a href="javascript:void(0)" class="edit_text footer_a2">
+						66made.com
+					</a>
+				</div>
+				<div id="share" class="right clearfix">
+					<span id="share_weibo">
+						<!--分享到微博-->
+					</span>
+					<span id="share_weixin">
+						<!--分享到微信-->
+					</span>
+					<span id="share_qq">
+						<!--分享到QQ-->
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../../js/public/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/model-1/index.js" type="text/javascript" charset="utf-8"></script>
+</html>

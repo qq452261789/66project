@@ -1,0 +1,20 @@
+$(function(){
+	
+	//var top = document.body.scrollTop || document.documentElement.scrollTop;
+	//console.log(top);
+	var $banner_box = $("#banner_box");
+	
+	$(window||document.body).scroll(function ()
+	{
+		var st = $(this).scrollTop();
+		pos_y = st/($banner_box.height())*100
+		console.log(pos_y);
+		
+		$banner_box.css({"background-position-y":pos_y});
+		
+		//background-position-y: ;
+	});
+	
+	
+	
+})

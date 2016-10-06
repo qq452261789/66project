@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>services</title>
+        <link rel="stylesheet" href="../../css/public/base.css" />
+        <link rel="stylesheet" href="../../css/model-1/services.css" />
+        <link rel="stylesheet" href="../../css/model-1/header.css" />
+    </head>
+    <body>
+        <div id="header_box">
+            <div id="header">
+                <div id="log" class="left clearfix edit_text">
+                    JAMES <span id="">CONSULTING</span>
+                </div>
+                <div id="nav" class="right clearfix">
+                    <a href="about.html" class="edit_text">
+                        关于
+                    </a>
+                    <a href="#" class="edit_text">
+                        服务
+                    </a>
+                    <a href="#" class="edit_text">
+                        项目
+                    </a>
+                    <a href="#" class="edit_text">
+                        客户
+                    </a>
+                    <a href="#" class="edit_text">
+                        联系
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- service正文开始 -->
+        <div id="service_content_box">
+            <div class="service_content">
+                <div class="service_title">
+                    <h2 class="edit_text">服务</h2>
+                    <div></div>
+                    <p class="edit_text">此处为段落文本。可以添加文字和编辑。点击“编辑文本”或双击添加内容。</p>
+                </div>
+                <ul class="service_list clearfix">
+                   <li class="left">
+                       <div>
+                           <div class="service_img"><img class="edit_image" src="../../images/model-1/active/discuss_3.jpg" alt="services" /></div>
+                           <div class="service_list_text">
+                               <p>企业战略</p>
+                               <p>1 hr</p>
+                               <p>在这里描述为您服务。是什么使得它的伟大？使用简短上口的文字告诉您提供什么人，他们将获得的利益。一个伟大的描述得到心情的读者，使他们更有可能继续和书籍。</p>
+                           </div>
+                       </div>
+                       <button>立即预定</button>
+                   </li>
+                   <li>
+                       <div>
+                           <div class="service_img"><img class="edit_image" src="../../images/model-1/active/discuss_1.jpg" alt="services" /></div>
+                           <div class="service_list_text">
+                               <p>运营咨询</p>
+                               <p>1 hr</p>
+                               <p>在这里描述为您服务。是什么使得它的伟大？使用简短上口的文字告诉您提供什么人，他们将获得的利益。一个伟大的描述得到心情的读者，使他们更有可能继续和书籍。</p>
+                           </div>
+                       </div>
+                       <button>立即预定</button>
+                   </li>
+                   <li class="right">
+                       <div>
+                           <div class="service_img"><img class="edit_image" src="../../images/model-1/active/working.jpg" alt="services" /></div>
+                           <div class="service_list_text">
+                               <p>项目管理</p>
+                               <p>1 hr</p>
+                               <p>在这里描述为您服务。是什么使得它的伟大？使用简短上口的文字告诉您提供什么人，他们将获得的利益。一个伟大的描述得到心情的读者，使他们更有可能继续和书籍。</p>
+                           </div>
+                       </div>
+                       <button>立即预定</button>
+                   </li>
+                </ul>
+            </div>
+        </div>
+        <!-- service正文结束 -->
+        <div id="footer_box">
+            <div id="footer" class="clearfix">
+                <div id="" class="left clearfix">
+                    <a href="javascript:void(0)" class="edit_text footer_a1">
+                        2016  陆陆科技 
+                    </a>
+                    <a href="javascript:void(0)" class="edit_text footer_a2">
+                        66made.com
+                    </a>
+                </div>
+                <div id="share" class="right clearfix">
+                    <span id="share_weibo">
+                        <!--分享到微博-->
+                    </span>
+                    <span id="share_weixin">
+                        <!--分享到微信-->
+                    </span>
+                    <span id="share_qq">
+                        <!--分享到QQ-->
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/public/jquery-1.12.0.js"></script>
+        <script src="../../js/model-1/services.js"></script>
+    </body>
+</html>

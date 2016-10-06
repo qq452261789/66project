@@ -7,17 +7,16 @@
 		<link rel="stylesheet" type="text/css" href="../css/index.css" />
 		<link rel="stylesheet" type="text/css" href="../css/base.css" />
 		<link rel="stylesheet" type="text/css" href="../css/user_web.css"/>
-		<script src="../js/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
-		<div id="header">
+		<div id="header" class="clearfix">	
 			<!--导航部分-->
 			<h1><a href="http://66made.com" target="_blank"></a></h1>
 
 			<div id="in_page" class="left">
 				<!--默认显示的首页-->
-				<div id="in_page_1">
+				<div id="in_page_1" class="clearfix">
 					<span id="in_page_1_bg_1">
 						<!--页数背景   1-->
 					</span>
@@ -39,7 +38,7 @@
 				</div>
 			</div>
 
-			<div id="status" class="left">
+			<div id="status" class="left clearfix">
 				<span id="">
 					当前
 				</span>
@@ -53,229 +52,35 @@
 					升级
 				</span>				
 			</div>
-			<!--状态栏弹窗部分-->
-			<div id="alert_status" class="clearfix">		
-				<!--当前弹框-->
-				<div id="_for_now" class="status_alert clearfix">
-					<div id="_for_now_left" class="left clearfix">
-						<span id="" class="">
-							
-						</span>
-						<p class="_for_now_left_p2">
-							保存
-						</p>
-						<p class="_for_now_left_p2">
-							预览
-						</p>
-						<p class="_for_now_left_p4">
-							得到反馈
-						</p>
-						<p class="_for_now_left_p2">
-							发布
-						</p>
-						<p class="_for_now_left_p7">
-							查看发布的网站
-						</p>
-						<p class="_for_now_left_p3">
-							链接域
-						</p>
-						<p class="_for_now_left_p2">
-							升级
-						</p class="_for_now_left_p1">
-						<div id="edit_phone">
-							<p class="_for_now_left_p4">
-								手机编辑
-							</p>
-						</div>
-						<p class="_for_now_left_p4">
-							图像锐化
-						</p>
-						<p class="_for_now_left_p5">
-							我的仪表板
-						</p>
-						<p class="_for_now_left_p4">
-							网站管理
-						</p>
-						<p class="_for_now_left_p4">
-							网站历史
-						</p>
-						<p class="_for_now_left_p5">
-							退出编辑器
-						</p>
-					</div>
-					<div id="_for_now_right" class="left clearfix">
-						<ul id="_for_now_right_ul" class="clearfix">
-							<li>
-								<span id="" class="for_save_span">
-									
-								</span>
-								<p class="_for_now_right_p1">
-									保存你的工作
-								</p>
-								<p class="_for_now_right_p2">
-									来吧，保存您到目前为止所做的工作。
-								</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<!--工具弹窗-->
-				<div id="_for_tool" class="status_alert clearfix">
-					<div id="_for_tool_left" class="left clearfix">
-						<span id="">
-							<!--头部背景图-->
-						</span>
-						<p>
-							<label for="">
-								<input type="checkbox" checked="checked" name="" id="" value="" /> 
-								工具栏
-							</label>
-						</p>
-						<p>
-							<label for="">
-								<input type="checkbox" name="" id="" value="" /> 
-								统治者
-							</label>
-						</p>	
-						<p>
-							<label for="">
-								<input type="checkbox" checked="checked" name="" id="" value="" /> 
-								网格线
-							</label>
-						</p>
-						<p class="_for_tool_left_last_p">
-							<label for="">
-								<input type="checkbox" checked="checked" name="" id="" value="" /> 
-								捕捉到对象
-							</label>
-						</p>
-					</div>
-					<div id="_for_tool_right" class="clearfix left">
-						<ul id="_for_tool_right_ul" class="clearfix">
-							<li class="clearfix">
-								<span id="" class="__for_tool_right_span">
-									<!--头部背景图-->
-								</span>
-								<div id="">
-									<p class="_for_tool_right_p_1">
-										工具栏
-									</p>
-									<p class="_for_tool_right_p_2">
-										使用工具栏轻松搞定你的网页对齐，定位和大小完美的所有元素。
-									</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<!--帮助弹窗-->
-				<div id="_for_help" class="status_alert clearfix">
-					<div id="_for_help_left" class="left clearfix">
-						<span id="" class="_for_help_left_span">
-							<!--头部小箭头-->
-						</span>
-						<p class="_for_help_left_1">
-							编辑器支持中心
-						</p>
-						<p class="_for_help_left_2">
-							键盘快捷键
-						</p>
-						<div id="" class="_for_help_left_div">
-							<p class="_for_help_left_3">
-								链接域
-							</p>
-							<p class="_for_help_left_4">
-								快速在网上找到（SEO）
-							</p>
-						</div>
-						<div id="" class="_for_help_left_div_2">
-							<p class="_for_help_left_5">
-							给予反馈
-						</p>
-						</div>
-						<p class="_for_help_left_6">
-							使用条款
-						</p>
-						<p class="_for_help_left_7">
-							隐私政策
-						</p>
-					</div>
-					<div id="_for_help_right" class="left clearfix">
-						<ul id="_for_help_right_ul" class="clearfix">
-							<li>
-								<span class="_for_help_right_span_1">
-									
-								</span>
-								<p class="_for_help_right_p_1">
-								 	所以你需要的帮助
-								</p>
-								<p  class="_for_help_right_p_2">
-									一步一步的帮助让您的网站顺利建立和运行。
-								</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<!--升级弹窗-->
-				<div id="_for_upgrade" class="status_alert clearfix">
-					<div id="_for_upgrade_left" class="left clearfix">
-						<div class="_for_upgrade_left_div_1">
-							升级到无限的年限和储存！
-						</div>
-						<p class="_for_upgrade_left_p">
-							获取一个免费域名链接到您的网站
-						</p>
-						<p class="_for_upgrade_left_p">
-							享受无限的贷款和额外的储存空间
-						</p>
-						<p class="_for_upgrade_left_p">
-							链接谷歌Analytics（分析）
-						</p>
-						<p class="_for_upgrade_left_p">
-							删除66科技品牌广告
-						</p>
-						<div id="" class="_for_upgrade_left_div_2">
-							去升级，通过节省您的网站启动
-						</div>
-						<div id="save_to_web">
-							保存到站点
-						</div>
-					</div>
-					<div id="_for_upgrade_right" class="left clearfix">
-						
-					</div>
-				</div>
-				<!--点击编辑器消失病预览网页-->
-			</div>
 			<div id="controller">
 				<span id="">
 					<!--123-->
 				</span>
 			</div>
 
-			<div id="edit">
+			<div id="edit" class="clearfix">
 				<!--1-->
-				<span id="">
+				<span id="enlarge">
 					
 				</span>
 				<!--2-->
-				<span id="">
+				<span id="go_back">
 					
 				</span>
 				<!--3-->
-				<span id="">
+				<span id="go_next">
 					
 				</span>
 				<!--4-->
-				<span id="">
-					
+				<span id="phone_mode">
+					<!--手机模式-->
 				</span>
 				<!--5-->
-				<span id="">
+				<span id="save_web_status">
 					保存
 				</span>
 				<!--6-->
-				<span id="">
+				<span id="preview">
 					预览
 				</span>
 				<!--7-->
@@ -284,7 +89,7 @@
 				</span>
 			</div>
 		</div>
-		
+		<!--导航编辑器弹窗-->
 		<div id="nav_edict" class="clearfix">
 			<!--导航编辑器头部-->
 			<div id="nav_edict_h" class="clearfix">
@@ -506,8 +311,8 @@
 			</div>
 		</div>
 		
-	<!--小导航编辑部分    弹窗-->
-		<a id="small_nav_edit">
+		<!--小导航编辑部分    弹窗-->
+		<div id="small_nav_edit">
 			<span id="">
 				<!--小箭头提示-->
 			</span>
@@ -541,7 +346,266 @@
 			<p class="small_nav_edit_p_9 small_nav_edit_bg_6 small_nav_edit_p">
 				删除
 			</p>
+		</div>	
+		
+			
+		<!--状态栏弹窗部分-->
+		<div id="alert_status" class="clearfix">		
+			<!--当前弹框-->
+			<a href="javascript:void(0)" id="_for_now" class="status_alert clearfix">				
+				<div id="_for_now_left" class="left clearfix">
+					<span id="" class="">
+						<!--箭头提示部分-->
+					</span>
+					<p class="_for_now_left_p2">
+						保存
+					</p>
+					<p class="_for_now_left_p2">
+						预览
+					</p>
+					<p class="_for_now_left_p4">
+						得到反馈
+					</p>
+					<p class="_for_now_left_p2">
+						发布
+					</p>
+					<p class="_for_now_left_p7">
+						查看发布的网站
+					</p>
+					<p class="_for_now_left_p3">
+						链接域
+					</p>
+					<p class="_for_now_left_p2">
+						升级
+					</p class="_for_now_left_p1">
+					<div id="edit_phone">
+						<p class="_for_now_left_p4">
+							手机编辑
+						</p>
+					</div>
+					<p class="_for_now_left_p4">
+						图像锐化
+					</p>
+					<p class="_for_now_left_p5">
+						我的仪表板
+					</p>
+					<p class="_for_now_left_p4">
+						网站管理
+					</p>
+					<p class="_for_now_left_p4">
+						网站历史
+					</p>
+					<p class="_for_now_left_p5">
+						退出编辑器
+					</p>
+				</div>
+				<div id="_for_now_right" class="left clearfix">
+					<ul id="_for_now_right_ul" class="clearfix">
+						<li>
+							<span id="" class="for_save_span">
+								
+							</span>
+							<p class="_for_now_right_p1">
+								保存你的工作
+							</p>
+							<p class="_for_now_right_p2">
+								来吧，保存您到目前为止所做的工作。
+							</p>
+						</li>
+					</ul>
+				</div>
+			</a>
+			<!--工具弹窗-->
+			<a href="javascript:void(0)" id="_for_tool" class="status_alert clearfix">
+				<div id="_for_tool_left" class="left clearfix">
+					<span id="">
+						<!--头部背景图-->
+					</span>
+					<p>
+						<label for="">
+							<input type="checkbox" checked="checked" name="" id="" value="" /> 
+							工具栏
+						</label>
+					</p>
+					<p>
+						<label for="">
+							<input type="checkbox" name="" id="" value="" /> 
+							统治者
+						</label>
+					</p>	
+					<p>
+						<label for="">
+							<input type="checkbox" checked="checked" name="" id="" value="" /> 
+							网格线
+						</label>
+					</p>
+					<p class="_for_tool_left_last_p">
+						<label for="">
+							<input type="checkbox" checked="checked" name="" id="" value="" /> 
+							捕捉到对象
+						</label>
+					</p>
+				</div>
+				<div id="_for_tool_right" class="clearfix left">
+					<ul id="_for_tool_right_ul" class="clearfix">
+						<li class="clearfix">
+							<span id="" class="__for_tool_right_span">
+								<!--头部背景图-->
+							</span>
+							<div id="">
+								<p class="_for_tool_right_p_1">
+									工具栏
+								</p>
+								<p class="_for_tool_right_p_2">
+									使用工具栏轻松搞定你的网页对齐，定位和大小完美的所有元素。
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</a>
+			<!--帮助弹窗-->
+			<a href="javascript:void(0)" id="_for_help" class="status_alert clearfix">				
+				<div id="_for_help_left" class="left clearfix">
+					<span id="" class="_for_help_left_span">
+						<!--头部小箭头-->
+					</span>
+					<p class="_for_help_left_1">
+						编辑器支持中心
+					</p>
+					<p class="_for_help_left_2">
+						键盘快捷键
+					</p>
+					<div id="" class="_for_help_left_div">
+						<p class="_for_help_left_3">
+							链接域
+						</p>
+						<p class="_for_help_left_4">
+							快速在网上找到（SEO）
+						</p>
+					</div>
+					<div id="" class="_for_help_left_div_2">
+						<p class="_for_help_left_5">
+						给予反馈
+					</p>
+					</div>
+					<p class="_for_help_left_6">
+						使用条款
+					</p>
+					<p class="_for_help_left_7">
+						隐私政策
+					</p>
+				</div>
+				<div id="_for_help_right" class="left clearfix">
+					<ul id="_for_help_right_ul" class="clearfix">
+						<li>
+							<span class="_for_help_right_span_1">
+								
+							</span>
+							<p class="_for_help_right_p_1">
+							 	所以你需要的帮助
+							</p>
+							<p  class="_for_help_right_p_2">
+								一步一步的帮助让您的网站顺利建立和运行。
+							</p>
+						</li>
+					</ul>
+				</div>
+			</a>
+			<!--升级弹窗-->
+			<a href="javascript:void(0)" id="_for_upgrade" class="status_alert clearfix">
+				<span id="_for_upgrade_span"></span>
+				<div id="_for_upgrade_left" class="left clearfix">
+					<div class="_for_upgrade_left_div_1">
+						升级到无限的年限和储存！
+					</div>
+					<p class="_for_upgrade_left_p">
+						获取一个免费域名链接到您的网站
+					</p>
+					<p class="_for_upgrade_left_p">
+						享受无限的贷款和额外的储存空间
+					</p>
+					<p class="_for_upgrade_left_p">
+						链接谷歌Analytics（分析）
+					</p>
+					<p class="_for_upgrade_left_p">
+						删除66科技品牌广告
+					</p>
+					<div id="" class="_for_upgrade_left_div_2">
+						去升级，通过节省您的网站启动
+					</div>
+					<div id="save_to_web">
+						保存到站点
+					</div>
+				</div>
+				<div id="_for_upgrade_right" class="left clearfix">
+					
+				</div>
+			</a>
+			<!--点击编辑器消失病预览网页-->
+		</div>	
+		<!--手机模式弹窗-->
+		<a id="phone_alert" href="javascript:void(0)">
+			<span id="" class="phone_alert_span">
+				<!--提示小箭头-->
+			</span>
+			<div id="phone_alert_left" class="left clearfix">
+				<p class="computer_model">
+					编辑桌面视图
+					<span id="">
+						<!--模式选择背景-->
+					</span>
+				</p>
+				<p class="phone_model">
+					编辑手机浏览
+					<span id="">
+						<!--模式选择背景-->
+					</span>
+				</p>
+				<div id="" class="choice_mobile">
+					<span id="" class="choice_mobile_span1">
+						
+					</span>
+					<span id="" class="choice_mobile_span2">
+						
+					</span>
+					优化您的移动端网站。
+				</div>
+			</div>
+			<div id="phone_alert_right" class="left clearfix">
+				<span id="phone_alert_right_bg">
+					
+				</span>
+				<p class="phone_alert_right_p1">
+					所有设备上看起来都很美观
+				</p>
+				<p class="phone_alert_right_p2">
+					66科技可以很容易地优化您的 网站的移动。
+				</p>
+			</div>
 		</a>	
+		<!--保存弹窗-->	
+		<div id="save_alert">
+			<div id="sever_mask">
+			<!--保存弹窗遮罩层-->
+			</div>
+			<div id="save_alert_content">
+				<div id="save_alert_content_top">
+					保存你的工作
+					<span id="closs_save_alert" class="">
+						
+					</span>
+				</div>
+				<div id="save_alert_content_center">
+					<p>
+						当你创建你的网站，这是一个好主意，定 期保存您的工作。
+					</p>
+				</div>
+				<div id="save_web">
+					确认保存
+				</div>
+			</div>
+		</div>
 		<!--发布弹窗-->
 		<div id="publish_alert">
 			<div id="publish_mask">
@@ -595,29 +659,7 @@
 					保存并确认
 				</div>
 			</div>
-		</div>
-		<!--保存弹窗-->	
-		<div id="save_alert">
-			<div id="sever_mask">
-			<!--保存弹窗遮罩层-->
-			</div>
-			<div id="save_alert_content">
-				<div id="save_alert_content_top">
-					保存你的工作
-					<span id="closs_save_alert" class="">
-						
-					</span>
-				</div>
-				<div id="save_alert_content_center">
-					<p>
-						当你创建你的网站，这是一个好主意，定 期保存您的工作。
-					</p>
-				</div>
-				<div id="save_web">
-					确认保存
-				</div>
-			</div>
-		</div>
+		</div>	
 		<!--编辑器代码部分-->
 		<ul id="edit_ul" class="clearfix">
 			<li class="edit_ul_li_1">
@@ -644,7 +686,7 @@
 					我的上传
 				</p>
 			</li>
-			<li  class="edit_ul_li_4">
+			<li  class="edit_ul_li_5">
 			
 				<p class="action left">
 					编写博客
@@ -944,7 +986,6 @@
 				</p>
 			</div>
 		</div>
-
 		<!--添加元素隐藏框-->
 		<div id="for_add" class="clearfix edit">
 			<div id="_small_bg">
@@ -2369,18 +2410,18 @@
 				<span id="">
 						<!--复制-->
 						<img src="../images/copy_1.png"/>
-					</span>
+				</span>
 				<span id="">
 						<!--粘贴-->
-						<img src="../images/past_1.png"/>
-					</span>
+					<img src="../images/past_1.png"/>
+				</span>
 				<span id="">
 						<img src="../images/copy_2.png"/>
 					</span>
 				<!--删除-->
 				<span id="">
-						<img src="../images/del_1.png"/>
-					</span>
+					<img src="../images/del_1.png"/>
+				</span>
 			</div>
 			<!--文本编辑框第三部份-->
 			<div id="edit_text_s" class="clearfix">
@@ -2493,10 +2534,10 @@
 
 			<!--文本编辑框第五部份    尺度-->
 			<div id="edit_text_f" class="clearfix">
-				<div class="clearfix">
+				<div >
 					尺寸
 				</div>
-				<div class="clearfix">
+				<div>
 					<span id="">
 						W :
 					</span>
@@ -2504,7 +2545,7 @@
 						900
 					</i>
 				</div>
-				<div class="clearfix">
+				<div>
 					<span id="">
 						H :
 					</span>
@@ -2514,7 +2555,7 @@
 				</div>
 			</div>
 			<!--文本编辑框第6部份    位置信息-->
-			<div id="edit_text_x" class="clearfix">
+			<div id="edit_text_x">
 				<div>
 					位置
 				</div>
@@ -2526,7 +2567,7 @@
 						50
 					</i>
 				</div>
-				<div class="clearfix">
+				<div>
 					<span id="">
 						Y :
 					</span>
@@ -2536,7 +2577,7 @@
 				</div>
 			</div>
 			<!--文本编辑框第尾部    显示所有也页数-->
-			<div id="edit_text_l" class="clearfix">
+			<div id="edit_text_l" >
 				<div>
 					显示所有页
 				</div>
@@ -2551,7 +2592,7 @@
 				</div>
 			</div>
 		</div>
-		
+	
 		<!--添加文本帮助弹窗-->	
 		<div id="add_text_help_alert">
 			<div id="add_text_help_top">
@@ -2605,9 +2646,7 @@
 				</div>
 			</div>
 		</div>	
-			
-			
-			
+							
 		<!--基本参考线-->
 		<div id="">
 			<div id="line_1">
@@ -2636,7 +2675,7 @@
 			
 		<!--客户编辑框内容部分-->
 		<div id="user_nav">
-			<div id="user_nav_center">
+			<div id="user_nav_center" class="clearfix">
 				<div id="user_nav_log" class="left">
 					<a href="#">
 						<img src="../images/img/log_2.jpg"/>
@@ -2675,8 +2714,9 @@
 			</div>
 		</div>
 	</body>
-	<script type="text/javascript" src="../js/main.js"></script>
-	<script src="../js/index.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../js/bass-js/jquery-1.12.0.js"></script>
+	<script type="text/javascript" src="../js/bass-js/main.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
 	<script type="text/javascript" src="../js/index_2.js"></script>
 
 </html>

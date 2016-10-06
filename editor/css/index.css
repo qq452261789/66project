@@ -128,6 +128,7 @@ h1 a{
 	display: none;
 	cursor: pointer;
 	z-index: 10;
+	cursor: default;
 }
 #_for_now_left{
 	width: 160px;
@@ -227,6 +228,7 @@ h1 a{
     border-radius:10px ;
     cursor: pointer;
     z-index: 10;
+    color: #2D4150;
 }
 #_for_tool_left{
 	width: 213px;
@@ -416,6 +418,14 @@ h1 a{
 	display: none;
 	z-index: 10;
 }
+#_for_upgrade_span{
+      width: 22px;
+    height: 14px;
+    position: absolute;
+    left: 38px;
+    top: -14px;
+    background: url(../images/_for_now_bg.png) no-repeat;
+}
 #_for_upgrade_left{
 	padding-top:25px ;
 	padding-left:25px ;
@@ -459,6 +469,128 @@ h1 a{
 	margin-top:45px;
 	background: url(../images/_for_upgrade_bg.png) no-repeat;
 }
+
+/*手机模型弹窗*/
+#phone_alert{
+	width: 460px;
+	height: 280px;
+	background: #fff;
+	position: absolute;
+	left: 1135px;
+	top:65px;
+	z-index: 15;
+	border-radius: 10px;
+	box-shadow: 0 0 3px #D8D8D8;
+	-webkit-box-shadow: 0 0 3px #D8D8D8;
+	-moz-window-shadow: 0 0 3px #d8d8d8;
+	display: none;
+	cursor: default;
+	}
+#phone_alert .phone_alert_span{
+	width: 22px;
+    height: 14px;
+    position: absolute;
+    right: 104px;
+    top: -14px;
+    background: url(../images/_for_now_bg.png) no-repeat;
+}
+#phone_alert_left{
+	width: 200;
+	padding: 50px 20px 0 20px;
+}
+#phone_alert_left p{
+	position: relative;
+	height: 28px;
+	font-size: 15px;
+	padding-left:75px;
+	line-height: 28px;
+	color: #2a3742;
+	cursor: pointer;
+}
+#phone_alert_left p:hover{
+	color: #659fe9;
+}
+#phone_alert_left .computer_model{
+ 	background: url(../images/computer_bg.png) 38px 3px no-repeat;
+ }
+ #phone_alert_left .computer_model:hover{
+ 	background: url(../images/computer_bg_2.png) 38px 3px no-repeat;
+ }
+ #phone_alert_left span{
+  	width: 25px;
+ 	height: 25px;
+ 	display: block;
+ 	position: absolute;
+ 	left: 5px;
+ 	top: 1px;
+  }
+ #phone_alert_left .computer_model span{
+ 	background: url(../images/domain_selected_bg.png) 5px 5px no-repeat;
+ }
+
+ #phone_alert_left .phone_model{
+ 	margin-top: 20px;
+ 	background: url(../images/phone.png) 44px 1px no-repeat;
+ }
+  #phone_alert_left .phone_model:hover{
+ 	background: url(../images/phone_2.png) 44px 1px no-repeat;
+ }
+ #phone_alert_left .phone_model span{
+ 	background: url(../images/domain_selected_bg_2.png) 5px 5px no-repeat;
+ }
+ #phone_alert_left .choice_mobile{
+ 	height: 60px;
+ 	border-top:1px solid #d9e1e8 ;
+ 	margin-top: 70px;
+ 	background: url(../images/choice_mobile_bg.png) 1px 20px no-repeat;
+ 	line-height: 60px;
+ 	padding-left: 42px;
+ 	color: #2a3742;
+ 	font-size: 14px;
+ 	position: relative;
+ }
+#phone_alert_left .choice_mobile span{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	/*background: #002E5D;*/ 	 	
+}
+
+#phone_alert_left .choice_mobile .choice_mobile_span1{
+	left: -1px;
+	top: 19px;
+}
+#phone_alert_left .choice_mobile .choice_mobile_span2{
+	left: 20px;
+	top: 19px;
+}
+#phone_alert_right{
+ 	height: 200px;
+ 	width: 180px;
+ 	background: url(../images/phone_model.png) no-repeat;
+ 	background: #d3edff;
+ 	border-radius: 10px;
+ 	padding: 20px; 
+ 	margin-top: 20px;	
+ }
+#phone_alert_right_bg{
+	display: block;
+	width: 140px;
+	height: 114px;
+	background: url(../images/phone_model.png) no-repeat;
+	margin-left: 20px;
+}
+.phone_alert_right_p1{
+	line-height: 30px;
+	margin-top: 20px;
+	color: #416a85;
+	font-size: 14px;
+}
+.phone_alert_right_p2{
+	color:#94b5cb ;
+}
+
+
 
 
 /*状态样式*/
@@ -509,42 +641,42 @@ h1 a{
 	cursor: pointer;
 }
 
-#edit span:nth-of-type(1) {
+#edit #enlarge {
 	background: url(../images/jingzi.png) no-repeat center !important;
 }
-#edit span:nth-of-type(1):hover {
+#edit #enlarge:hover {
 	background: url(../images/jingzi_2.png) no-repeat center !important;
 }
-#edit span:nth-of-type(2) {
+#edit #go_back {
 	background: url(../images/goback.png) no-repeat center !important;
 }
 
-#edit span:nth-of-type(2):hover {
+#edit #go_back:hover {
 	background: url(../images/goback_2.png) no-repeat center !important;
 }
-#edit span:nth-of-type(3) {
+#edit #go_next {
 	background: url(../images/next.png) no-repeat center !important;
 }
-#edit span:nth-of-type(3):hover {
+#edit #go_next:hover {
 	background: url(../images/go_next.png) no-repeat center !important;
 }
-#edit span:nth-of-type(4) {
+#edit #phone_mode {
 	background: url(../images/phone.png)no-repeat center !important;
 }
-#edit span:nth-of-type(4):hover {
+#edit #phone_mode:hover {
 	background: url(../images/phone_2.png)no-repeat center !important;
 }
 
-#edit span:nth-of-type(5):hover  {
+#edit #preview:hover  {
 	color: #3899ec;
-}#edit span:nth-of-type(6):hover {
+}#edit #preview:hover {
 	color: #3899ec;
 }
 
-#edit span:nth-of-type(7) {
+#edit #publish_web {
 	background: #3899ec;
 }
-#edit span:nth-of-type(7):hover {
+#edit #publish_web:hover {
 	color:#fff;
 }
 
@@ -723,7 +855,7 @@ h1 a{
 	-moz-window-shadow: 0 0 3px #d8d8d8;
 	-webkit-box-shadow:  0 0 3px #d8d8d8;
 	z-index: 15;
-	display: block;
+	display: none;
 }			
 #small_nav_edit span{
 	display: block;
@@ -1202,6 +1334,7 @@ h1 a{
 	z-index: 100;
 	left: 0;
 	top:0;
+	display: none;
 }
 #sever_mask{
 	width: 100%;
@@ -1286,9 +1419,9 @@ h1 a{
 	cursor: pointer;
 	line-height: 48px;
 	font-weight:bolder ;
-	box-shadow: 0px 0px 3px #d8d8d8;
+	/*box-shadow: 0px 0px 3px #d8d8d8;
 	-webkit-box-shadow: 0px 0px 3px #d8d8d8;
-    -moz-window-shadow: ;:  0px 0px 3px #d8d8d8;
+    -moz-window-shadow: ;:  0px 0px 3px #d8d8d8;*/
     text-indent: 50px;
     background-color:#fff !important;
 }
@@ -3246,6 +3379,7 @@ background-position-y: 30px;
 	-webkit-box-shadow: 0px 0px 3px #D8D8D8;
     -moz-window-shadow:  0px 0px 3px #D8D8D8;
 	border-radius: 10px;
+	z-index: 15;
 }
 #edit_text:hover{
 	opacity: 1;

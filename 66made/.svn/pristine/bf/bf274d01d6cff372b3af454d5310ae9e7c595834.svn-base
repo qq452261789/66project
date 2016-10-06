@@ -1,0 +1,91 @@
+/* 
+* @Author: An_dy
+* @Date:   2016-10-05 14:55:53
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-10-05 17:31:03
+*/
+#client_content_box{
+    width: 100%;
+}
+#client_content_box .client_content{
+    width:980px;
+    margin: 0 auto;
+    text-align: center;
+}
+#client_content_box .client_content .client_title h2{
+    text-align: center;
+    font-size: 40px;
+    color: #6EA4CA;
+}
+#client_content_box .client_content .client_title div{
+    margin:0 auto;
+    width:50px;
+    height: 3px;
+    background-color: #6EA4CA;
+}
+#client_content_box .client_content .client_title p{
+    margin:0 auto;
+    margin-top: 50px;
+    width:550px;
+    font-size: 16px;
+    color: #39729b;
+}
+#client_content_box .client_content .client_logo_list{
+    margin:0 auto;
+    margin-top: 80px;
+    width:560px;
+}
+#client_content_box .client_content .client_logo_list li{
+    float: left;
+    width:100px;
+    height:100px;
+    margin-left: 130px;
+    overflow:hidden;
+}
+#client_content_box .client_content .client_logo_list li:nth-of-type(1){
+    margin-left: 0;
+}
+#client_content_box .client_content .client_logo_list li:nth-of-type(4){
+    margin-left: 0;
+    margin-top: 115px;
+}
+#client_content_box .client_content .client_logo_list li:nth-of-type(5){
+    margin-top: 115px;
+}
+#client_content_box .client_content .client_logo_list li:nth-of-type(6){
+    margin-top: 115px;
+}
+#client_content_box .client_content .client_bottom_text{
+    position: relative;
+    box-sizing: border-box;
+    margin:0 auto;
+    margin-top: 90px;
+    width:920px;
+    padding: 20px 0px;
+    background-color: #39729b;
+}
+#client_content_box .client_content .client_bottom_text p{
+    margin:0 auto;
+    width:840px;
+    font-size: 16px;
+    color:#fff;
+}
+#client_content_box .client_content .client_bottom_text div{
+    position:absolute;
+    bottom:-20px;
+    left:50%;
+    margin-left: -5px;  
+    width:0px;
+    height:0px;
+    border-top: 10px solid #39729b;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom:10px solid transparent;
+}
+#client_content_box .client_content>p{
+    margin:0 auto ;
+    margin-top: 25px;
+    width:570px;
+    font-size: 16px;
+    color:#39729b;
+}
