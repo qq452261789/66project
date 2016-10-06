@@ -97,10 +97,10 @@
 		</div>
 		<div id="about_box">
 			<div id="about" class="clearfix">
-				<div class="about_title">
+				<div id="about_title">
 					关于我们
 				</div>
-				<div  class="about_article edit_text">
+				<div id="about_article" class="edit_text">
 					这里可以编辑段落文本。随意拖放到任意页面。
 					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
 					让用户更多的了解你。告诉你的访客和竞争对手的不同。
@@ -109,46 +109,37 @@
 					让用户更多的了解你。告诉你的访客和竞争对手的不同。
 					这里可以编辑段落文本。随意拖放到任意页面。
 					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
-					让用户更多的了解你。告诉你的访客和竞争对手意拖放到任意页面。
+					让用户更多的了解你。告诉你的访客和竞争对手的不同。
+					这里可以编辑段落文本。随意拖放到任意页面。
+					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
+					让用户更多的了解你。告诉你的访客和竞争对手的不同。这里可以编辑段落文本。随意拖放到任意页面。
+					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
+					让用户更多的了解你。告诉你的访客和竞争对手的不同。这里可以编辑段落文本。随意拖放到任意页面。
+					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
+					让用户更多的了解你。告诉你的访客和竞争对手的不同。这里可以编辑段落文本。随意拖放到任意页面。
 					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
 					让用户更多的了解你。告诉你的访客和竞争对手的不同。
 					这里可以编辑段落文本。随意拖放到任意页面。
 					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
-					让用户更多的了解你。告诉你的访客和竞争对手意拖放到任意页面。
+					让用户更多的了解你。告诉你的访客和竞争对手的不同。这里可以编辑段落文本。随意拖放到任意页面。
 					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
 					让用户更多的了解你。告诉你的访客和竞争对手的不同。
 					这里可以编辑段落文本。随意拖放到任意页面。
 					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
-					让用户更多的了解你。告诉你的访客和竞争对手意拖放到任意页面。
-					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
-						让用户更多的了解你。告诉你的访客和竞争对手意拖放到任意页面。
-					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
-					让用户更多的了解你。告诉你的访客和竞争对手的不同。
-					这里可以编辑段落文本。随意拖放到任意页面。
-					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
-					让用户更多的了解你。告诉你的访客和竞争对手意拖放到任意页面。
-					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
-					让用户更多的了解你。告诉你的访客和竞争对手的不同。
-					这里可以编辑段落文本。随意拖放到任意页面。
-					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
-					让用户更多的了解你。告诉你的访客和竞争对手意拖放到任意页面。
-					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
-					让用户更多的了解你。告诉你的访客和竞争对手的不同。
-					这里可以编辑段落文本。随意拖放到任意页面。
-					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
-					让用户更多的了解你。告诉你的访客和竞争对手意拖放到任意页面。
+					
+					
 				</div>
-				<a  href="about.html" class="about_more about_href">
+				<a id="about_href" href="about.html" class="about_more">
 					阅读更多
 				</a>
 			</div>
 		</div>
 		<div id="contact_box">
 			<div id="contact">
-				<div class="contact_title">
+				<div id="contact_title">
 					联系我们
 				</div>
-				<div class="contact_title_main clearfix">
+				<div id="contact_title_main" class="clearfix">
 					<div class="left map_box">
 						<img class="edit_img" src="../../images/model-1/active/map.png"/>
 					</div>
@@ -163,13 +154,13 @@
 						</div>
 						<div class="user_info">
 							<p>
-								<input type="text" name="user_name" id="" placeholder="姓名" value="" />	
+								<input type="text" name="user_name" id="user_name" placeholder="姓名" value="" />	
 							</p>
 							<p>
-								<input type="email" name="user_email" id="" placeholder="邮箱" value="" />
+								<input type="email" name="user_email" id="user_email" placeholder="邮箱" value="" />
 							</p>
 							<p>
-								<input type="text" name="user_them" id="" placeholder="主题" value="" />
+								<input type="text" name="user_them" id="user_them" placeholder="主题" value="" />
 							</p>
 							<div>
 								<textarea name="" rows="" cols="" placeholder="信息"></textarea>

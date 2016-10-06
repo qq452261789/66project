@@ -82,30 +82,6 @@ body{
 	height: 180px;
 	overflow-y:auto ;
 }
-/*滚动条样式*/
-/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
-.mian_article::-webkit-scrollbar  
-{  
-    width: 6px;  
-    height: 100%; 
-}  
-  
-/*定义滚动条轨道 内阴影+圆角*/  
-.mian_article::-webkit-scrollbar-track  
-{  
-    border-radius: 10px;  
-    background-color: transparent;  
-}  
-  
-/*定义滑块 内阴影+圆角*/  
-.mian_article::-webkit-scrollbar-thumb  
-{  
-    border-radius: 10px;  
-    background-color: transparent;  
-}
-.mian_article:hover::-webkit-scrollbar-thumb {
-    background-color: #6ea4ca; 
-}
 .main_small_box a{
 	display: block;
 	height: 40px;
@@ -126,7 +102,6 @@ body{
 	width: 100%;
 	padding-bottom:65px ;
 	background-color: #d1e0eb;
-	opacity: 0;
 }
 #about{
 	width: 820px;
@@ -157,7 +132,7 @@ body{
 	line-height: 40px;
 	font-size: 14px;	
 	margin:0 auto;
-	opacity: 0;
+	
 }
 .about_href:hover{
 	background:  #3b729b;
@@ -166,20 +141,18 @@ body{
 	padding-top:80px ;
 	width: 100%;
 	background: #0C3C60;
-	
 }
 #contact{
 	width: 980px;
 	margin: 0 auto ;
-	opacity: 0;
 }
-.contact_title{
+#contact_title{
 	padding-bottom:130px ;
 	color: #fff;
 	font-size:40px ;
 	text-align: center;
 }
-.contact_title_main{
+#contact_title_main{
 	height: 500px;
 }
 .map_box {

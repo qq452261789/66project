@@ -1,14 +1,12 @@
-body{
-	min-width: 980px;
-}
+
 #banner_box{
 	position: relative;
 	margin-top:90px;
 	width: 100%;
 	height: 640px;
-	background: url(../../images/model-1/background/index_bg.png) no-repeat;
+	background: url(../../images/model-1/background/index_bg.png) no-repeat fixed;
 	background-position: top center;
-	background-size: 1920px 640px;
+	background-size: 100% 100%;
 }
 #banner{
 	width: 100%;
@@ -82,30 +80,6 @@ body{
 	height: 180px;
 	overflow-y:auto ;
 }
-/*滚动条样式*/
-/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
-.mian_article::-webkit-scrollbar  
-{  
-    width: 6px;  
-    height: 100%; 
-}  
-  
-/*定义滚动条轨道 内阴影+圆角*/  
-.mian_article::-webkit-scrollbar-track  
-{  
-    border-radius: 10px;  
-    background-color: transparent;  
-}  
-  
-/*定义滑块 内阴影+圆角*/  
-.mian_article::-webkit-scrollbar-thumb  
-{  
-    border-radius: 10px;  
-    background-color: transparent;  
-}
-.mian_article:hover::-webkit-scrollbar-thumb {
-    background-color: #6ea4ca; 
-}
 .main_small_box a{
 	display: block;
 	height: 40px;
@@ -124,30 +98,31 @@ body{
 }
 #about_box{
 	width: 100%;
-	padding-bottom:65px ;
+	height: 600px;
 	background-color: #d1e0eb;
-	opacity: 0;
 }
 #about{
 	width: 820px;
+	height: 600px;
 	margin: 0 auto;
 	padding: 0 80px;
 	text-align: center;
+	position: relative;
 }
-.about_title{
+#about_title{
 	padding-top: 45px;
 	margin-bottom: 30px;
 	font-size:40px;
 	color: #0c3c60;
 }
-.about_article{
+#about_article{
 	line-height: 26px;
-	font-size: 16px;
+	font-size: 14px;
 	color: #0c3c60;
 	margin-bottom: 30px;
 }
 
-.about_href{
+#about_href{
 	display: block;
 	height: 40px;
 	width: 140px;
@@ -157,29 +132,28 @@ body{
 	line-height: 40px;
 	font-size: 14px;	
 	margin:0 auto;
-	opacity: 0;
+	
 }
-.about_href:hover{
+#about_href:hover{
 	background:  #3b729b;
 }
 #contact_box{
-	padding-top:80px ;
+	height: 820px;
 	width: 100%;
 	background: #0C3C60;
-	
 }
 #contact{
 	width: 980px;
 	margin: 0 auto ;
-	opacity: 0;
 }
-.contact_title{
+#contact_title{
+	padding-top: 80px;
 	padding-bottom:130px ;
 	color: #fff;
 	font-size:40px ;
 	text-align: center;
 }
-.contact_title_main{
+#contact_title_main{
 	height: 500px;
 }
 .map_box {
@@ -199,7 +173,7 @@ body{
 	padding-top: 35px;
 	height: 80px;
 	color: #fff;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .user_info input{

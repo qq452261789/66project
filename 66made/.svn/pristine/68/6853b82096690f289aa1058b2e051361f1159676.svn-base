@@ -17,16 +17,16 @@
                 </div>
                 <div id="nav" class="right clearfix">
                     <a href="about.html" class="edit_text">
-                 		关于
+                        关于
                     </a>
                     <a href="services.html" class="edit_text">
-                      	服务
+                        服务
                     </a>
                     <a href="projects.html" class="edit_text">
-                       	项目
+                        项目
                     </a>
                     <a href="clients.html" class="edit_text">
-                       	客户
+                        客户
                     </a>
                     <a href="index.html#contact_box" class="edit_text">
                       	联系

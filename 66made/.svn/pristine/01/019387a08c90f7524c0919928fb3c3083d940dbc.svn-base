@@ -166,12 +166,10 @@ body{
 	padding-top:80px ;
 	width: 100%;
 	background: #0C3C60;
-	
 }
 #contact{
 	width: 980px;
 	margin: 0 auto ;
-	opacity: 0;
 }
 .contact_title{
 	padding-bottom:130px ;
