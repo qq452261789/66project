@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url("web/views/66made/css/public/base.css"); ?>">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url("web/views/66made/css/model-1/header.css"); ?>">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url("web/views/66made/css/model-1/about.css"); ?>">
+        <style type="text/css">
+            .sale_btn,.preview_btn{
+                color:white;
+                position:absolute;
+                top:10px;
+                left:10px;
+                width:105px;
+                font-size:20px;
+                line-height: 30px;
+                text-align: center;
+                background-color:blue;
+                opacity: 0.3;
+                z-index: 10;
+                border-radius: 5px;
+                border:1px solid white;
+            }
+            .sale_btn:hover{
+                opacity:1;
+            }
+            .preview_btn{
+                left:125px;
+            }
+            .preview_btn:hover{
+                opacity:1;
+            }
+            body{
+                position:relative;
+            }
+            #myfile{
+                position:absolute;
+                z-index: -100;
+            }
+        </style>
+
+    </head>
+    <body>
+    <a href="http://localhost/myFile/index.php/mypage/about" class="sale_btn">返回编辑</a>
+    <a target = "_blank" href="http://localhost/myFile/index.php/mypage/about_publish" class="preview_btn">发布</a>
+
+    <div id="www">
+    </div>
+    </body>
+<script type="text/javascript" src="<?php echo base_url("static/js/jq.js"); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url("static/js/ajaxfileuploads.js"); ?>"></script>
+
+<script type="text/javascript">
+ // $(function(){
+
+        function decodeUTF8(str){
+            return str.replace(/(\\u)(\w{4}|\w{2})/gi, function($0,$1,$2){
+                return String.fromCharCode(parseInt($2,16));
+            }); 
+        } 
+
+
+    // 渲染模块
+        $.ajax({
+            type: "GET",
+            url: "http://www.cpwix.com/index.php/MadePage/getPage",
+            data: "modsid=1&pageid=4" ,
+            datatype:"jsonp",
+            success: function(msg){
+                var mm = JSON.parse(msg).pop();
+           
+                $("#www").html(decodeUTF8(mm.content));
+                new_element=document.createElement("script");
+                new_element.setAttribute("type","text/javascript");
+                new_element.setAttribute("src","<?php echo base_url("web/views/66made/js/model-1/index.js"); ?>");
+                document.body.appendChild(new_element);
+            
+            }
+        });
+
+    // });
+ 
+</script>
+<!-- <script type="text/javascript" src=""></script> -->
+</html>

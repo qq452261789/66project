@@ -1,0 +1,427 @@
+html,body,input,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,tutton,input{ margin:0;padding:0; } 
+ul,ol,li{list-style:none;}
+a {text-decoration:none;outline:none;}
+img{border:none;}
+button:focus{outline:none;}
+.left{float:left;}
+.right{float:right;}
+body{font:12px "微软雅黑";}
+ul,li{list-style:none}
+
+.clearfix:after{
+  content: " "; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;  
+  }
+
+/*文本编辑框样式*/
+#edit_text{
+	width: 90px;
+	position: absolute;
+	right: 80px;
+	top: 60px;
+	background:#e0dddd;
+	padding-bottom: 10px;
+	/*opacity: .5;
+	filter:alpha(Opacity=50);
+	-moz-opacity:0.5;*/
+	border-radius: 10px;
+}
+/*#edit_text:hover{
+	background: #e4dfdf;
+	opacity: 1;
+	filter:alpha(Opacity=100);
+	-moz-opacity:1;
+}*/
+#edit_text_h{
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #a8aaab;
+}
+#edit_text_h span{
+	display: block;
+	float: left;
+	font-size: 16px;
+	color: #000000;
+	text-align: center;
+}
+
+#edit_text_h span:nth-of-type(1){
+	height: 30px;
+	width: 25px;
+	line-height: 30px;
+	margin-left: 5px;
+}
+#edit_text_h span:nth-of-type(1):hover{
+	color: #3899ec;
+	cursor: pointer;
+}
+#edit_text_h span:nth-of-type(2){
+	height: 30px;
+	width: 20px;
+	line-height: 30px;
+	background: url(../images/move_1.PNG) 5px 13px no-repeat ;
+	cursor:move
+}
+#edit_text_h span:nth-of-type(3){
+	height: 30px;
+	width: 25px;
+	margin-left: 5px;
+	line-height: 30px;
+}
+#edit_text_h span:nth-of-type(3):hover{
+	color: #3899ec;
+	cursor: pointer;
+}
+#edit_text_c{
+	height: 79px;
+	padding-left: 10px;	
+	padding-top: 10px;
+	border-bottom: 1px solid #a8aaab;
+}
+#edit_text_c span{
+	position: relative;
+	display: block;
+	width: 15px;
+	height: 15px;
+	float: left;
+	border-radius: 5px;	
+	background: #a3acb2;
+	border-bottom: 1px solid #a8aaab;
+	padding: 5px;
+}
+#edit_text_c span:hover{
+	background:#276ba5 ;
+}
+#edit_text_c span:nth-of-type(1){
+	margin-right: 12px;
+	margin-bottom: 8px;
+}
+#edit_text_c span:nth-of-type(2){
+	margin-bottom: 8px;
+	background: ;
+}
+#edit_text_c span:nth-of-type(3){
+	margin-right: 12px;
+	background: ;
+}
+#edit_text_c span:nth-of-type(4){
+	background: ;
+}
+
+/*文本对齐方式css*/
+#edit_text_s{
+	height: 84px;
+	padding-left: 10px;	
+	padding-top: 15px;
+	border-bottom: 1px solid #a8aaab;
+}
+#edit_text_s span{
+	position: relative;
+	display: block;
+	width: 15px;
+	height: 15px;
+	float: left;
+	border-radius: 5px;	
+	background: #a3acb2;	
+	padding: 5px;
+}
+
+#edit_text_s span:hover{
+	background:#276ba5 ;
+}
+#edit_text_s span img:nth-of-type(2){
+	position: absolute;
+	right: -5px;
+	bottom: -5px;
+}
+#edit_text_s span:nth-of-type(1){
+	margin-right: 15px;
+	margin-bottom: 13px;
+}
+#edit_text_s span:nth-of-type(1) div{
+	position: absolute;
+	right: 0px;
+	top:0px;
+	width: 48px;
+	height: 48px;
+	background: #b2b2b2;
+	padding: 6px;
+	z-index: 10;
+	border-radius: 5px;
+	display: none;
+}
+
+#edit_text_s span:nth-of-type(1) div cite{
+	display: block;
+	width:24px ;
+	height: 24px;
+	float:left;
+}
+
+#edit_text_s span:nth-of-type(1) div cite:nth-of-type(1){
+	display: block;
+	width:24px ;
+	height: 24px;
+	float:left;
+	background: url(../images/anpai_2.png) 3px 3px no-repeat; 
+}
+
+#edit_text_s span:nth-of-type(1) div cite:nth-of-type(2){
+	background: url(../images/anpai_2.png) -18px 3px no-repeat; 
+}
+#edit_text_s span:nth-of-type(1) div cite:nth-of-type(3){
+	background: url(../images/anpai_2.png) 3px -15px no-repeat; 
+}
+#edit_text_s span:nth-of-type(1) div cite:nth-of-type(4){
+	background: url(../images/anpai_2.png) -18px -16px no-repeat; 
+}
+#edit_text_s span:nth-of-type(2){
+	margin-bottom: 13px;
+}
+#edit_text_s span:nth-of-type(2) div{
+	position: absolute;
+	right: 0px;
+	top:0px;
+	background: #b2b2b2;
+	padding: 6px;
+	z-index: 10;
+	width: 95px;
+	height: 52px;
+	border-radius: 5px;
+	display: none;
+}
+#edit_text_s span:nth-of-type(2) div cite{
+	width:28px;
+	height:25px;
+	float:left;
+	margin-left:3px;
+	display:block;
+	margin-bottom: 3px;
+}
+#edit_text_s span:nth-of-type(2) div cite:nth-of-type(1){
+	background: url(../images/duiji.png) 5px 5px no-repeat;
+}
+#edit_text_s span:nth-of-type(2) div cite:nth-of-type(2){
+	background: url(../images/duiji.png) -25px 5px no-repeat;
+}
+#edit_text_s span:nth-of-type(2) div cite:nth-of-type(3){
+	background: url(../images/duiji.png) -58px 5px no-repeat;
+}
+#edit_text_s span:nth-of-type(2) div cite:nth-of-type(4){
+	background: url(../images/duiji.png) 5px -22px no-repeat;
+}
+#edit_text_s span:nth-of-type(2) div cite:nth-of-type(5){
+	background: url(../images/duiji.png) -25px -22px no-repeat;
+}
+#edit_text_s span:nth-of-type(2) div cite:nth-of-type(6){
+	background: url(../images/duiji.png) -58px -22px no-repeat;
+}
+
+
+#edit_text_s span:nth-of-type(3){
+	margin-right: 15px;	
+}
+
+#edit_text_s span:nth-of-type(3) div{
+	position: absolute;
+	right: 0px;
+	top:0px;
+	background: #b2b2b2;
+	padding: 5px;
+	z-index: 10;
+	width: 95px;
+	height: 30px;
+	border-radius: 5px;
+	display: none;
+}
+#edit_text_s span:nth-of-type(3) div cite{
+	width:28px;
+	height:30px;
+	float:left;
+	margin-left:3px;
+	display:block;
+	background: red;
+	margin-bottom: 3px;
+}
+#edit_text_s span:nth-of-type(3) div cite:nth-of-type(1){
+	background: url(../images/fenbu_1.png) 5px 6px no-repeat;
+}
+#edit_text_s span:nth-of-type(3) div cite:nth-of-type(2){
+	background: url(../images/fenbu_1.png) -20px 6px no-repeat;
+}
+#edit_text_s span:nth-of-type(3) div cite:nth-of-type(3){
+	background: url(../images/fenbu_1.png) -50px 6px no-repeat;
+}
+
+
+#edit_text_s span:nth-of-type(4){
+	background: ;
+}
+#edit_text_s span:nth-of-type(4) div{
+	position: absolute;
+	right: 0px;
+	top:0px;
+	background: #b2b2b2;
+	padding: 5px;
+	z-index: 10;
+	width: 95px;
+	height: 30px;
+	border-radius: 5px;
+	display: none;
+}
+#edit_text_s span:nth-of-type(4) div cite{
+	width:28px;
+	height:28px;
+	float:left;
+	margin-left:3px;
+	display:block;
+	margin-bottom: 3px;
+}
+#edit_text_s span:nth-of-type(4) div cite:nth-of-type(1){
+	background: url(../images/pibei_1.png) 5px 6px no-repeat;
+}
+#edit_text_s span:nth-of-type(4) div cite:nth-of-type(2){
+	background: url(../images/pibei_1.png) -20px 6px no-repeat;
+}
+#edit_text_s span:nth-of-type(4) div cite:nth-of-type(3){
+	background: url(../images/pibei_1.png) -50px 6px no-repeat;
+}
+
+
+
+
+
+
+
+
+
+#edit_text_t{
+	height: 34px;
+	border-bottom: 1px solid #a8aaab;
+	padding-left:18px ;
+	padding-top:25px ;
+}
+#edit_text_t span{
+	display: block;
+	height: 11px;
+	margin-right: 20px;
+	width: 13px;
+	float: left;
+	background: url(../images/xuanz_1.png) no-repeat;
+}
+
+#edit_text_t p{
+	display: block;
+	float: left;
+	height: 20px;
+	line-height: 0;
+	color: #969696;
+}
+#edit_text_t p a {
+	color: #969696;
+}
+
+#edit_text_f{
+	height:100px;
+	border-bottom: 1px solid #a8aaab;
+}
+#edit_text_f div{
+	height:33px;
+	line-height: 33PX;
+	text-align: center;
+}
+#edit_text_f div span{
+	display: block;
+	float: left;
+	width: 50px;
+}
+#edit_text_f div i{
+	display: block;
+	float: left;
+	width: 40px;
+	text-align: left;
+}
+#edit_text_f div:nth-of-type(1){
+	color: #1e3c50;
+}
+#edit_text_f div:nth-of-type(2) i{
+	font-style: normal;
+	color: #838383;
+}
+#edit_text_f div:nth-of-type(3) i{
+	color: #838383;
+	font-style: normal;
+}
+#edit_text_f div:nth-of-type(2) span{
+	color: #1e3c50;
+	font-size: small;
+}
+#edit_text_f div:nth-of-type(3) span{
+	color: #1e3c50;
+	font-size: small;
+}
+
+#edit_text_x{
+	height:100px;
+	border-bottom: 1px solid #a8aaab;
+}
+#edit_text_x div{
+	height:33px;
+	line-height: 33PX;
+	text-align: center;
+}
+#edit_text_x div span{
+	display: block;
+	float: left;
+	width: 50px;
+}
+#edit_text_x div i{
+	display: block;
+	float: left;
+	width: 40px;
+	text-align: left;
+}
+#edit_text_x div:nth-of-type(1){
+	color: #1e3c50;
+}
+#edit_text_x div:nth-of-type(2) i{
+	font-style: normal;
+	color: #838383;
+}
+#edit_text_x div:nth-of-type(3) i{
+	color: #838383;
+	font-style: normal;
+}
+#edit_text_x div:nth-of-type(2) span{
+	color: #1e3c50;
+	font-size: small;
+}
+#edit_text_x div:nth-of-type(3) span{
+	color: #1e3c50;
+	font-size: small;
+}
+#edit_text_l{
+	height: 65px;
+	padding-top: 15px;
+	text-align: center;
+	color: #1e3c50;
+}
+#edit_text_l div:nth-of-type(2){
+	width: 40px;
+	height: 20px;
+	background: url(../images/page_num.png) no-repeat;
+	margin:20px 0 0 25px
+}
+#edit_text_l span{
+	width: 20px;
+	height: 20px;
+	display: block;
+	float:left;
+}
+
+
+
+

@@ -1,0 +1,270 @@
+/* 
+* @Author: Marte
+* @Date:   2016-10-09 17:56:08
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-10-10 10:37:48
+*/
+
+#header {
+	width: 100%;
+	height: 90px;
+	background-color: #0c3c60;
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+	line-height: 90px;
+	position: relative;
+}
+
+#log {
+	margin-left: 6%;
+	height: 100%;
+	width: 55%;
+	text-align: center;
+	display: block;
+	position: relative;
+	float: left;
+}
+#log img{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.show_nav{
+    height:50px;
+    width:50px;
+    background: url(../../images/mobile_model-1/background/nav_bg.png) center no-repeat;
+    margin-right: 10%;
+    margin-top: 18px;
+}
+.closs_nav{
+	display: none;
+	height:50px;
+    width:50px;
+    margin-right: 10%;
+    margin-top: 18px;
+     background: url(../../images/mobile_model-1/background/closs_nav_bg.png) center no-repeat;
+}
+.nav_box{
+	position: absolute;
+	background: rgba(12,60,96,0.9);
+	left: 6%;
+	width: 88%;
+	top: 70px;
+	z-index: 10;
+	border: 1px solid #86a9c5;
+	display: none;
+}
+.nav_box a{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 1.5rem;
+	text-align: left;
+	text-indent: 10%;
+	border-bottom: 1px solid #86a9c5;
+}
+.nav_box a:last-child{
+	border-bottom: none;
+}
+#banner{
+    widows: 100%;  
+    position: relative;
+}
+#banner .banner_bg{
+    display: block;
+}
+.banner_main{
+    height:90px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.banner_text{
+    height:90px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: #2b596c;
+}
+.banner_text p:nth-of-type(1){
+    font-size: 1.6rem;
+    margin-top: 12px;
+    line-height: 26px;
+}
+.banner_text p:nth-of-type(2){
+    font-size: 2.8rem;
+}
+#main{
+    margin-top: 35px;
+}
+.main_color_box{
+    height:35px;
+    background-color: #fafafa;
+    width:100%;
+}
+#main .main{
+    padding-top: 40px;
+    padding-bottom: 24px;
+    background-color: #0c3c60;
+    margin-bottom: 35px;
+}
+#main .clients{
+     margin-bottom: 10px;
+}
+.mian_title{
+    text-align: center;
+    font-size: 1.8rem;
+    color:#fff;
+    margin-bottom: 30px;
+}
+.mian_text{
+    padding:0 6%;
+    text-align: center;
+    font-size: 1.4rem;
+    color:#fff;
+    line-height: 24px;
+}
+.main a{
+    display:block;
+    width:35%;
+    height:40px;
+    line-height: 40px;
+    margin:0 auto;
+    margin-top:25px;
+    text-align: center;
+    background-color:#6ea4ca;
+    color:#fff;
+    font-size: 1.5rem;
+}
+#about{
+	padding:40px 6%;
+	text-align: center;
+	background: #d1e0eb;
+}
+.abuot_title{
+	font-size: 1.8rem;
+	margin-bottom: 30px;
+}
+.about_text{
+	font-size:1.4rem;
+	line-height: 24px;
+	color: #0c3c60;
+	margin-bottom:5px ;
+}
+.about_more{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	width: 40%;
+	background: #0c3c60;
+	margin: 0 auto;
+	color: #fff;
+	margin-top: 50px;
+	font-size: 1.5rem;
+}
+#contact{
+	padding: 40px 6%;
+	background: #0c3c60;
+	position: relative;
+	overflow: hidden;
+}
+.contact_title{
+	font-size: 1.8rem;
+	text-align: center;
+	color:#fff;
+	margin-bottom: 45px;
+}
+.address,.phone{
+	line-height: 30px;
+	color: #fff;
+	font-size: 1.5rem;
+}
+.phone{
+	margin-bottom: 25px;
+}
+form input{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	outline: none;
+	border: none;
+	background: #fff;
+	margin-bottom: 10px;
+	text-indent: 8px;
+}
+textarea{
+	resize: none;
+	width: 100%;
+	height: 130px;
+	line-height: 20px;
+	outline: none;
+	border: none;
+	text-indent: 8px;
+}
+.map_box{
+	background: red;
+	margin-top: 30px;
+}
+.map_box img{
+	width: 100%;
+}
+.check_info{
+	color:#dec328;
+}
+.send_info{
+	position: relative;
+	left: 80%;
+	bottom: 15px;
+	width: 20%;
+	text-align: center;
+	background: #6ea4ca;
+	height: 35px;
+	line-height: 35px;
+	color: #FFF;
+}
+#footer{
+	padding: 30px 6%;
+	text-align: center;
+	background: #0C3C60;
+}
+#footer a{
+	color: #fff;
+	font-size: 1.4rem;
+	display: block;
+	margin: 0 auto;
+	padding-left: 10px;
+}
+#footer a span{
+	text-decoration: underline;
+}
+#footer img{
+	width: auto;
+	height: auto;
+	display: inline-block
+}
+.share_box{
+	margin-top:10px
+}
+.share_box span{
+	display: inline-block;
+	width: 18px;
+	height: 15px;
+	margin-left: 15px;
+	
+}
+.share_box span:nth-of-type(1){
+	
+	background: url(../../images/mobile_model-1/background/share_bg.png)  no-repeat;
+}
+.share_box span:nth-of-type(2){
+	background: url(../../images/mobile_model-1/background/share_bg.png) -39px no-repeat;
+}
+.share_box span:nth-of-type(3){
+	background: url(../../images/mobile_model-1/background/share_bg.png) -77px no-repeat;
+}

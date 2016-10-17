@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+        <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+<script src="../sea_modules/sea.js"></script>
+<script>
+//seajs 的简单配置
+seajs.config({
+  base: "../sea_modules/",
+  alias: {
+    "jquery": "jquery.js"
+  }
+})
+
+// 加载入口模块
+
+// seajs.use("../static/js/index.js");
+// seajs.use("../static/js/createp.js");
+// seajs.use("../static/js/function.js");
+        // seajs.use(['../static/js/index'], function (Greet) {
+        //     Greet.helloJavaScript();
+        // })
+        seajs.use(['../static/js/function','../static/js/index'],function(a,b){
+           a.r();
+           b.bb();
+        });
+        seajs.use(['../static/js/index'],function(greet){
+          greet.helloJavaScript();
+          greet.col_change();
+          greet.createp();
+        })
+
+        
+</script>
+    <body>
+        <p>测试文字</p>
+        <button class="btn">点击</button>
+        <div class="btn1">创建p标签</div>
+        <div class="wrap"></div>
+    </body>
+</html>

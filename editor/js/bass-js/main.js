@@ -182,7 +182,28 @@ function getClass(tagname, className) { //tagname指元素，className指class�
 		return tagnameAll;
 	}
 }
+function hasClass(obj, cls) {
+	return obj.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+}
 
+function addClass(obj, cls) {
+	if(!hasClass(obj, cls)) obj.className += " " + cls;
+}
+//模拟jq移除class
+function removeClass(obj, cls) {
+	if(hasClass(obj, cls)) {
+		var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+		obj.className = obj.className.replace(reg, ' ');
+	}
+}
+//模拟jqtoggleclass
+function toggleClass(obj, cls) {
+	if(hasClass(obj, cls)) {
+		removeClass(obj, cls);
+	} else {
+		addClass(obj, cls);
+	}
+}
 
 
 //获取文本节点或元素节点

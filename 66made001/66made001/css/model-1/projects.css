@@ -1,0 +1,84 @@
+/* 
+* @Author: An_dy
+* @Date:   2016-10-05 11:17:04
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-10-06 17:53:46
+*/
+#project_content_box{
+    width: 100%;
+}
+#project_content_box .project_content{
+    margin: 0 auto;
+    margin-top: 155px;
+    margin-bottom: 180px;
+    width:980px;
+}
+#project_content_box .project_content .project_title h2{
+    text-align: center;
+    font-size: 40px;
+    color: #6EA4CA;
+}
+#project_content_box .project_content .project_title div{
+    margin:0 auto;
+    width:50px;
+    height: 3px;
+    background-color: #6EA4CA;
+}
+#project_content_box .project_content .project_list{
+    margin-top: 80px;
+}
+#project_content_box .project_content .project_list li{
+    margin-top: 80px;
+}
+#project_content_box .project_content .project_list li:nth-child(1){
+    margin-top: 0;
+}
+#project_content_box .project_content .project_list li div:nth-of-type(1){
+    margin-right: 40px;
+    width: 300px;
+    height:188px;
+    overflow:hidden;
+    vertical-align: middle;
+}
+#project_content_box .project_content .project_list li div:nth-of-type(2){
+    width: 627px;
+}
+#project_content_box .project_content .project_list li div:nth-of-type(2) p:nth-of-type(1){
+    width:100%;
+    font-size: 18px;
+    line-height: 17px;
+    color:#39729B;
+}
+#project_content_box .project_content .project_list li div:nth-of-type(2) p:nth-of-type(2){
+    margin-top: 20px;
+    width:100%;
+    height:140px;
+    overflow:auto;
+    font-size: 16px;
+    color:#0C3C60; 
+}
+
+/*滚动条样式*/
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+#project_content_box .project_content .project_list li div:nth-of-type(2) p:nth-of-type(2)::-webkit-scrollbar  
+{  
+    width: 6px;  
+    height: 100%; 
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+#project_content_box .project_content .project_list li div:nth-of-type(2) p:nth-of-type(2)::-webkit-scrollbar-track  
+{  
+    border-radius: 10px;  
+    background-color: transparent;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+#project_content_box .project_content .project_list li div:nth-of-type(2) p:nth-of-type(2)::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px;  
+    background-color: transparent;  
+}
+#project_content_box .project_content .project_list li div:nth-of-type(2) p:nth-of-type(2):hover::-webkit-scrollbar-thumb {
+    background-color: #6ea4ca; 
+}

@@ -1,0 +1,89 @@
+#about_box{
+	width: 100%;
+
+}
+#about{
+	margin: 0 auto;
+	margin-top: 155px;
+    margin-bottom: 65px;
+}
+.about_title h2{
+    text-align: center;
+    font-size: 40px;
+    color: #6EA4CA;
+}
+.about_title div{
+    margin:0 auto;
+    width:50px;
+    height: 3px;
+    background-color: #6EA4CA;
+}
+ .about_title p{
+    margin:0 auto;
+    margin-top: 50px;
+    width:550px;
+    text-align: center;
+    font-size: 16px;
+    color: #39729b;
+}
+#about_list{
+	margin:0 auto;
+	margin-top: 50px;
+	width:980px;
+}
+#about_list .about_list_div{
+	width: 430px;
+	float: left;
+	margin-bottom: 20px;
+}
+.person{
+	height: 120px;
+	background: #0c3c60;
+	}
+.person_picture{
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+}
+.person_picture img{
+	display: block;
+}
+.person div:nth-of-type(2){
+	width:310px;
+	height:100%;
+}
+.person_name{
+	color: #fff;
+	width:290px;
+	font-size:22px;
+	line-height: 38px;
+	padding-left:20px ;
+	margin-top: 20px;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+}
+.person_job{
+	color: #c4e0e2;
+	width:290px;
+	font-size:24px;
+	line-height: 34px;
+	padding-left:20px ;
+	line-height: 34px;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.person_introduce{
+	margin-top: 20px;
+	line-height: 20px;
+	font-size: 16px;
+	color: #0c3c60;
+	
+}
+
+
+
+
+

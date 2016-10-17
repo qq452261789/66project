@@ -1,0 +1,1 @@
+{"version": "2014.10.17.07.35.52", "description": "A humble SublimeText package for exporting highlighted code as RTF or HTML", "url": "https://github.com/n1k0/SublimeHighlight", "platforms": ["*"], "dependencies": [], "sublime_text": "*"}

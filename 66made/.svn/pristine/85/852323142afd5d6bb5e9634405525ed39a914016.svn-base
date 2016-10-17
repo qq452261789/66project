@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../../css/public/base.css" />
+        <link rel="stylesheet" href="../../css/model-2/header.css" />
+        <link rel="stylesheet" href="../../css/model-2/about.css" />
+        <title></title>
+    </head>
+    <body>
+        <div id="header" class="clearfix">
+
+            <a class="log" href="index.html"><img src="../../images/model-2/active/log.png" /></a>
+            <div class="right">
+                <div class="nav">
+                    <a href="welcome.html">欢迎</a>
+                    <a href="protfolio.html">投资融合</a>
+                    <a href="javascript:void(0)">客户展示</a>
+                    <a href="about.html">关于</a>
+                    <a href="contact.html">联系</a>
+                    <a href="book_online.html">在线预订</a>
+                </div>
+                <div class="share_box" class="clearfix">
+                    <a href="" class="share_to_weibo" id="share_weibo"></a>
+                    <a href="" class="share_to_weixin" id="share_weixin"></a>
+                    <a href="" class="share_to_qq" id="share_qq"></a>
+                </div>
+            </div>
+        </div>
+        <div id="about_box">
+            <div class="clearfix">
+                <div class="about_text">
+                    <p>关于我</p>
+                    <div>
+                        <p>我是一个段落。点击此处添加自己的文字和编辑我。这很容易。只需点击“编辑文本”或双击我来添加自己的内容，并更改字体。随意拖放我在任何地方你喜欢你的页面上。我是一个伟大的地方给你讲一个故事，让你的用户知道多一点关于你的</p>
+                        <p>这是一个很大的空间来写你的公司和你的服务长文本。你可以使用这个空间，进入有关贵公司更详细一点。谈谈你的团队，你提供什么服务。告诉你的访客你如何想出了主意为您的企业的故事，是什么让你从你的竞争对手不同。使您的公司脱颖而出，并显示您的访问者你是谁。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <a href="">
+            <span class="company edit_text" >
+                © 2016 陆陆科技
+            </span>
+            <span class="company_web edit_text" >
+                66made.com
+            </span>
+                
+            </a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+.mobile_model{
+    margin: 0 auto;
+    margin-top: 100px;
+    width:326px;
+    height:750px;
+    overflow:auto;
+}
+
+/*滚动条样式*/
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+.mobile_model::-webkit-scrollbar  
+{  
+    width: 6px;  
+    height: 100%;  
+    background-color: #fff;  
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+.mobile_model::-webkit-scrollbar-track  
+{
+    -webkit-box-shadow: inset 0 0 6px #fff;  
+    border-radius: 10px;  
+    background-color: #fff;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+.mobile_model::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+    background-color: #6ea4ca;  
+}
+
+#clients_box{
+    margin-top: 35px;
+    margin-bottom: 20px;
+    width:100%;
+    background-color: #fff;
+}
+#clients_box .clients_title{
+    width:78%;
+    margin:0 auto;
+    text-align: center;
+}
+#clients_box .clients_title p{
+    margin-bottom: 5px;
+    font-size: 2rem;
+    color:#6ea4ca;
+}
+#clients_box .clients_title div{
+    margin:0 auto;
+    margin-bottom: 30px;
+    width: 30px;
+    height: 3px;
+    background-color: #6ea4ca;
+}
+#clients_box .clients_title p:nth-of-type(2){
+    font-size: 1.4rem;
+}
+#clients_box .clients_logo_list{
+    width:100%;
+    background-color: #fff;
+}
+#clients_box .clients_logo_list li{
+    margin:0 auto;
+    margin-top: 25px;
+    width:25%;  
+}
+#clients_box .clients_logo_list li:nth-child(1){
+    margin-top: 50px;
+}
+#clients_box .clients_bottom_text{
+    position:relative;
+    margin: 0 auto;
+    margin-top: 75px;
+    padding: 25px 0;
+    width: 78%;
+    min-height: 140px;
+    background-color: #39729b;
+}
+#clients_box .clients_bottom_text p{
+    margin:0 auto;
+    width:80%;
+    font-size: 1.2rem;
+    color:white;
+    text-align: center;
+}
+#clients_box .clients_bottom_text div{
+    position:absolute;
+    bottom:-20px;
+    left:50%;
+    margin-left: -5px;  
+    width:0px;
+    height:0px;
+    border-top: 10px solid #39729b;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom:10px solid transparent;
+}
+#clients_box>p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    color:#608aaa;
+    text-align: center;
+}
+

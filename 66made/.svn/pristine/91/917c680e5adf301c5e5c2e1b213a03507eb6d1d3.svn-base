@@ -1,0 +1,25 @@
+$(function(){
+	var $nav_box = $(".nav_box");
+	var $show_nav = $(".show_nav");
+	var $closs_nav = $(".closs_nav");
+	$show_nav.click(function(){
+		$(this).css({
+			"display":"none"
+		})
+		$(this).next().css({
+			"display":"block"
+		})
+		$nav_box.css({"display":"block"});
+		
+	})
+	$closs_nav.click(function(){
+		$(this).css({
+			"display":"none"
+		})
+		$(this).prev().css({
+			"display":"block"
+		})
+		$nav_box.css({"display":"none"});
+	})
+	
+})

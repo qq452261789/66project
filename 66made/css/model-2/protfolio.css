@@ -1,0 +1,283 @@
+#content{
+	width: 100%;
+	height:100%;
+	margin-top: 82px;
+}
+
+.img_ul li{
+	
+}
+.img_ul li{
+	float: left;
+	position: relative;
+	cursor: pointer;
+	width: 25%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+}
+.img_ul li:nth-of-type(1){
+	background-image: url(../../images/model-2/active/main_1.png);
+}
+.img_ul li:nth-of-type(2){
+	background-image: url(../../images/model-2/active/main_2.png);
+}
+.img_ul li:nth-of-type(3){
+	background-image: url(../../images/model-2/active/main_3.png);
+}
+.img_ul li:nth-of-type(4){
+	background-image: url(../../images/model-2/active/main_4.png);
+}
+.img_ul li:nth-of-type(5){
+	background-image: url(../../images/model-2/active/main_5.png);
+}
+.img_ul li:nth-of-type(6){
+	background-image: url(../../images/model-2/active/main_6_2.png);
+}
+.img_ul li:nth-of-type(7){
+	background-image: url(../../images/model-2/active/main_7.png);
+}
+.img_ul li:nth-of-type(8){
+	background-image: url(../../images/model-2/active/main_8.png);
+}
+.img_ul li:nth-of-type(9){
+	background-image: url(../../images/model-2/active/main_9.png);
+}
+.img_ul li:nth-of-type(10){
+	background-image: url(../../images/model-2/active/main_10.png);
+}
+.img_ul li:nth-of-type(11){
+	background-image: url(../../images/model-2/active/main_20.png);
+}
+.img_ul li:nth-of-type(12){
+	background-image: url(../../images/model-2/active/main_11.png);
+}
+.img_ul li:nth-of-type(13){
+	background-image: url(../../images/model-2/active/main_12.png);
+}
+.img_ul li:nth-of-type(14){
+	background-image: url(../../images/model-2/active/main_13.png);
+}
+.img_ul li:nth-of-type(15){
+	background-image: url(../../images/model-2/active/main_14.png);
+}
+.img_ul li:nth-of-type(16){
+	background-image: url(../../images/model-2/active/main_15.png);
+}
+.img_ul li:nth-of-type(17){
+	background-image: url(../../images/model-2/active/main_16.png);
+}
+.img_ul li:nth-of-type(18){
+	background-image: url(../../images/model-2/active/main_17.png);
+}
+.img_ul li:nth-of-type(19){
+	background-image: url(../../images/model-2/active/main_18.png);
+}
+.img_ul li:nth-of-type(20){
+	background-image: url(../../images/model-2/active/main_19.png);
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1469px) {
+	.img_ul li{
+		width: 33.33%;		
+	}
+}
+@media only screen and (max-width: 979px) {
+	.img_ul li{
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 979px) {
+	body{
+		min-width: 600px;
+	}
+	.img_ul li{
+		width: 50%;
+	}
+}
+.shardow_box{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.4);
+	display: none;
+}
+.share_box_2{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.share_box_2_a{
+	margin-top: 30%;
+	display: none;
+}
+.share_box_2 a{
+	display: block;
+	width: 25px;
+	height: 25px;
+	padding: 5px;
+	margin-bottom:10px ;
+	margin: 0 auto;
+	
+}
+.show_share{
+	width: 25px;
+	height: 25px;
+	position:absolute;
+	right: 15%;
+	bottom: 16px;
+	background: url(../../images/model-2/background/show_share_bg_1.png) no-repeat;
+}
+.show_share:hover{
+	background: url(../../images/model-2/background/show_share_bg_2.png) no-repeat;
+}
+.share_box_2 .share_to_weibo{
+	background:url(../../images/model-2/background/share_1.png) 7px 5px no-repeat !important;
+}
+.share_box_2 .share_to_weixin{
+	background:url(../../images/model-2/background/share_1.png) 7px -35px no-repeat !important;
+}
+.share_box_2 .share_to_qq{
+	background:url(../../images/model-2/background/share_1.png) 7px -80px no-repeat !important;
+}
+.share_box_2 .share_to_weibo:hover{
+	background:url(../../images/model-2/background/share_2.png) 7px 5px no-repeat !important;
+}
+.share_box_2 .share_to_weixin:hover{
+	background:url(../../images/model-2/background/share_2.png) 7px -35px no-repeat !important;
+}
+.share_box_2 .share_to_qq:hover{
+	background:url(../../images/model-2/background/share_2.png) 7px -80px no-repeat !important;
+}
+.love_img{
+	display: block;
+	width: 40px;
+	padding-left:30px ;
+	height: 24px;
+	line-height: 20px;
+	position: absolute;
+	left: 15%;
+	bottom: 20px;
+	color: #fff;
+	background: url(../../images/model-2/background/live_1.png) 0 5px  no-repeat;
+}
+.love_img:hover{
+	background: url(../../images/model-2/background/live_2.png) 0 5px  no-repeat;
+	color: #d3d3d3;
+}
+#enlarge_box{
+	background: #fff;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-top:82px;
+	display: none;
+}
+.enlarge_top{
+	height: 85px;
+	width: 100%;
+	position: relative;
+}
+
+
+.love_img_2{
+	display: block;
+	width: 40px;
+	padding-left:30px ;
+	height: 24px;
+	line-height: 20px;
+	position: absolute;
+	left: 60px;
+	bottom: 20px;
+	color: #878786;
+	cursor: pointer;
+	z-index: 10;
+	background: url(../../images/model-2/background/live_4.png) 0 5px  no-repeat;
+
+}
+
+.show_share_2{
+	width: 25px;
+	height: 25px;
+	position:absolute;
+	left: 150px;
+	bottom: 16px;
+	cursor: pointer;
+	background: url(../../images/model-2/background/show_share_bg_3.png) 0 1px no-repeat;
+}
+.share_box_3{
+	position:absolute;
+	left:200px;
+	top: 13px;
+	width: 0px;
+	overflow: hidden;
+	height: 50px;
+}
+.share_box_3 a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	float: left;
+	cursor: pointer;
+	margin-top: 28px;
+	margin-left: 5px;
+}
+#share_to_weibo_2{
+	background: url(../../images/model-2/active/share.png) 5px 8px no-repeat;	
+}
+#share_to_weixin_2{
+	background: url(../../images/model-2/active/share.png) -28px 8px no-repeat;	
+}
+#share_to_qq_2{
+	background: url(../../images/model-2/active/share.png) -60px 8px no-repeat;	
+}
+
+
+.enlarge_top_right {
+	margin-top:39px
+}
+.enlarge_top_right span{
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin-right: 40px;
+	float: left;
+	cursor: pointer;
+}
+
+.enlarge_small{
+	background: url(../../images/model-2/background/enlarge_top_bg.png) 11px  no-repeat;
+}
+.enlarge_prev{
+	background: url(../../images/model-2/background/enlarge_top_bg.png) -85px  no-repeat;
+}
+.enlarge_next{
+	
+	background: url(../../images/model-2/background/enlarge_top_bg.png) -130px  no-repeat;
+}
+.closs_enlarge_box{
+	
+	background: url(../../images/model-2/background/enlarge_top_bg.png) -219px  no-repeat;
+}
+.enlarge_main{
+	width: 100%;
+	padding-bottom: 30px;
+	position: relative;
+}
+.enlarge_main img{
+	width: auto;
+	height: 100%;
+	margin: 0 auto;
+}
+
+
+
+
+
+

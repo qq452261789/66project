@@ -1,0 +1,10 @@
+/* 
+* @Author: Marte
+* @Date:   2016-10-10 11:48:28
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-10-10 11:48:28
+*/
+
+$(document).ready(function(){
+    
+});

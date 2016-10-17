@@ -1,0 +1,2375 @@
+{
+	"folder_history":
+	[
+		"/F/WWWRoot/myFile/myFile",
+		"/C/Users/Administrator/Desktop/66project",
+		"/H/安/php",
+		"/F/WWWRoot",
+		"/F/WWWRoot/Test/qianduan",
+		"/C/Users/Administrator/Desktop/111",
+		"/C/Users/Administrator/Desktop/规范",
+		"/C/Users/Administrator/Desktop/wix - seajs_first",
+		"/C/Users/Administrator/Desktop/hucai model",
+		"/C/Users/Administrator/Desktop/小测试",
+		"/C/Users/Administrator/Desktop/angular",
+		"/H/安/node/angular",
+		"/F/WWWRoot/Test",
+		"/E/66made",
+		"/E/商城PC",
+		"/E/猫步商城",
+		"/E/租车后台",
+		"/D/tools/xampp/htdocs/www",
+		"/F/",
+		"/E/demo",
+		"/E/猫步new",
+		"/E/猫步移动端",
+		"/E/猫步",
+		"/E/代码草稿/响应式/07/云课堂-原版",
+		"/E/代码草稿/响应式/06/img",
+		"/E/代码草稿/响应式/06/携程"
+	],
+	"last_version": 3083,
+	"last_window_id": 26,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 894.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"erro",
+						"error_reporting"
+					],
+					[
+						"reset",
+						"reset.css"
+					],
+					[
+						"re",
+						"reset	css重置"
+					],
+					[
+						"getELement",
+						"getElementById()	Document"
+					],
+					[
+						"getELem",
+						"getElementById()	Document"
+					],
+					[
+						"ac",
+						"accept"
+					],
+					[
+						"line",
+						"line-height"
+					],
+					[
+						"font",
+						"font-size"
+					],
+					[
+						"list",
+						"list-style"
+					],
+					[
+						"mar",
+						"margin-left"
+					],
+					[
+						"append",
+						"appendChild()"
+					],
+					[
+						"getE",
+						"getElementsByTagName()"
+					],
+					[
+						"onmouse",
+						"onmousemove"
+					],
+					[
+						"getELment",
+						"getElementsByName()	Document"
+					],
+					[
+						"parent",
+						"parentNode"
+					],
+					[
+						"fun",
+						"function"
+					],
+					[
+						"for",
+						"for	for (…) {…}"
+					],
+					[
+						"getElement",
+						"getElementById()	Document"
+					],
+					[
+						"no",
+						"no-repeat"
+					],
+					[
+						"back",
+						"background"
+					],
+					[
+						"out",
+						"outline"
+					],
+					[
+						"src",
+						"srcElement	Event"
+					],
+					[
+						"overflow-",
+						"overflow-x"
+					],
+					[
+						"over",
+						"overflow"
+					],
+					[
+						"jquer",
+						"jquery-3.0.0.min.js"
+					],
+					[
+						"getELemen",
+						"getElementsByClassName()"
+					],
+					[
+						"cancle",
+						"cancel_me"
+					],
+					[
+						"drag",
+						"draggable"
+					],
+					[
+						"quer",
+						"querySelectorAll()"
+					],
+					[
+						"padd",
+						"padding"
+					],
+					[
+						"sh",
+						"shadow"
+					],
+					[
+						"nex",
+						"nextSibling"
+					],
+					[
+						"bef",
+						"insertBefore()"
+					],
+					[
+						"posi",
+						"position"
+					],
+					[
+						"cli",
+						"clientY	Default"
+					],
+					[
+						"ma",
+						"material"
+					],
+					[
+						"text",
+						"text-align"
+					],
+					[
+						"pad",
+						"padding"
+					],
+					[
+						"clien",
+						"clientY	Default"
+					],
+					[
+						"off",
+						"offsetTop"
+					],
+					[
+						"offset",
+						"offsetLeft"
+					],
+					[
+						"dco",
+						"document"
+					],
+					[
+						"files",
+						"files"
+					],
+					[
+						"pic",
+						"picBox"
+					],
+					[
+						"imglist",
+						"imglist2"
+					],
+					[
+						"getElem",
+						"getElementById()	Document"
+					],
+					[
+						"clone",
+						"cloneNode()"
+					],
+					[
+						"pr",
+						"preventDefault	Event"
+					],
+					[
+						"log",
+						"log	console.log()"
+					],
+					[
+						"a",
+						"accept	Attr"
+					],
+					[
+						"clie",
+						"clientWidth"
+					],
+					[
+						"getElemnt",
+						"getElementsByName()	Document"
+					],
+					[
+						"prev",
+						"preventDefault()	Event"
+					],
+					[
+						"fi",
+						"fire	fillRect()"
+					],
+					[
+						"getElemen",
+						"getElementById()	Document"
+					],
+					[
+						"chil",
+						"childNodes[]"
+					],
+					[
+						"chi",
+						"childNodes[]"
+					],
+					[
+						"chr",
+						"children	.children()"
+					],
+					[
+						"big",
+						"bigBox"
+					],
+					[
+						"get",
+						"getAttribute()"
+					],
+					[
+						"cl",
+						"clientWidth"
+					],
+					[
+						"width",
+						"borderWidth	css"
+					],
+					[
+						"offse",
+						"offsetWidth"
+					],
+					[
+						"wrapold",
+						"wrapoldHeight"
+					],
+					[
+						"wrap",
+						"wrapoldWidth"
+					],
+					[
+						"1",
+						"1.jpg	w:631 h:330"
+					],
+					[
+						"klass",
+						"klass	Default"
+					],
+					[
+						"first",
+						"firstChild"
+					],
+					[
+						"more",
+						"more_scroll.css"
+					],
+					[
+						"imgArr",
+						"imgArr_"
+					],
+					[
+						"add",
+						"addImg	Default"
+					],
+					[
+						"img",
+						"imageShow"
+					],
+					[
+						"scrollImg",
+						"scrollImgLen"
+					],
+					[
+						"ins",
+						"insertBefore()"
+					],
+					[
+						"setAttr",
+						"setAttribute()"
+					],
+					[
+						"setA",
+						"setAttributeNode()"
+					],
+					[
+						"background",
+						"background-color"
+					],
+					[
+						"w",
+						"width"
+					],
+					[
+						"scroll",
+						"scrollBox"
+					],
+					[
+						"indexs",
+						"indexsPic"
+					],
+					[
+						"div",
+						"div:nth"
+					],
+					[
+						"len",
+						"len_	Default"
+					],
+					[
+						"show",
+						"showPic"
+					],
+					[
+						"auto",
+						"autoplay"
+					],
+					[
+						"set",
+						"setInterval()	Frame"
+					],
+					[
+						"scrollC",
+						"scrollContent"
+					],
+					[
+						"scrollCo",
+						"scrollContentHtml"
+					],
+					[
+						"onmou",
+						"onmousedown"
+					],
+					[
+						"client",
+						"clientX"
+					],
+					[
+						"scroll_top",
+						"scroll_top_ele"
+					],
+					[
+						"scr",
+						"scrollIndex"
+					],
+					[
+						"inner",
+						"innerHTML"
+					],
+					[
+						"crea",
+						"createscroll2.js"
+					],
+					[
+						"hi",
+						"history"
+					],
+					[
+						"innerH",
+						"innerHTML"
+					],
+					[
+						"create",
+						"create.html"
+					],
+					[
+						"right",
+						"rightArrow"
+					],
+					[
+						"scrolling",
+						"scrollingHtml"
+					],
+					[
+						"GETeLENE",
+						"getElementsByTagName()"
+					],
+					[
+						"op",
+						"opacity"
+					],
+					[
+						"getElementBy",
+						"getElementById()	Document"
+					],
+					[
+						"geElement",
+						"getElementsByTagName()"
+					],
+					[
+						"addi",
+						"paddingBottom	css"
+					],
+					[
+						"margin",
+						"marginLeft	css"
+					],
+					[
+						"inline",
+						"inline-block"
+					],
+					[
+						"javascript",
+						"javascript:void"
+					],
+					[
+						"spl",
+						"splice()	Array"
+					],
+					[
+						"toLo",
+						"toLowerCase()	String"
+					],
+					[
+						"node",
+						"nodeName"
+					],
+					[
+						"ta",
+						"target"
+					],
+					[
+						"A",
+						"getAttribute()"
+					],
+					[
+						"getEleme",
+						"getElementsByTagName()"
+					],
+					[
+						"repla",
+						"replaceImgBox"
+					],
+					[
+						"on",
+						"onblur"
+					],
+					[
+						"SPan",
+						"SpanInfor"
+					],
+					[
+						"getCook",
+						"getCookie"
+					],
+					[
+						"span",
+						"spanInfors"
+					],
+					[
+						"string",
+						"stringify"
+					],
+					[
+						"strin",
+						"stringify()	JSON"
+					],
+					[
+						"infor",
+						"imgInfor"
+					],
+					[
+						"con",
+						"console"
+					],
+					[
+						"removeC",
+						"removeChild()"
+					],
+					[
+						"last",
+						"lastChild"
+					],
+					[
+						"remove",
+						"removeChild()"
+					],
+					[
+						"docue",
+						"document	Window"
+					],
+					[
+						"class",
+						"className"
+					],
+					[
+						"ri",
+						"rightArrow"
+					],
+					[
+						"left",
+						"leftArrow"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 400.0,
+				"last_filter": "in",
+				"selected_items":
+				[
+					[
+						"in",
+						"Package Control: Install Package"
+					],
+					[
+						"add",
+						"Package Control: Add Repository"
+					],
+					[
+						"ins",
+						"Package Control: Install Package"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 536.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/C/Users/Administrator/Desktop/小测试/reset.css",
+				"/D/global.css",
+				"/C/Users/Administrator/Desktop/规范/项目前准备.txt",
+				"/C/Users/Administrator/Desktop/规范/命名参考规范.txt",
+				"/C/Users/Administrator/Desktop/规范/前端开发规范.txt",
+				"/C/Users/Administrator/Desktop/规范/项目前准备",
+				"/C/Users/Administrator/Desktop/规范/命名参考规范",
+				"/C/Users/Administrator/Desktop/hucai model/upload.html",
+				"/C/Users/Administrator/Desktop/前端开发规范.txt",
+				"/C/Users/Administrator/Desktop/小测试/多个轮播/asd.html",
+				"/C/Users/Administrator/Desktop/小测试/font.html",
+				"/H/安/项目/xieyi/css/reset.css",
+				"/C/Users/Administrator/Desktop/小测试/asd.html",
+				"/C/Users/Administrator/Desktop/angular/ng-module.html",
+				"/C/Users/Administrator/Desktop/angular/依赖注入1.html",
+				"/C/Users/Administrator/Desktop/angular/依赖注入2.html",
+				"/C/Users/Administrator/Desktop/angular/service-http.html",
+				"/C/Users/Administrator/Desktop/angular/angular3.html",
+				"/C/Users/Administrator/Desktop/hucai model/div转变为图片/jietu.html",
+				"/C/Users/Administrator/Desktop/小测试/tab+change+replace.html",
+				"/C/Users/Administrator/Desktop/hucai model/叶序修改.html",
+				"/C/Users/Administrator/Desktop/hucai model/tab+change_content.html",
+				"/C/Users/Administrator/Desktop/小测试/img_border.html",
+				"/C/Users/Administrator/Desktop/hucai model/insert.html",
+				"/C/Users/Administrator/Desktop/hucai model/jquery-ui.js",
+				"/C/Users/Administrator/Desktop/hucai model/333.html",
+				"/C/Users/Administrator/Desktop/hucai model/222.html",
+				"/C/Users/Administrator/Desktop/hucai model/Sortable.js",
+				"/C/Users/Administrator/Desktop/hucai model/111.html",
+				"/F/WWWRoot/Test/upload1.html",
+				"/C/Users/Administrator/Desktop/git/666/upload.html",
+				"/F/WWWRoot/Test/shadow.html",
+				"/F/WWWRoot/Test/upload.html",
+				"/F/WWWRoot/Test/drap_drop.html",
+				"/C/Users/Administrator/Desktop/小测试/多个轮播/ff.html",
+				"/C/Users/Administrator/Desktop/example.html",
+				"/C/Users/Administrator/Desktop/uploadfile1.html",
+				"/H/安/某些测试/location.search.html",
+				"/C/Users/Administrator/.ssh/id_rsa.pub",
+				"/C/Users/Administrator/Desktop/ff.html",
+				"/D/通讯/906112505/FileRecv/php3/uploadfile1.html",
+				"/F/WWWRoot/Test/jietu.html",
+				"/C/Users/Administrator/Desktop/aa.html",
+				"/C/Users/Administrator/Desktop/小测试/rotate.html",
+				"/C/Users/Administrator/Desktop/小测试/jietu.html",
+				"/C/Users/Administrator/Desktop/angular/自定义.html",
+				"/C/Users/Administrator/Desktop/小测试/quanpin.html",
+				"/C/Users/Administrator/Desktop/html2canvas.js",
+				"/E/demo/d.html",
+				"/C/Users/Administrator/Desktop/自定义滚动条.html",
+				"/E/demo/双行字数大点.html",
+				"/E/demo/vue/index.html",
+				"/F/WWWRoot/Test/wix/index.html",
+				"/F/WWWRoot/Test/test/canvastextbase1.html",
+				"/F/WWWRoot/Test/test/canvastextbase.html",
+				"/F/WWWRoot/Test/test/more_scroll1.js",
+				"/F/WWWRoot/Test/test/more_scroll.js",
+				"/F/WWWRoot/Test/test/edit1.js",
+				"/C/Users/Administrator/Desktop/小测试/LayoutIT/LayoutIT/js/jquery-2.0.0.min.js",
+				"/C/Users/Administrator/Desktop/小测试/LayoutIT/LayoutIT/index.html",
+				"/C/Users/Administrator/Desktop/小测试/LayoutIT/LayoutIT/1.html",
+				"/F/WWWRoot/Test/test/more_scroll.css",
+				"/C/Users/Administrator/Desktop/小测试/多个轮播/more_scroll.html",
+				"/F/WWWRoot/Test/wix/css/base.css",
+				"/H/安/node/angular/ng-route.html",
+				"/C/Users/Administrator/Desktop/ad.html",
+				"/C/Users/Administrator/Downloads/4_20141030153749.htm",
+				"/C/Users/Administrator/Downloads/4.htm",
+				"/F/WWWRoot/Test/more_scroll.js",
+				"/C/Users/Administrator/Desktop/小测试/多个轮播/a.html",
+				"/F/WWWRoot/Test/test/comm.css",
+				"/F/WWWRoot/Test/test/edit.js",
+				"/C/Users/Administrator/Desktop/小测试/多个轮播/object.js",
+				"/C/Users/Administrator/Desktop/小测试/多个轮播/object.css",
+				"/F/WWWRoot/Test/create.html",
+				"/F/WWWRoot/Test/test/createscroll1.js",
+				"/F/WWWRoot/Test/test/createscroll.js",
+				"/F/WWWRoot/Test/createscroll.js",
+				"/F/WWWRoot/Test/createscroll2.js",
+				"/F/WWWRoot/Test/ff.html",
+				"/F/WWWRoot/Test/test/base.css",
+				"/F/WWWRoot/Test/create2.html",
+				"/F/WWWRoot/Test/canvastextbase.html",
+				"/F/WWWRoot/Test/canvastextbase1.html",
+				"/C/Users/Administrator/Desktop/小测试/事件委托.html",
+				"/F/WWWRoot/Test/scroll2.html",
+				"/F/WWWRoot/Test/canvastext.html",
+				"/F/WWWRoot/Test/canvastext1.html",
+				"/F/WWWRoot/Test/scroll.js",
+				"/F/WWWRoot/Test/scroll2-1.html",
+				"/C/Users/Administrator/Desktop/小测试/fff.html",
+				"/C/Users/Administrator/Desktop/小测试/fff.js",
+				"/F/WWWRoot/Test/scroll2.min.html",
+				"/D/通讯/906112505/FileRecv/大图滚动_碰壁反弹/大图滚动2.html",
+				"/F/WWWRoot/Test/原生轮播图.html",
+				"/C/Users/Administrator/Desktop/小测试/图片伸缩测试.html",
+				"/C/Users/Administrator/Desktop/小测试/加图片.html",
+				"/C/Users/Administrator/Desktop/小测试/changeHW.html",
+				"/C/Users/Administrator/Desktop/小测试/色板.html",
+				"/C/Users/Administrator/Desktop/小测试/拖动改宽高.html",
+				"/C/Users/Administrator/Desktop/小测试/拖动改宽度例子.html",
+				"/C/Users/Administrator/Desktop/小测试/canvastext2.html",
+				"/C/Users/Administrator/Desktop/小测试/分享.html",
+				"/C/Users/Administrator/Desktop/小测试/百度分享.html",
+				"/C/Users/Administrator/Desktop/小测试/img.html",
+				"/C/Users/Administrator/Desktop/小测试/1.html",
+				"/F/WWWRoot/Test/scrollimg.html",
+				"/C/Users/Administrator/Desktop/Wix Website Editor.html",
+				"/C/Users/Administrator/Desktop/小测试/d.html",
+				"/C/Users/Administrator/Desktop/小测试/canvas_input.html",
+				"/C/Users/Administrator/Desktop/小测试/background_center.html",
+				"/C/Users/Administrator/Desktop/小测试/resize.html",
+				"/D/66made/index.html",
+				"/E/66made/css/contact.css",
+				"/E/66made/contact.html",
+				"/D/66made/about.html",
+				"/E/66made/css/server.css",
+				"/E/66made/map.html",
+				"/E/66made/css/about.css",
+				"/E/66made/solve.html",
+				"/E/66made/css/production.css",
+				"/E/66made/server.html",
+				"/E/66made/css/solve.css",
+				"/D/通讯/574903318/FileRecv/dgcpDemo/js/Particleground.js",
+				"/D/通讯/574903318/FileRecv/dgcpDemo/login.html",
+				"/E/66made/about.html",
+				"/E/66made/css/global.css",
+				"/F/特效1/wow/WOW-master/demo.html"
+			],
+			"find":
+			{
+				"height": 35.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"[]",
+					"list",
+					"red",
+					"div",
+					"left",
+					"案例",
+					"id",
+					"            </",
+					" class=\"ser_new_t\"",
+					" class=\"ser_new_i\"",
+					"250px",
+					";\n",
+					"800m",
+					"1000ms",
+					"div",
+					"u",
+					"8",
+					"7",
+					"about_5_2.",
+					"5",
+					"2",
+					"3",
+					"../",
+					"iconfont",
+					"3",
+					"5",
+					"45",
+					"top",
+					"hand",
+					"70",
+					"90",
+					"hand",
+					"16",
+					"server_p1",
+					"onclick",
+					"u",
+					"nav",
+					"navB",
+					"navBar",
+					"6",
+					"8",
+					"9",
+					"66",
+					"800",
+					"show",
+					"num",
+					"4",
+					"rem",
+					"rem\\",
+					"swiper-container",
+					"bottom",
+					"        <div class=\"nav\">\n",
+					"BULLET",
+					"#000",
+					"app.png",
+					"\n    ",
+					"  data-caption=\"w66商驾-司机端\"",
+					"data-caption=\"66商驾-司机端\"",
+					"data-caption=\"p66商驾-司机端\"",
+					"img/app.png",
+					"gallery",
+					"#{title}",
+					"#{name}",
+					"SERVICE",
+					"anchors",
+					"bulletsColor",
+					"c.navigation.bulletsColor",
+					"style",
+					"attr",
+					"backgou",
+					"#",
+					"rgb(44, 62, 80)",
+					"sectionsColor",
+					"background",
+					"production_show",
+					"\n                ",
+					"4px",
+					"5",
+					"bbefff",
+					"fff",
+					".6",
+					"1",
+					"0",
+					"    border-radius: 50%;\n    box-shadow: 0 0 4px rgba(31,78,255,.6);\n",
+					"98",
+					"9",
+					"b8ecff",
+					"solid",
+					"red",
+					"90",
+					"\n}",
+					"0",
+					"Golden Gate Bridge",
+					"index",
+					"jpg",
+					";\"></",
+					"320",
+					"works_app.png",
+					"\n    ",
+					";\n",
+					"\n            ",
+					"1",
+					"forward",
+					"0",
+					"map",
+					"on",
+					"52",
+					"116.397428, 39.90923",
+					"1.jpg",
+					"p",
+					"div",
+					"310",
+					"58",
+					"广州市天河区珠江新城华夏路28号1804",
+					"350",
+					"$dow",
+					"5b0505",
+					">\n",
+					"magnification_bar",
+					" class=\"on\"",
+					"$('.big')",
+					"('.glass')",
+					"(smallimg).children('.mid_img')",
+					"$(smallimg).children('.mid_img')",
+					"$(''+smallimg+'')",
+					"$(''+smallimg+'').children('.mid_img')",
+					"'.show_glass'",
+					"ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"get",
+					""
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 35.0
+			},
+			"input":
+			{
+				"height": 39.0
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.sftp":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 66.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"规范\\命名参考规范.txt"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 251.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 1312.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"background",
+						"background-color"
+					],
+					[
+						"tra",
+						"translate()"
+					],
+					[
+						"dis",
+						"display"
+					],
+					[
+						"overflow",
+						"overflow"
+					],
+					[
+						"logo",
+						"BFC_logo.png	w:100 h:100"
+					],
+					[
+						"min",
+						"min-width"
+					],
+					[
+						"back",
+						"background-position"
+					],
+					[
+						"fi",
+						"fixed"
+					],
+					[
+						"scroll",
+						"scrollTop	.scrollTop()"
+					],
+					[
+						"margin",
+						"marginTop	css"
+					],
+					[
+						"mar",
+						"marginTop	css"
+					],
+					[
+						"service_list",
+						"service_list_text"
+					],
+					[
+						"abou",
+						"absolute"
+					],
+					[
+						"top",
+						"top"
+					],
+					[
+						"abo",
+						"absolute"
+					],
+					[
+						"overf",
+						"overflow"
+					],
+					[
+						"e",
+						"ellipsis"
+					],
+					[
+						"over",
+						"text-overflow"
+					],
+					[
+						"clear",
+						"clearfix"
+					],
+					[
+						"margin-",
+						"margin-top"
+					],
+					[
+						"marg",
+						"margin-top"
+					],
+					[
+						"float",
+						"float"
+					],
+					[
+						"child",
+						"firstChild"
+					],
+					[
+						"fade",
+						"fadeOut	.fadeOut()"
+					],
+					[
+						"slid",
+						"slideDown	.slideDown()"
+					],
+					[
+						"hi",
+						"hide	.hide()"
+					],
+					[
+						"mouse",
+						"mouseup	mouseup"
+					],
+					[
+						"border",
+						"border-left"
+					],
+					[
+						"re",
+						"relative"
+					],
+					[
+						"box",
+						"box-sizing"
+					],
+					[
+						"edit",
+						"edit_text"
+					],
+					[
+						"chi",
+						"china_mobile_logo.png	w:100 h:100"
+					],
+					[
+						"font",
+						"font-family"
+					],
+					[
+						"erro",
+						"error_reporting"
+					],
+					[
+						"reset",
+						"reset.css"
+					],
+					[
+						"getELement",
+						"getElementById()	Document"
+					],
+					[
+						"getELem",
+						"getElementById()	Document"
+					],
+					[
+						"ac",
+						"accept"
+					],
+					[
+						"line",
+						"line-height"
+					],
+					[
+						"list",
+						"list-style"
+					],
+					[
+						"append",
+						"appendChild()"
+					],
+					[
+						"getE",
+						"getElementsByTagName()"
+					],
+					[
+						"onmouse",
+						"onmousemove"
+					],
+					[
+						"getELment",
+						"getElementsByName()	Document"
+					],
+					[
+						"parent",
+						"parentNode"
+					],
+					[
+						"fun",
+						"function"
+					],
+					[
+						"for",
+						"for	for (…) {…}"
+					],
+					[
+						"getElement",
+						"getElementById()	Document"
+					],
+					[
+						"no",
+						"no-repeat"
+					],
+					[
+						"out",
+						"outline"
+					],
+					[
+						"src",
+						"srcElement	Event"
+					],
+					[
+						"overflow-",
+						"overflow-x"
+					],
+					[
+						"jquer",
+						"jquery-3.0.0.min.js"
+					],
+					[
+						"getELemen",
+						"getElementsByClassName()"
+					],
+					[
+						"cancle",
+						"cancel_me"
+					],
+					[
+						"drag",
+						"draggable"
+					],
+					[
+						"quer",
+						"querySelectorAll()"
+					],
+					[
+						"padd",
+						"padding"
+					],
+					[
+						"sh",
+						"shadow"
+					],
+					[
+						"nex",
+						"nextSibling"
+					],
+					[
+						"bef",
+						"insertBefore()"
+					],
+					[
+						"posi",
+						"position"
+					],
+					[
+						"cli",
+						"clientY	Default"
+					],
+					[
+						"ma",
+						"material"
+					],
+					[
+						"text",
+						"text-align"
+					],
+					[
+						"pad",
+						"padding"
+					],
+					[
+						"clien",
+						"clientY	Default"
+					],
+					[
+						"off",
+						"offsetTop"
+					],
+					[
+						"offset",
+						"offsetLeft"
+					],
+					[
+						"dco",
+						"document"
+					],
+					[
+						"files",
+						"files"
+					],
+					[
+						"pic",
+						"picBox"
+					],
+					[
+						"imglist",
+						"imglist2"
+					],
+					[
+						"getElem",
+						"getElementById()	Document"
+					],
+					[
+						"clone",
+						"cloneNode()"
+					],
+					[
+						"pr",
+						"preventDefault	Event"
+					],
+					[
+						"log",
+						"log	console.log()"
+					],
+					[
+						"a",
+						"accept	Attr"
+					],
+					[
+						"clie",
+						"clientWidth"
+					],
+					[
+						"getElemnt",
+						"getElementsByName()	Document"
+					],
+					[
+						"prev",
+						"preventDefault()	Event"
+					],
+					[
+						"getElemen",
+						"getElementById()	Document"
+					],
+					[
+						"chil",
+						"childNodes[]"
+					],
+					[
+						"chr",
+						"children	.children()"
+					],
+					[
+						"big",
+						"bigBox"
+					],
+					[
+						"get",
+						"getAttribute()"
+					],
+					[
+						"cl",
+						"clientWidth"
+					],
+					[
+						"width",
+						"borderWidth	css"
+					],
+					[
+						"offse",
+						"offsetWidth"
+					],
+					[
+						"wrapold",
+						"wrapoldHeight"
+					],
+					[
+						"wrap",
+						"wrapoldWidth"
+					],
+					[
+						"1",
+						"1.jpg	w:631 h:330"
+					],
+					[
+						"klass",
+						"klass	Default"
+					],
+					[
+						"first",
+						"firstChild"
+					],
+					[
+						"more",
+						"more_scroll.css"
+					],
+					[
+						"imgArr",
+						"imgArr_"
+					],
+					[
+						"add",
+						"addImg	Default"
+					],
+					[
+						"img",
+						"imageShow"
+					],
+					[
+						"scrollImg",
+						"scrollImgLen"
+					],
+					[
+						"ins",
+						"insertBefore()"
+					],
+					[
+						"setAttr",
+						"setAttribute()"
+					],
+					[
+						"setA",
+						"setAttributeNode()"
+					],
+					[
+						"w",
+						"width"
+					],
+					[
+						"indexs",
+						"indexsPic"
+					],
+					[
+						"div",
+						"div:nth"
+					],
+					[
+						"len",
+						"len_	Default"
+					],
+					[
+						"show",
+						"showPic"
+					],
+					[
+						"auto",
+						"autoplay"
+					],
+					[
+						"set",
+						"setInterval()	Frame"
+					],
+					[
+						"scrollC",
+						"scrollContent"
+					],
+					[
+						"scrollCo",
+						"scrollContentHtml"
+					],
+					[
+						"onmou",
+						"onmousedown"
+					],
+					[
+						"client",
+						"clientX"
+					],
+					[
+						"scroll_top",
+						"scroll_top_ele"
+					],
+					[
+						"scr",
+						"scrollIndex"
+					],
+					[
+						"inner",
+						"innerHTML"
+					],
+					[
+						"crea",
+						"createscroll2.js"
+					],
+					[
+						"innerH",
+						"innerHTML"
+					],
+					[
+						"create",
+						"create.html"
+					],
+					[
+						"right",
+						"rightArrow"
+					],
+					[
+						"scrolling",
+						"scrollingHtml"
+					],
+					[
+						"GETeLENE",
+						"getElementsByTagName()"
+					],
+					[
+						"op",
+						"opacity"
+					],
+					[
+						"getElementBy",
+						"getElementById()	Document"
+					],
+					[
+						"geElement",
+						"getElementsByTagName()"
+					],
+					[
+						"addi",
+						"paddingBottom	css"
+					],
+					[
+						"inline",
+						"inline-block"
+					],
+					[
+						"javascript",
+						"javascript:void"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/F/WWWRoot/myFile/myFile/web/views/66made/html/model-1/index.php",
+					"settings":
+					{
+						"buffer_size": 9761,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/F/WWWRoot/myFile/myFile/web/views/66made/html/model-1/index_view.php",
+					"settings":
+					{
+						"buffer_size": 2838,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/F/WWWRoot/myFile/myFile/web/views/66made/html/model-1/index_publish.php",
+					"settings":
+					{
+						"buffer_size": 2536,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 400.0,
+				"last_filter": "in",
+				"selected_items":
+				[
+					[
+						"in",
+						"Package Control: Install Package"
+					],
+					[
+						"add",
+						"Package Control: Add Repository"
+					],
+					[
+						"ins",
+						"Package Control: Install Package"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 536.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/C/Users/Administrator/Desktop/66project/css",
+				"/C/Users/Administrator/Desktop/66project/css/model-1",
+				"/C/Users/Administrator/Desktop/66project/css/public",
+				"/C/Users/Administrator/Desktop/66project/html",
+				"/C/Users/Administrator/Desktop/66project/html/model-1",
+				"/C/Users/Administrator/Desktop/66project/images",
+				"/C/Users/Administrator/Desktop/66project/images/model-1",
+				"/C/Users/Administrator/Desktop/66project/images/model-1/active",
+				"/C/Users/Administrator/Desktop/66project/js",
+				"/C/Users/Administrator/Desktop/66project/js/model-1",
+				"/F/WWWRoot/myFile/myFile",
+				"/F/WWWRoot/myFile/myFile/admin",
+				"/F/WWWRoot/myFile/myFile/web",
+				"/F/WWWRoot/myFile/myFile/web/views",
+				"/F/WWWRoot/myFile/myFile/web/views/66made",
+				"/F/WWWRoot/myFile/myFile/web/views/66made/html",
+				"/F/WWWRoot/myFile/myFile/web/views/66made/html/model-1"
+			],
+			"file_history":
+			[
+				"/C/Users/Administrator/Desktop/66project/css/model-1/index.css",
+				"/C/Users/Administrator/Desktop/66project/html/model-1/index.html",
+				"/C/Users/Administrator/Desktop/66project/html/model-1/about.html",
+				"/C/Users/Administrator/Desktop/66project/html/model-1/clients.html",
+				"/F/WWWRoot/Test/myFile/index.php",
+				"/F/WWWRoot/myFile/web/controllers/Mypage.php",
+				"/F/WWWRoot/myFile/web/controllers/Logins.php",
+				"/F/WWWRoot/myFile/web/config/config.php",
+				"/C/Users/Administrator/Desktop/66project/html/model-1/projects.html",
+				"/C/Users/Administrator/Desktop/66project/html/model-1/services.html",
+				"/C/Users/Administrator/Desktop/66project/css/model-1/header.css",
+				"/F/WWWRoot/myFile/web/controllers/Indexs.php",
+				"/C/Users/Administrator/Desktop/66project/js/model-1/services.js",
+				"/C/Users/Administrator/Desktop/66project/css/model-1/projects.css",
+				"/C/Users/Administrator/Desktop/66project/css/model-1/services.css",
+				"/C/Users/Administrator/Desktop/66project/css/model-1/clients.css",
+				"/C/Users/Administrator/Desktop/66project/css/model-1/about.css",
+				"/C/Users/Administrator/Desktop/66project/css/public/base.css",
+				"/C/Users/Administrator/Desktop/小测试/reset.css",
+				"/D/global.css",
+				"/C/Users/Administrator/Desktop/规范/项目前准备.txt",
+				"/C/Users/Administrator/Desktop/规范/命名参考规范.txt",
+				"/C/Users/Administrator/Desktop/规范/前端开发规范.txt",
+				"/C/Users/Administrator/Desktop/规范/项目前准备",
+				"/C/Users/Administrator/Desktop/规范/命名参考规范",
+				"/C/Users/Administrator/Desktop/hucai model/upload.html",
+				"/C/Users/Administrator/Desktop/前端开发规范.txt",
+				"/C/Users/Administrator/Desktop/小测试/多个轮播/asd.html",
+				"/C/Users/Administrator/Desktop/小测试/font.html",
+				"/H/安/项目/xieyi/css/reset.css",
+				"/C/Users/Administrator/Desktop/小测试/asd.html",
+				"/C/Users/Administrator/Desktop/angular/ng-module.html",
+				"/C/Users/Administrator/Desktop/angular/依赖注入1.html",
+				"/C/Users/Administrator/Desktop/angular/依赖注入2.html",
+				"/C/Users/Administrator/Desktop/angular/service-http.html",
+				"/C/Users/Administrator/Desktop/angular/angular3.html",
+				"/C/Users/Administrator/Desktop/hucai model/div转变为图片/jietu.html",
+				"/C/Users/Administrator/Desktop/小测试/tab+change+replace.html",
+				"/C/Users/Administrator/Desktop/hucai model/叶序修改.html",
+				"/C/Users/Administrator/Desktop/hucai model/tab+change_content.html",
+				"/C/Users/Administrator/Desktop/小测试/img_border.html",
+				"/C/Users/Administrator/Desktop/hucai model/insert.html",
+				"/C/Users/Administrator/Desktop/hucai model/jquery-ui.js",
+				"/C/Users/Administrator/Desktop/hucai model/333.html",
+				"/C/Users/Administrator/Desktop/hucai model/222.html",
+				"/C/Users/Administrator/Desktop/hucai model/Sortable.js",
+				"/C/Users/Administrator/Desktop/hucai model/111.html",
+				"/F/WWWRoot/Test/upload1.html",
+				"/C/Users/Administrator/Desktop/git/666/upload.html",
+				"/F/WWWRoot/Test/shadow.html",
+				"/F/WWWRoot/Test/upload.html",
+				"/F/WWWRoot/Test/drap_drop.html",
+				"/C/Users/Administrator/Desktop/小测试/多个轮播/ff.html",
+				"/C/Users/Administrator/Desktop/example.html",
+				"/C/Users/Administrator/Desktop/uploadfile1.html",
+				"/H/安/某些测试/location.search.html",
+				"/C/Users/Administrator/.ssh/id_rsa.pub",
+				"/C/Users/Administrator/Desktop/ff.html",
+				"/D/通讯/906112505/FileRecv/php3/uploadfile1.html",
+				"/F/WWWRoot/Test/jietu.html",
+				"/C/Users/Administrator/Desktop/aa.html",
+				"/C/Users/Administrator/Desktop/小测试/rotate.html",
+				"/C/Users/Administrator/Desktop/小测试/jietu.html",
+				"/C/Users/Administrator/Desktop/angular/自定义.html",
+				"/C/Users/Administrator/Desktop/小测试/quanpin.html",
+				"/C/Users/Administrator/Desktop/html2canvas.js",
+				"/E/demo/d.html",
+				"/C/Users/Administrator/Desktop/自定义滚动条.html",
+				"/E/demo/双行字数大点.html",
+				"/E/demo/vue/index.html",
+				"/F/WWWRoot/Test/wix/index.html",
+				"/F/WWWRoot/Test/test/canvastextbase1.html",
+				"/F/WWWRoot/Test/test/canvastextbase.html",
+				"/F/WWWRoot/Test/test/more_scroll1.js",
+				"/F/WWWRoot/Test/test/more_scroll.js",
+				"/F/WWWRoot/Test/test/edit1.js",
+				"/C/Users/Administrator/Desktop/小测试/LayoutIT/LayoutIT/js/jquery-2.0.0.min.js",
+				"/C/Users/Administrator/Desktop/小测试/LayoutIT/LayoutIT/index.html",
+				"/C/Users/Administrator/Desktop/小测试/LayoutIT/LayoutIT/1.html",
+				"/F/WWWRoot/Test/test/more_scroll.css",
+				"/C/Users/Administrator/Desktop/小测试/多个轮播/more_scroll.html",
+				"/F/WWWRoot/Test/wix/css/base.css",
+				"/H/安/node/angular/ng-route.html",
+				"/C/Users/Administrator/Desktop/ad.html",
+				"/C/Users/Administrator/Downloads/4_20141030153749.htm",
+				"/C/Users/Administrator/Downloads/4.htm",
+				"/F/WWWRoot/Test/more_scroll.js",
+				"/C/Users/Administrator/Desktop/小测试/多个轮播/a.html",
+				"/F/WWWRoot/Test/test/comm.css",
+				"/F/WWWRoot/Test/test/edit.js",
+				"/C/Users/Administrator/Desktop/小测试/多个轮播/object.js",
+				"/C/Users/Administrator/Desktop/小测试/多个轮播/object.css",
+				"/F/WWWRoot/Test/create.html",
+				"/F/WWWRoot/Test/test/createscroll1.js",
+				"/F/WWWRoot/Test/test/createscroll.js",
+				"/F/WWWRoot/Test/createscroll.js",
+				"/F/WWWRoot/Test/createscroll2.js",
+				"/F/WWWRoot/Test/ff.html",
+				"/F/WWWRoot/Test/test/base.css",
+				"/F/WWWRoot/Test/create2.html",
+				"/F/WWWRoot/Test/canvastextbase.html",
+				"/F/WWWRoot/Test/canvastextbase1.html",
+				"/C/Users/Administrator/Desktop/小测试/事件委托.html",
+				"/F/WWWRoot/Test/scroll2.html",
+				"/F/WWWRoot/Test/canvastext.html",
+				"/F/WWWRoot/Test/canvastext1.html",
+				"/F/WWWRoot/Test/scroll.js",
+				"/F/WWWRoot/Test/scroll2-1.html",
+				"/C/Users/Administrator/Desktop/小测试/fff.html",
+				"/C/Users/Administrator/Desktop/小测试/fff.js",
+				"/F/WWWRoot/Test/scroll2.min.html",
+				"/D/通讯/906112505/FileRecv/大图滚动_碰壁反弹/大图滚动2.html",
+				"/F/WWWRoot/Test/原生轮播图.html",
+				"/C/Users/Administrator/Desktop/小测试/图片伸缩测试.html",
+				"/C/Users/Administrator/Desktop/小测试/加图片.html",
+				"/C/Users/Administrator/Desktop/小测试/changeHW.html",
+				"/C/Users/Administrator/Desktop/小测试/色板.html",
+				"/C/Users/Administrator/Desktop/小测试/拖动改宽高.html",
+				"/C/Users/Administrator/Desktop/小测试/拖动改宽度例子.html",
+				"/C/Users/Administrator/Desktop/小测试/canvastext2.html",
+				"/C/Users/Administrator/Desktop/小测试/分享.html",
+				"/C/Users/Administrator/Desktop/小测试/百度分享.html",
+				"/C/Users/Administrator/Desktop/小测试/img.html",
+				"/C/Users/Administrator/Desktop/小测试/1.html",
+				"/F/WWWRoot/Test/scrollimg.html",
+				"/C/Users/Administrator/Desktop/Wix Website Editor.html",
+				"/C/Users/Administrator/Desktop/小测试/d.html",
+				"/C/Users/Administrator/Desktop/小测试/canvas_input.html"
+			],
+			"find":
+			{
+				"height": 35.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"[]",
+					"list",
+					"red",
+					"div",
+					"left",
+					"案例",
+					"id",
+					"            </",
+					" class=\"ser_new_t\"",
+					" class=\"ser_new_i\"",
+					"250px",
+					";\n",
+					"800m",
+					"1000ms",
+					"div",
+					"u",
+					"8",
+					"7",
+					"about_5_2.",
+					"5",
+					"2",
+					"3",
+					"../",
+					"iconfont",
+					"3",
+					"5",
+					"45",
+					"top",
+					"hand",
+					"70",
+					"90",
+					"hand",
+					"16",
+					"server_p1",
+					"onclick",
+					"u",
+					"nav",
+					"navB",
+					"navBar",
+					"6",
+					"8",
+					"9",
+					"66",
+					"800",
+					"show",
+					"num",
+					"4",
+					"rem",
+					"rem\\",
+					"swiper-container",
+					"bottom",
+					"        <div class=\"nav\">\n",
+					"BULLET",
+					"#000",
+					"app.png",
+					"\n    ",
+					"  data-caption=\"w66商驾-司机端\"",
+					"data-caption=\"66商驾-司机端\"",
+					"data-caption=\"p66商驾-司机端\"",
+					"img/app.png",
+					"gallery",
+					"#{title}",
+					"#{name}",
+					"SERVICE",
+					"anchors",
+					"bulletsColor",
+					"c.navigation.bulletsColor",
+					"style",
+					"attr",
+					"backgou",
+					"#",
+					"rgb(44, 62, 80)",
+					"sectionsColor",
+					"background",
+					"production_show",
+					"\n                ",
+					"4px",
+					"5",
+					"bbefff",
+					"fff",
+					".6",
+					"1",
+					"0",
+					"    border-radius: 50%;\n    box-shadow: 0 0 4px rgba(31,78,255,.6);\n",
+					"98",
+					"9",
+					"b8ecff",
+					"solid",
+					"red",
+					"90",
+					"\n}",
+					"0",
+					"Golden Gate Bridge",
+					"index",
+					"jpg",
+					";\"></",
+					"320",
+					"works_app.png",
+					"\n    ",
+					";\n",
+					"\n            ",
+					"1",
+					"forward",
+					"0",
+					"map",
+					"on",
+					"52",
+					"116.397428, 39.90923",
+					"1.jpg",
+					"p",
+					"div",
+					"310",
+					"58",
+					"广州市天河区珠江新城华夏路28号1804",
+					"350",
+					"$dow",
+					"5b0505",
+					">\n",
+					"magnification_bar",
+					" class=\"on\"",
+					"$('.big')",
+					"('.glass')",
+					"(smallimg).children('.mid_img')",
+					"$(smallimg).children('.mid_img')",
+					"$(''+smallimg+'')",
+					"$(''+smallimg+'').children('.mid_img')",
+					"'.show_glass'",
+					"ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>)"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"get",
+					""
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "C:\\Users\\Administrator\\Desktop\\66project"
+				},
+				{
+					"path": "F:\\WWWRoot\\myFile\\myFile"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/F/WWWRoot/myFile/myFile/web/views/66made/html/model-1/index.php",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 9761,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										913,
+										913
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"apply_syntax_touched": true,
+									"bh_regions":
+									[
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close"
+									],
+									"c_time":
+									[
+										128,
+										3,
+										99,
+										100,
+										97,
+										116,
+										101,
+										116,
+										105,
+										109,
+										101,
+										10,
+										100,
+										97,
+										116,
+										101,
+										116,
+										105,
+										109,
+										101,
+										10,
+										113,
+										0,
+										67,
+										10,
+										7,
+										224,
+										10,
+										8,
+										17,
+										2,
+										50,
+										0,
+										0,
+										0,
+										113,
+										1,
+										133,
+										113,
+										2,
+										82,
+										113,
+										3,
+										46
+									],
+									"function_name_status_row": 37,
+									"incomplete_sync": null,
+									"is_xml": false,
+									"origPos": 0.0,
+									"origin_encoding": "UTF-8",
+									"remote_loading": false,
+									"syncScroll": false,
+									"synced": false,
+									"syntax": "Packages/PHP/PHP.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 792.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/F/WWWRoot/myFile/myFile/web/views/66made/html/model-1/index_view.php",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 2838,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1502,
+										1502
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"apply_syntax_touched": true,
+									"bh_regions":
+									[
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close"
+									],
+									"c_time":
+									[
+										128,
+										3,
+										99,
+										100,
+										97,
+										116,
+										101,
+										116,
+										105,
+										109,
+										101,
+										10,
+										100,
+										97,
+										116,
+										101,
+										116,
+										105,
+										109,
+										101,
+										10,
+										113,
+										0,
+										67,
+										10,
+										7,
+										224,
+										10,
+										8,
+										17,
+										2,
+										50,
+										0,
+										0,
+										0,
+										113,
+										1,
+										133,
+										113,
+										2,
+										82,
+										113,
+										3,
+										46
+									],
+									"function_name_status_row": 46,
+									"incomplete_sync": null,
+									"is_xml": false,
+									"origPos": 0.0,
+									"origin_encoding": "UTF-8",
+									"remote_loading": false,
+									"syncScroll": false,
+									"synced": false,
+									"syntax": "Packages/PHP/PHP.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 720.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/F/WWWRoot/myFile/myFile/web/views/66made/html/model-1/index_publish.php",
+							"semi_transient": true,
+							"settings":
+							{
+								"buffer_size": 2536,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1353,
+										1353
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"apply_syntax_touched": true,
+									"bh_regions":
+									[
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close"
+									],
+									"c_time":
+									[
+										128,
+										3,
+										99,
+										100,
+										97,
+										116,
+										101,
+										116,
+										105,
+										109,
+										101,
+										10,
+										100,
+										97,
+										116,
+										101,
+										116,
+										105,
+										109,
+										101,
+										10,
+										113,
+										0,
+										67,
+										10,
+										7,
+										224,
+										10,
+										8,
+										17,
+										2,
+										50,
+										0,
+										0,
+										0,
+										113,
+										1,
+										133,
+										113,
+										2,
+										82,
+										113,
+										3,
+										46
+									],
+									"function_name_status_row": 42,
+									"incomplete_sync": null,
+									"is_xml": false,
+									"origPos": 0.0,
+									"origin_encoding": "UTF-8",
+									"remote_loading": false,
+									"syncScroll": false,
+									"synced": false,
+									"syntax": "Packages/PHP/PHP.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 720.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 35.0
+			},
+			"input":
+			{
+				"height": 39.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.sftp":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,1,-32000,-32000,-1,-1,1008,399,56,1755",
+			"project": "",
+			"replace":
+			{
+				"height": 66.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"规范\\命名参考规范.txt"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+				"xdebug":
+				{
+					"hide_conflict": false
+				}
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 251.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 26,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>services</title>
+        <link rel="stylesheet" href="../../css/public/base.css" />
+        <link rel="stylesheet" href="../../css/model-2/book_online.css" />
+    </head>
+    <body>
+        <!-- book_online正文开始 -->
+        <div id="book_online_content_box">
+            <div class="book_online_content">
+                <div class="book_online_title">
+                    <p class="edit_text">我们的私人服务</p>
+                </div>
+                <ul class="book_online_list clearfix">
+                   <li class="left">
+                       <div>
+                           <div class="book_online_img"><img class="edit_image" src="../../images/model-2/active/book_online_1.png" /></div>
+                           <div class="book_online_list_text">
+                               <p class="edit_text">户外拍摄</p>
+                               <p><span class="edit_text">1hr</span> | <span class="edit_text">简介会</span></p>
+                               <p class="edit_text">描述你在这里的服务。什么使它伟大？使用简短有力的文字告诉人们你能提供什么，他们将得到的好处。一个伟大的描述获取读者的情绪，并使他们更可能去提前和书。</p>
+                           </div>
+                       </div>
+                       <button class="edit_text">让我们相遇</button>
+                   </li>
+                   <li>
+                       <div>
+                           <div class="book_online_img"><img class="edit_image" src="../../images/model-2/active/book_online_2.png" /></div>
+                           <div class="book_online_list_text">
+                               <p class="edit_text">户外拍摄</p>
+                               <p><span class="edit_text">1hr</span> | <span class="edit_text">简介会</span></p>
+                               <p class="edit_text">描述你在这里的服务。什么使它伟大？使用简短有力的文字告诉人们你能提供什么，他们将得到的好处。一个伟大的描述获取读者的情绪，并使他们更可能去提前和书。</p>
+                           </div>
+                       </div>
+                       <button class="edit_text">让我们相遇</button>
+                   </li>
+                   <li class="right">
+                       <div>
+                           <div class="book_online_img"><img class="edit_image" src="../../images/model-2/active/book_online_3.png" /></div>
+                           <div class="book_online_list_text">
+                               <p class="edit_text">户外拍摄</p>
+                               <p><span edit_text>1hr</span> | <span edit_text>简介会</span></p>
+                               <p class="edit_text">描述你在这里的服务。什么使它伟大？使用简短有力的文字告诉人们你能提供什么，他们将得到的好处。一个伟大的描述获取读者的情绪，并使他们更可能去提前和书。</p>
+                           </div>
+                       </div>
+                       <button class="edit_text">让我们相遇</button>
+                   </li>
+                </ul>
+            </div>
+        </div>
+        <!-- book_online正文结束 -->
+        <script src="../../js/public/jquery-1.12.0.js"></script>
+        <script src="../../js/model-2/book_online.js"></script>
+    </body>
+</html>

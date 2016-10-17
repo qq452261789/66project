@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<link rel="stylesheet" href="../../css/public/base.css" />
+		<link rel="stylesheet" href="../../css/model-1/header.css" />
+		<link rel="stylesheet" href="../../css/model-1/index.css" />
+	</head>
+
+	<body>
+		<div id="header_box">
+			<div id="header" class="clearfix">
+				<div id="log" class="left  edit_text">
+					<a href="index.html">
+						<!-- JAMES <span>CONSULTING</span> -->
+                        <img class="edit_image" src="../../images/model-1/active/logo.png" alt="logo" />
+					</a>
+				</div>
+				<div id="nav" class="right">
+					<a href="about.html" class="edit_text">
+						关于
+					</a>
+					<a href="services.html" class="edit_text">
+						服务
+					</a>
+					<a href="projects.html" class="edit_text">
+						项目
+					</a>
+					<a href="clients.html" class="edit_text">
+						客户
+					</a>
+					<a href="#contact_box" class="edit_text">
+						联系
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="banner_box">
+			<div id="banner">
+				<div id="banner_main">
+					<p class="banner_main_p1 edit_text">
+						开放创新战略
+					</p>
+					<p class="banner_main_p2 edit_text">
+						实现增长
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="main_box">
+			<div id="main" class="clearfix">
+				<div id="main_service" class="main_small_box">
+					<p class="edit_text mian_title">
+						服务
+					</p>
+					<p class="edit_text mian_article">
+						此处可以添加文字。点击“编辑文本”或双击“添加内容”。
+						此处可以添加文字。点击“编辑文本”或双击“添加内容”。
+						此处可以添加文字。点击“编辑文本”或双击“添加内容”。
+						此处可以添加文字。点击“编辑文本”或双击“添加内容”。
+					</p>
+					<a href="services.html">
+						更多信息
+					</a>
+				</div>
+				<div id="main_project" class="main_small_box">
+					<p class="edit_text mian_title">
+						项目
+					</p>
+					<p class="edit_text  mian_article">
+						此处可以添加文字。点击“编辑文本”或双击“添加内容”。
+						此处可以添加文字。点击“编辑文本”或双击“添加内容”。
+						此处可以添加文字。点击“编辑文本”或双击“添加内容”。
+						此处可以添加文字。点击“编辑文本”或双击“添加内容”。
+					</p>
+					<a href="projects.html">
+						更多信息
+					</a>
+				</div>
+				<div id="main_clients" class="main_small_box">
+					<p class="edit_text mian_title">
+						客户
+					</p>
+					<p class="edit_text  mian_article">
+						此处可以添加文字。点击“编辑文本”或双击“添加内容”。
+						此处可以添加文字。点击“编辑文本”或双击“添加内容”。
+						此处可以添加文字。点击“编辑文本”或双击“添加内容”。
+						此处可以添加文字。点击“编辑文本”或双击“添加内容”。
+					</p>
+					<a href="clients.html">
+						更多信息
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="about_box">
+			<div id="about" class="clearfix">
+				<div class="about_title">
+					关于我们
+				</div>
+				<div  class="about_article edit_text">
+					这里可以编辑段落文本。随意拖放到任意页面。
+					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
+					让用户更多的了解你。告诉你的访客和竞争对手的不同。
+					这里可以编辑段落文本。随意拖放到任意页面。
+					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
+					让用户更多的了解你。告诉你的访客和竞争对手的不同。
+					这里可以编辑段落文本。随意拖放到任意页面。
+					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
+					让用户更多的了解你。告诉你的访客和竞争对手意拖放到任意页面。
+					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
+					让用户更多的了解你。告诉你的访客和竞争对手的不同。
+					这里可以编辑段落文本。随意拖放到任意页面。
+					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
+					让用户更多的了解你。告诉你的访客和竞争对手意拖放到任意页面。
+					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
+					让用户更多的了解你。告诉你的访客和竞争对手的不同。
+					这里可以编辑段落文本。随意拖放到任意页面。
+					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
+					让用户更多的了解你。告诉你的访客和竞争对手意拖放到任意页面。
+					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
+						让用户更多的了解你。告诉你的访客和竞争对手意拖放到任意页面。
+					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
+					让用户更多的了解你。告诉你的访客和竞争对手的不同。
+					这里可以编辑段落文本。随意拖放到任意页面。
+					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
+					让用户更多的了解你。告诉你的访客和竞争对手意拖放到任意页面。
+					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
+					让用户更多的了解你。告诉你的访客和竞争对手的不同。
+					这里可以编辑段落文本。随意拖放到任意页面。
+					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
+					让用户更多的了解你。告诉你的访客和竞争对手意拖放到任意页面。
+					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
+					让用户更多的了解你。告诉你的访客和竞争对手的不同。
+					这里可以编辑段落文本。随意拖放到任意页面。
+					在这里编辑贵公司的详细信息，关于你的团队和提供什么服务。
+					让用户更多的了解你。告诉你的访客和竞争对手意拖放到任意页面。
+				</div>
+				<a  href="about.html" class="about_more about_href">
+					阅读更多
+				</a>
+			</div>
+		</div>
+		<div id="contact_box">
+			<div id="contact">
+				<div class="contact_title">
+					联系我们
+				</div>
+				<div class="contact_title_main clearfix">
+					<div class="left map_box">
+						<img class="edit_img" src="../../images/model-1/active/map.png"/>
+					</div>
+					<div class="contact_maseeges right">
+						<div class="company_info">
+							<p class="edit_text ">
+								地址：天河区珠江新城华夏路49号
+							</p>
+							<p class="edit_text">
+								电话：020-87096175
+							</p>
+						</div>
+						<div class="user_info">
+							<p>
+								<input type="text" name="user_name" id="user_name" placeholder="姓名" value="" />	
+							</p>
+							<p>
+								<input type="email" name="user_email" id="user_email" placeholder="邮箱" value="" />
+							</p>
+							<p>
+								<input type="text" name="user_them" id="" placeholder="主题" value="" />
+							</p>
+							<div>
+								<textarea name="" rows="" cols="" placeholder="信息"></textarea>
+							</div>
+							<div class="check_info">
+								请输入正确的姓名或邮箱
+							</div>
+							<div class="user_send" type="button">
+								发送
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer_box">
+			<div id="footer" class="clearfix">
+				<div id="" class="left">
+					<a href="javascript:void(0)" class="edit_text footer_a1">
+						2016  陆陆科技 
+					</a>
+					<a href="javascript:void(0)" class="edit_text footer_a2">
+						66made.com
+					</a>
+				</div>
+				<div id="share" class="right">
+					<span id="share_weibo">
+						<!--分享到微博-->
+					</span>
+					<span id="share_weixin">
+						<!--分享到微信-->
+					</span>
+					<span id="share_qq">
+						<!--分享到QQ-->
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../../js/public/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/model-1/index.js" type="text/javascript" charset="utf-8"></script>
+</html>

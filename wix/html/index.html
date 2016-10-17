@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>66编辑器</title>
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<script src="../js/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			#header {
+				width: 1260px;
+				height: 50px;
+				margin: 0 auto;
+				background: #F1F1F1;				
+			}
+			h1{
+				height: 50px;
+				width: 80px;
+				background: url(../images/logou.png) no-repeat center;
+				float: left;
+			}
+			
+			#preservation,
+			#see,
+			#submit {
+				display: block;
+				width: 180px;
+				height: 50px;
+				line-height: 50px;
+				font-weight: 800;
+				float: left;
+				font-size: 25px;
+				text-align: center;
+				margin-left: 15px;
+			}
+			#in_page{
+				height: 50px;
+				width:230px ;
+				background: #eaf7ff;
+				border-left: solid 1px #e3eaf6;
+				border-right: solid 1px #e3eaf6;
+			}
+			
+			#in_page span{
+				display: block;
+				float: left;
+				height: 50px;
+				min-width: 20px;
+			}
+			#in_page span:nth-of-type(1){
+				background: url(../images/_page.png) no-repeat center;
+				padding-left: 30px;
+			}
+			#in_page span:nth-of-type(2){
+				line-height: 50px;
+				margin: 0 10px;
+				color: black;
+				font-size: 14px;
+				font-weight: 700;
+			}
+			#in_page span:nth-of-type(3):hover{
+				color: #3899ec;
+			}
+			#in_page span:nth-of-type(4){
+				background: url(../images/xialai.png) no-repeat center;
+			}
+
+			#edit_ul {
+				position: fixed;
+				left: 10px;
+				top: 55px;
+			}
+			#status{
+				width: 240px;
+				height: 50px;
+				line-height: 50px;
+			}
+			#status span{
+				display: block;
+				float: left;
+				height: 50px;
+				width: 60px;
+				text-align: center;
+				
+			}
+			#status span:nth-of-type(1)
+				{
+					color: #3899ec
+				}
+			#controller{
+				width: 130px;
+				height: 15px;
+				background: #eaf7ff;
+				float: left;
+				border-bottom: 1px solid #f1f1f1;
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+				margin: 0 15px;
+			}
+			#controller span
+				{
+				display: block;
+				width: 100%px;
+				height: 15px;
+				background: url(../images/xialai.png) no-repeat center;
+			}
+			#edit{
+				float: right;
+				height: 50px;
+			}
+			#edit span{
+				display: block;
+				height: 50px;
+				line-height: 50px;
+				width: 60px;
+				text-align: center;
+				float: left;
+				padding: 0 5px;
+			}
+			#edit span:nth--of-type(1){
+				background: url(../images/jingzi.png) no-repeat center;
+			}
+			#edit span:nth-of-type(2){
+				background: url(../images/goback.png) no-repeat center;
+			}
+			#edit span:nth-of-type(3){
+				background: url(../images/next.png) no-repeat center;
+			}
+			#edit span:nth-of-type(4){
+				background: url(../images/phone.png)no-repeat center;
+			}
+			
+			#edit_ul li {
+				height: 48px;
+				line-height: 53px;
+				margin-bottom: 15px;
+				overflow: hidden;
+				min-width: 48px;
+				border: solid 1px #f2f2f2;
+				border-radius:25px ;
+			}
+			
+			
+			#bg_1 {
+				height: 48px;
+				width: 48px;
+				background: url(../images/bg_1.png) no-repeat;
+			}
+			
+			#bg_2 {
+				height: 48px;
+				width: 48px;
+				background: url(../images/bg_2.png) no-repeat;
+			}
+			
+			#bg_3 {
+				height: 48px;
+				width: 48px;
+				background: url(../images/bg_3.png) no-repeat;
+			}
+			
+			#bg_4 {
+				height: 48px;
+				width: 48px;
+				background: url(../images/bg_4.png) no-repeat;
+			}
+			
+			#bg_5 {
+				height: 48px;
+				width: 48px;
+				background: url(../images/bg_5.png) no-repeat;
+			}
+			
+			.background {
+				display: none;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div id="header">
+			<!--导航部分-->
+			<h1></h1>
+			
+			<div id="in_page" class="left">
+				<span id="">
+					
+				</span>
+				<span id="">
+					页数：首页
+				</span>
+				<span id="">
+					
+				</span>
+			</div>
+			
+			
+			<div id="status" class="left">
+				<span id="">
+					当前
+				</span>
+				<span id="">
+					工具
+				</span>
+				<span id="">
+					帮助
+				</span>
+				<span id="">
+					升级
+				</span>
+			</div>
+			
+			<!--点击编辑器消失病预览网页-->
+			<div id="controller">
+				<span id="">
+					<!--123-->
+				</span>
+			</div>
+			
+			<div id="edit">
+				<!--1-->
+				<span id="">
+					
+				</span>
+				<!--2-->
+				<span id="">
+					
+				</span>
+				<!--3-->
+				<span id="">
+					
+				</span>
+				<!--4-->
+				<span id="">
+					
+				</span>
+				<!--5-->
+				<span id="">
+					预览
+				</span>
+				<!--6-->
+				<span id="">
+					保存
+				</span>
+				<!--7-->
+				<span id="">
+					发布
+				</span>
+			</div>			
+		</div>
+		
+		
+		
+		<ul id="edit_ul">
+			<li>
+				<div id="bg_1" class="left"></div>
+				<p class="background background1 left">
+					背景设置
+				</p>	
+			</li>
+			<li>
+				<div id="bg_2" class="left"></div>
+				<p class="background left">
+					添加元素
+				</p>
+			</li>
+			<li>
+				<div id="bg_3" class="left"></div>
+				<p class="background left">
+					背景
+				</p>
+			</li>
+			<li>
+				<div id="bg_4" class="left"></div>
+				<p class="background left">
+					背景
+				</p>
+			</li>
+			<li>
+				<div id="bg_5" class="left"></div>
+				<p class="background left">
+					背景
+				</p>
+			</li>
+		</ul>
+		
+		<div id="edit_text" class="clearfix">
+			<!--文本编辑框第一部分-->
+			<div id="edit_text_h" class="clearfix">
+				<span id="">
+					?
+				</span>
+				<span id="">
+					&nbsp;
+				</span>
+				<span id="">
+					x
+				</span>
+			</div>			
+			<!--文本编辑框第二部份-->
+			<div id="edit_text_c" class="clearfix">
+					<span id="">
+						<!--复制-->
+						<img src="../images/copy_1.png"/>
+					</span>
+					<span id="">
+						<!--粘贴-->
+						<img src="../images/past_1.png"/>
+					</span>
+					<span id="">
+						<img src="../images/copy_2.png"/>
+					</span>
+					<!--删除-->
+					<span id="">
+						<img src="../images/del_1.png"/>
+					</span>
+			</div>
+			<!--文本编辑框第三部份-->
+			<div id="edit_text_s" class="clearfix">
+					<span id="">
+						<!--安排-->
+						<img src="../images/anpai_1.png"/>
+						<img src="../images/sanjiao_r.png"/>
+						
+						<!--安排弹窗-->
+						<div id="" class="clearfix">
+							
+							<cite>
+								<!--弹窗出现 第一个-->
+							</cite>
+							
+							<cite>
+								<!--弹窗出现 第2个-->
+							</cite>
+							
+							<cite>
+								<!--弹窗出现 第3个-->
+							</cite>
+							
+							<cite>
+								<!--弹窗出现 第4个-->
+							</cite>
+							
+						</div>
+						
+					</span>
+					<span id="">
+						<!--对齐-->
+						<img src="../images/line_right.png"/>						
+						<img src="../images/sanjiao_r.png"/>
+						<!--文本对齐 弹窗-->
+						<div id="" class="clearfix">
+							<cite>
+								<!--对齐出现 第一个 左对齐-->
+							</cite>
+							
+							<cite>
+								<!--对齐出现 第二个 居中对齐-->
+							</cite>
+							
+							<cite>
+								<!--对齐出现 第三个 右对齐-->
+							</cite>
+							
+							<cite>
+								<!--对齐出现 第四个 右水平对齐-->
+							</cite>
+							<cite>
+								<!--对齐出现 第五个 水平对齐-->	
+							</cite>
+							<cite>
+								<!--对齐出现 第六个 左水平对齐-->	
+							</cite>
+						</div>
+					</span>
+					
+					
+					<!--分布-->
+					<span id="">
+						<img src="../images/line_center.png"/>
+						<img src="../images/sanjiao_r.png"/>
+						<!--分布弹窗-->
+						<div id="">
+							<cite>
+								<!--垂直分布-->
+							</cite>
+							<cite>
+								<!--楼梯分布-->
+							</cite>
+							<cite>
+								<!--水平分布-->
+							</cite>
+						</div>
+					</span>
+					<!--比配大小-->
+					<span id="">
+						<img src="../images/line_dingyi.png"/>
+						<img src="../images/sanjiao_r.png"/>
+							<!--比配弹窗-->
+						<div id="">
+							<cite>
+								<!--比配弹窗 1-->
+							</cite>
+							<cite>
+								<!--比配弹窗 2-->
+							</cite>
+							<cite>
+								<!--比配弹窗 3-->
+							</cite>
+						</div>
+					</span>
+			</div>
+			<!--文本编辑框第四部份    旋转角度-->
+			<div id="edit_text_t" class="clearfix">
+				<span id="">
+					
+				</span>
+				<p>
+					<a href="javascript:void(0)">
+						0 
+					</a>
+					<sup id="">
+						。
+					</sup>
+				</p>				
+			</div>
+			
+			<!--文本编辑框第五部份    尺度-->
+			<div id="edit_text_f" class="clearfix">
+				<div class="clearfix">
+					尺寸
+				</div>
+				<div class="clearfix">
+					<span id="">
+						W :
+					</span>
+					<i  id="">
+						900
+					</i>
+				</div>
+				<div class="clearfix">
+					<span id="">
+						H :
+					</span>
+					<i  id="">
+						800
+					</i>
+				</div>
+			</div>
+			<!--文本编辑框第6部份    位置信息-->
+			<div id="edit_text_x" class="clearfix">
+				<div>
+					位置
+				</div>
+				<div class="clearfix">
+					<span id="">
+						X :
+					</span>
+					<i  id="">
+						50
+					</i>
+				</div>
+				<div class="clearfix">
+					<span id="">
+						Y :
+					</span>
+					<i id="">
+						800
+					</i>
+				</div>
+			</div>
+			<!--文本编辑框第尾部    显示所有也页数-->
+			<div id="edit_text_l" class="clearfix">
+				<div>
+					显示所有页
+				</div>
+				<div>
+					
+					<span id="">
+						<!--点击隐藏所有页-->
+					</span>
+					<span id="">
+						<!--点击显示所有页-->
+					</span>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+	</body>
+	<script type="text/javascript">
+		var $edit_text_c = $("#edit_text_s");
+		var $edit_text_c_span = $edit_text_c.children("span");
+		$edit_text_c_span.mouseenter(function(){			
+			$(this).children("img").eq(1).attr("src","../images/sanjiao_r_2.png")
+			
+		}).mouseleave(function(){
+			$(this).children("img").eq(1).attr("src","../images/sanjiao_r.png")
+		})
+		
+		
+		
+	</script>
+
+</html>

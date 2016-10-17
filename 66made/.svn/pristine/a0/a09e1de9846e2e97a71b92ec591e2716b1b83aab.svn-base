@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />-->
+		<title>联系</title>
+		
+		<link rel="stylesheet" type="text/css" href="../../css/public/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/mobile_model-2/header.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/mobile_model-2/contact.css"/>
+	</head>
+	<body>
+		<div class="mobile_model" >
+			<div id="header" class="clearfix">
+				<a class="log" href="" class="left">
+					<img class="edit_img" src="../../images/mobile_model-2/active/log.png"/>
+				</a>
+				<div class="nav_box left">
+					<div class="clearfix">
+						<span class="show_nav right">
+							<!--显示导航栏-->
+						</span>	
+					</div>
+					<p class="clearfix">
+						<span class="share_to_weibo left">
+							<!--分享到微博-->
+						</span>
+						<span class="share_to_weixin left">
+							<!--分享到微信-->
+						</span>
+						<span class="share_to_qq left">
+							<!--分享到qq-->
+						</span>
+					</p>
+				</div>			
+			</div>
+			<!--导航-->
+			<div class="big_nav_box">
+				<div class="closs_big_nav_box">
+					<a href="javascipt:void(0)"></a>
+				</div>
+				<div class="big_nav_box_b">
+					<a href="">欢迎</a>
+					<span></span>
+					<a href="">投资组合</a>
+					<span></span>
+					<a href="">客户展厅</a>
+					<span></span>
+					<a href="">关于</a>
+					<span></span>
+					<a href="">联系</a>
+					<span></span>
+					<a href="">在线预订</a>
+					<span></span>
+				</div>
+			</div>
+			<div id="contact">
+				<img class="edit_img contact_img" src="../../images/mobile_model-2/active/contact_bg.png"/>
+				<div class="contact_box">
+					<p class="contact_title edit_text">联系方式</p>
+					<div class="">
+						<p class="contact_email edit_text">电子邮箱</p>
+						<p class="contact_val edit_text">info@mysite.com</p>
+					</div>
+					<div class="">
+						<p class="contact_phone edit_text">联系电话</p>
+						<p class="contact_val edit_text">123-456-789</p>
+					</div>
+					<div>
+						<form class="contact_form">
+							<p>
+								<input type="" name="" id="" value="" placeholder="姓名" />
+							</p>
+							<p>
+								<input type="" name="" id="" value="" placeholder="邮箱" />
+							</p>
+							<p>
+								<input type="" name="" id="" value="" placeholder="主题" />
+							</p>
+							<p class="textarea_box">
+								<textarea name="" rows="" cols="" placeholder="消息"></textarea>
+							</p>
+						</form>
+					</div>
+					<div class="check_info">
+						请提供一个有效的电子邮箱
+					</div>
+					<div class="user_send">
+						发送
+					</div>	
+					
+				</div>
+			</div>	
+			<div id="footer">
+				<a href="">
+					<span class="edit_text">
+						© 2016 陆陆科技 
+					</span>
+					<span class="edit_text">
+						66made.com
+					</span>
+				</a>
+			</div>
+		</div>
+	</body>
+	<script src="../../js/public/jquery-1.12.0.js" type="text/javascript"></script>
+	<script src="../../js/mobile_model-2/contact.js" type="text/javascript"></script>
+</html>

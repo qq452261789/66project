@@ -1,0 +1,64 @@
+#header{
+	height: 82px;
+	width: 100%;
+	background: #f1f1f1;
+	position: relative;
+}
+.log {
+	display: block;
+	position: absolute;
+	left: 100px;
+	top:50% ;
+	width: 200px;
+	transform: translateY(-50%);
+}
+.log img{
+	display: block;
+	width: auto;
+}
+.nav{
+	display: block;
+	float: left;
+	font-size: 14px;
+	line-height: 82px;	
+}
+.nav a{
+	margin-right: 35px;
+	color: #1c1c1c;
+}
+.nav a:hover{
+	color: #4595f7;
+}
+.share_box{
+	float: right;
+	margin-right: 100px;
+}
+.share_box a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-top: 28px;
+	margin-left: 5px;
+}
+.share_weibo{
+	background: url(../../images/model-2/active/share.png) 5px 8px no-repeat;	
+}
+.share_weixin{
+	background: url(../../images/model-2/active/share.png) -28px 8px no-repeat;	
+}
+.share_qq{
+	background: url(../../images/model-2/active/share.png) -60px 8px no-repeat;	
+}
+
+#footer{
+	height: 55px;
+	line-height: 55px;
+	font-size: 14px;
+	width: 100%;
+}
+#footer a{
+	color: #686767;
+	margin-left: 15%;
+	cursor: pointer;
+}

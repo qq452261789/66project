@@ -1,0 +1,282 @@
+html,body{
+    width:100%;
+    height:100%;
+}
+#client_showcase_box{
+    margin:0 auto;
+    width: 980px;
+}
+#client_showcase_box>p:nth-of-type(1){
+    width:500px;
+    font-size: 28px;
+    color: #9d9c9c;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#client_showcase_box>p:nth-of-type(2){
+    margin-top: 15px;
+    width:700px;
+    font-size: 14px;
+    color: #9d9c9c;
+}
+#client_showcase_box ul{
+    margin-top: 50px;
+    width:100%;
+    text-align: center;
+}
+#client_showcase_box ul li{
+    position:relative;
+    display:inline-block;
+    width:315px;
+    height:315px;
+    overflow:hidden;
+}
+#client_showcase_box ul li .album_title{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    display:none;
+    padding-top: 15px;
+   /* padding-bottom: 20px;*/
+    width: 100%;
+    height:70px;
+    background-color: #fff;
+}
+#client_showcase_box ul li .album_title p{
+    margin:0 auto;
+    width:80%;
+    font-size: 14px;
+    color:#666;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+#client_showcase_box ul li .album_title p:nth-of-type(1){
+    margin-bottom: 5px;
+}
+/*******************点击相册弹出相册封面begin*******************/
+#client_showcase_mask{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/*******************相册封面样式*******************/
+#client_showcase_mask .album_1{
+    width:100%;
+    height: 100%;
+}
+#client_showcase_mask .album_1 .album_cover{
+    display:none;
+    box-sizing: border-box;
+    margin:auto;
+    width:90%;
+    height:90%;
+    border:5px solid #fff;
+    overflow: auto;
+    background: url(../../images/model-2/active/client_showcase1-6.jpg) no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    -webkit-transform: translateY(5%);
+       -moz-transform: translateY(5%);
+        -ms-transform: translateY(5%);
+         -o-transform: translateY(5%);
+            transform: translateY(5%);
+}
+#client_showcase_mask .album_1 .album_cover div{
+    box-sizing: border-box;
+    margin:70px auto;
+    width:60%;
+    min-width: 980px;
+    padding-top:150px;
+    padding-bottom: 150px;
+    text-align:center;
+    border:7px solid #fff;
+}
+#client_showcase_mask .album_1 .album_cover div a{
+    display:inline-block;
+    max-width:60%;
+    font-size:20px;
+    color:#fff;
+}
+#client_showcase_mask .album_1 .album_cover div p{
+    margin:0 auto;
+    margin-top: 50px;
+    color:#fff;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#client_showcase_mask .album_1 .album_cover div p:nth-of-type(1){
+    max-width: 90%;
+    font-size: 75px;
+    line-height: 75px;
+}
+#client_showcase_mask .album_1 .album_cover div p:nth-of-type(2){
+     max-width:60%;
+    font-size: 21px;
+}
+#client_showcase_mask .album_1 .album_cover div button{
+    margin-top: 120px;
+    padding: 10px 20px;
+    width:200px;
+    border:2px solid #fff;
+    background-color: transparent;
+    font-size: 16px;
+    color:#fff;
+    outline: none;
+}
+#client_showcase_mask .album_1 .album_cover div button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+#client_showcase_mask>button{
+    position:fixed;
+    right:2%;
+    top:4%;
+    width:20px;
+    height:25px;
+    border:none;
+    outline:none;
+    background: url(../../images/model-2/background/icon.png) no-repeat;
+    cursor: pointer;
+}
+#client_showcase_mask>a{
+    position:fixed;
+    right:2%;
+    top:5%;
+    margin-top:40px;
+    width:20px;
+    height:25px;
+    border:none;
+    background: url(../../images/model-2/background/icon.png) no-repeat;
+    background-position-y: -25px;
+}
+@media screen and (max-width:1500px){
+   #client_showcase_mask .album_1 .album_cover{
+     background-size: 1500px;
+   }
+}
+
+/*相册内容*/
+#client_showcase_mask .album_1 .album{
+    box-sizing: border-box;
+    margin:auto;
+    border: 5px solid #fff;
+    width:90%;
+    height:90%;
+    overflow: auto;
+    background-color: #fff;
+    -webkit-transform: translateY(5%);
+       -moz-transform: translateY(5%);
+        -ms-transform: translateY(5%);
+         -o-transform: translateY(5%);
+            transform: translateY(5%);
+}
+#client_showcase_mask .album_1 .album p{
+    margin-top: 35px;
+    min-width: 980px;
+    font-size: 16px;
+    color:#999;
+    text-align: center;
+}
+.active{
+    color:#666;
+}
+#client_showcase_mask .album_1 .album p span{
+    display:inline-block;
+    width:20%;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#client_showcase_mask .album_1 .album p span:hover{
+     color:#999;
+}
+#client_showcase_mask .album_1 .album p span:nth-child(1){
+    text-align: right;
+    margin-right: 10px;
+}
+#client_showcase_mask .album_1 .album p span:last-child{
+    text-align: left;
+    margin-left: 10px;
+}
+#client_showcase_mask .album_1 .album .image_list{
+    margin:0 auto;
+    width:980px;
+}
+#client_showcase_mask .album_1 .album .image_list li{
+    margin-top: 5px;
+}
+#client_showcase_mask .album_1 .album .image_list li:nth-of-type(1){
+    margin-top: 15px;
+}
+#client_showcase_mask .album_1 .album a{
+    margin:0 auto;
+    margin-bottom: 10px;
+    display:block;
+    min-width: 980px;
+}
+#client_showcase_mask .album_1 .album a span{
+    margin:0 auto;
+    display:block;
+    width:30%;
+    font-size: 16px;
+    color:#333;
+    text-align:center;
+}
+
+/***************分享icon样式************/
+.share_icon{
+    position:fixed;
+    left:150px;
+    bottom:80px;
+    width:120px;
+}
+.share_icon li{
+    float: left;
+    width:20px;
+    height: 20px;
+    background: url(../../images/model-2/background/share_icon.png) no-repeat;
+}
+.share_icon li:hover{
+     background: url(../../images/model-2/background/share_hover_icon.png) no-repeat;
+    cursor: pointer;
+}
+.share_icon li:nth-of-type(1){
+    background-size: 550%;
+    background-position:5px 5px;
+}
+.share_icon li:nth-of-type(1):hover{
+    background-size: 550%;
+    background-position:5px 5px;
+}
+.share_icon li:nth-of-type(1).active{
+    background: url(../../images/model-2/background/share_hover_icon.png) no-repeat;
+    background-size: 550%;
+    background-position:5px 5px;
+}
+.share_icon li:nth-of-type(2){
+    margin-left: 10px;
+    background-position: -45px;
+}
+.share_icon li:nth-of-type(2):hover{
+     background-position: -48px;
+}
+.share_icon li:nth-of-type(3){
+    background-position: -92px;
+    margin-left: 10px;
+}
+.share_icon li:nth-of-type(3):hover{
+     background-position: -93px;
+}
+.share_icon li:nth-of-type(4){
+    background-position: -138px;
+    margin-left: 10px;
+}
+.share_icon li:nth-of-type(4):hover{
+     background-position: -138px;
+}

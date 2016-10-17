@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../../css/public/base.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/model-2/welcome.css" />
+        <title></title>
+    </head>
+    <body>
+        <div id="welcome_box">
+            <a href="javascript:void(0)">
+                <div class="logo">
+                    <img src="../../images/model-2/active/logo.png" alt="logo" />
+                </div>
+                <p>进入网站</p>
+            </a>
+        </div>
+        
+    </body>
+</html>

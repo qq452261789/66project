@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../../css/public/base.css" />
+        <link rel="stylesheet" href="../../css/model-2/contact.css" />
+        <title></title>
+    </head>
+    <body>
+        <div id="contact_box">
+            <div class="clearfix">
+                <div class="contact_text">
+                    <div>
+                        <p>联系方式</p>
+                        <p>电子邮件</p>
+                        <p>info@mysite.com</p>
+                        <p>电话</p>
+                        <p>123-456-7890</p>
+                        <form class="clearfix" action="" method="post">
+                            <input type="text" name="name" placeholder="姓名"/>
+                            <input type="email" name="email" placeholder="邮箱"/>
+                            <input type="text" name="title" placeholder="主题"/>
+                            <textarea id="contact_content" name="content" placeholder="消息"></textarea>
+                            <p id="Invalid_email_reminder">请提供一个有效的电子邮件</p>
+                            <p id="Incomplete_information_prompt">请填写完整的信息</p>
+                            <input type="submit" value="发送" onclick="return check(this.form)"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../../js/model-2/contact.js"></script>
+    </body>
+</html>

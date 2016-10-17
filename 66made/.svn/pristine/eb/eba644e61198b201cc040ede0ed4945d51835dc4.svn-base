@@ -1,0 +1,41 @@
+#projects{
+	padding: 35px 6%;
+	background: #fff;
+	color: #6ea4ca;
+}
+.projects_title{
+	font-size: 1.8rem;
+	margin-bottom: 5px;
+	text-align: center;	
+}
+.projects_title_line{
+	width: 30px;
+	margin: 0 auto;
+	border-bottom: 3px solid #6EA4CA;
+	margin-bottom: 25px;
+}
+.projects_content{
+	line-height: 20px;
+	font-size: 1.4rem;
+	text-align: center;
+	
+}
+.projects_list{
+	padding-top: 30px;
+}
+.projects_list img{
+	width: 100%;
+	display: block;
+}
+.projects_list_title{
+	font-size: 1.6rem;
+	margin: 28px 0;
+}
+.projects_list_content{
+	font-size: 1.4rem;
+	line-height: 20px;
+	color: #0c3c60;
+}
+
+
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="../../css/mobile_model-1/header.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/mobile_model-1/index.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/public/base.css" />
+	</head>
+
+	<body>
+		<div id="header" class="clearfix">
+			<a href="" id="log">
+				<img class="edit_img" src="../../images/mobile_model-1/background/a.png" />
+			</a>
+			<div class="right show_nav" data-name="点击显示导航栏"></div>
+			<div class="right closs_nav" data-name="点击关闭导航栏"></div>
+			<div class="nav_box">
+				<a href="">关于</a>
+				<a href="">服务</a>
+				<a href="">项目</a>
+				<a href="">客户</a>
+				<a href="">联系</a>
+			</div>
+			
+		</div>
+		<div id="banner" class="clearfix">
+			<img class="edit_img banner_bg" src="../../images/mobile_model-1/background/banner_bg.png" alt="" />
+			<div class="banner_main" data-name="白色透明条"></div>
+			<div class="banner_text">
+				<p class="edit_text">
+					开发创新战略
+				</p>
+				<p class="edit_text">
+					实现增长
+				</p>
+			</div>
+		</div>
+		<div id="main" class="clearfix">
+			<div class="main_color_box" date-name="色块"></div>
+			<div class="main services">
+				<p class="edit_text mian_title">
+					服务
+				</p>
+				<p class="edit_text mian_text">
+					我是一个段落。点击这里添加你自己的文本和编辑我。这很容易。 只需单击“编辑文本”或双击我添加您自己的内容，并作出更改的字体。
+				</p>
+				<a class="edit_text" href="">更多信息</a>
+			</div>
+			<div class="main projects">
+				<p class="edit_text mian_title">
+					项目
+				</p>
+				<p class="edit_text mian_text">
+					我是一个段落。点击这里添加你自己的文本和编辑我。这很容易。 只需单击“编辑文本”或双击我添加您自己的内容，并作出更改的字体。
+				</p>
+				<a class="edit_text" href="">更多信息</a>
+			</div>
+			<div class="main clients">
+				<p class="edit_text mian_title edit_text">
+					客户
+				</p>
+				<p class="edit_text mian_text">
+					我是一个段落。点击这里添加你自己的文本和编辑我。这很容易。 只需单击“编辑文本”或双击我添加您自己的内容，并作出更改的字体。
+				</p>
+				<a class="edit_text" href="">更多信息</a>
+			</div>
+		</div>
+		<div id="about" class="">
+			<p class="edit_text abuot_title ">
+				关于我们
+			</p>
+			<p class="edit_text about_text">
+				我是一个段落。点击此处添加自己的文字和编辑我。这很容易。只需点击“编辑文本”或双击我来添加自己的内容，并更改字体。随意拖放我在;
+				我是一个段落。点击此处添加自己的文字和编辑我。这很容易。只需点击“编辑文本”或双击我来添加自己的内容，并更改字体。随意拖放我在
+			</p>
+			<p class="edit_text about_text">
+				我是一个段落。点击此处添加自己的文字和编辑我。这很容易。只需点击“编辑文本”或双击我来添加自己的内容，并更改字体。随意拖放我在;
+				我是一个段落。点击此处添加自己的文字和编辑我。这很容易。只需点击“编辑文本”或双击我来添加自己的内容，并更改字体。随意拖放我在
+			</p>
+			<p class="edit_text about_text">
+				我是一个段落。点击此处添加自己的文字和编辑我。这很容易。只需点击“编辑文本”或双击我来添加自己的内容，并更改字体。随意拖放我在;
+				我是一个段落。点击此处添加自己的文字和编辑我。这很容易。只需点击“编辑文本”或双击我来添加自己的内容，并更改字体。随意拖放我在
+			</p>
+			<a class="edit_text about_more" href="">阅读更多</a>
+		</div>
+		<div id="contact">
+			<p class="contact_title">
+				联系我们
+			</p>
+			<p class="edit_text address" >地址：天河区珠江新城华夏路49号</p>
+			<p class="edit_text phone" >电话：020-87096175</p>
+			<form action="">
+				<input type="text" name="user_name" id="user_name" value="" placeholder="姓名" />
+				<input type="text" name="user_email" id="user_email" value="" placeholder="邮箱" />
+				<input type="text" name="them" id="them" value="" placeholder="主题" />
+				<textarea name="textarea" rows="" cols="" placeholder="消息"></textarea>
+			</form>
+			<div class="check_info">
+				请提供一个有效的邮箱
+			</div>
+			<div class="send_info">
+				发送
+			</div>
+			<div class="map_box">
+				<img class="edit_img" src="../../images/mobile_model-1/background/map.png" alt=""/>
+			</div>
+		</div>
+		<div id="footer">
+			<a href="index.html">
+				<img src="../../images/mobile_model-1/background/footer_small_bg.png"/>
+				2016  陆陆科技
+				<span id="">66made.com</span>
+			</a>
+			<div class="share_box">
+				<span class="share"></span>					
+				<span class="share"></span>
+				<span class="share"></span>			
+			</div>
+		</div>
+	</body>
+	
+	<script type="text/javascript" src="../../js/public/jquery-1.12.0.js"></script>
+	<script type="text/javascript" src="../../js/mobile_,model-1/index.js"></script>	
+			
+</html>

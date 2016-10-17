@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+ 
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>测试</title>
+  <script src="../js/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $().ready(function () {
+        $("#hidePanel1").click(function () {
+            $(this).show();
+            $(this).focus();
+        });
+        $("#hidePanel1").blur(function () {
+            $(this).hide();
+        });
+        $("#hidePanel1").hide();
+        var $h1 = $("h3")
+        $h1.click(function(){
+        	window.location.href = "https://www.baidu.com";
+//      	 location.href='newpage.html';
+        })
+    });
+</script>
+</head>
+<body> 
+    <h1 onclick='$("#hidePanel1").hide()'>点我div隐藏</h1>
+    <h1 onclick='$("#hidePanel1").click()'>点我div显示</h1>
+    <a href="javascript:void(0)" class="showPanel" id="hidePanel1" style="border:2px solid; color:#333; text-decoration:none; height:150px;display:block;">
+      	  点我div还会显示，点其他地方div隐藏
+        <h3>点我div还会显示</h3>
+      	<!--<a href="https://www.baidu.com/">a去百度</a>-->
+    </a>
+    <h2 href="https://www.baidu.com/" target="_blank">百度</h2>
+</body>
+</html>

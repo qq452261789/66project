@@ -1,0 +1,128 @@
+$(function(){
+	
+	var $li_img = $(".img_ul").find("li") ;	
+	//鼠标滑入显示隐藏分享代码	
+	$li_img.mouseenter(function(){
+		$(this).find(".shardow_box").css({"display":"block"});
+		$(this).find(".share_box_2").css({"display":"block"});	
+	}).mouseleave(function(){
+		$(this).find(".shardow_box").css({"display":"none"});
+		$(this).find(".share_box_2").css({"display":"none"});
+		$(this).find(".share_box_2_a").css({"display":"none"});		
+	})
+		
+		
+	$(".show_share").click(function(){
+		console.log(idx)
+		if( $(this).prev().css("display") == "none" ){
+			$(this).prev().css({"display":"block"})
+		}else{
+			$(this).prev().css({"display":"none"})	
+		}	
+		return false;
+	})
+	//点赞js
+	$(".love_img").click(function(){	
+		//console.log( $(this).is(".activ_love") )
+		if( $(this).is(".activ_love") == false){
+			$(this).css({
+				"background":"url(../../images/model-2/background/live_3.png) 0 5px  no-repeat"
+			})
+			$(this).html(Number($(this).html())+1);
+			$(this).toggleClass("activ_love");			
+		}else{
+			$(this).css({
+				"background":"url(../../images/model-2/background/live_1.png) 0 5px  no-repeat"
+			})
+			$(this).html(Number($(this).html())-1);	
+			$(this).toggleClass("activ_love");			
+		}
+		return false;
+	})
+	
+	//点击弹出放大框 并把相应的信息拷贝到弹窗中
+	var now = 0;
+	var idx = 0 ;
+	var $enlarge_box = $("#enlarge_box");
+	var $enlarge_main = $(".enlarge_main");
+	var $love_img_2 = $(".love_img_2");
+	
+	$li_img.click(function(){
+		idx =$(this).index();
+		$enlarge_box.css({"display":"block"});
+		var clone_img = $(this).children("img").clone();
+		
+		var clone_img_text = $(this).find(".love_img").html();	
+		
+		console.log(clone_img_text);
+		
+		 $love_img_2.html(clone_img_text) ;
+		
+		$enlarge_main.children("img").remove();
+		$enlarge_main.append(clone_img);
+		
+		
+		
+	})
+	var $share_box_2_a = $(".share_box_2_a").click(function(){		
+		return false;
+	});
+	
+	var $enlarge_prev =$(".enlarge_prev");
+	var $enlarge_next =$(".enlarge_next");
+	
+	$enlarge_prev.click(function(){
+		if(idx>0){
+			console.log(idx)
+			var clone_img = $li_img.eq(idx-1).children("img").clone();
+			$enlarge_main.children("img").remove();
+			$enlarge_main.append(clone_img);
+			idx -= 1;
+		}else{
+			//$(this).css({"cursor":"default"})
+		}
+	})
+	if(idx>0){
+		$enlarge_prev.css({"cursor":"pointer"})
+	}
+	
+	$enlarge_next.click(function(){
+		if(idx<=$li_img.length-2){
+			console.log(idx)
+			var clone_img = $li_img.eq(idx+1).children("img").clone();
+			
+			
+			
+			$enlarge_main.children("img").remove();
+			$enlarge_main.append(clone_img);
+			idx += 1;
+		}else{
+			alert("已经是最后一张")
+		}
+		
+	})
+	
+	
+	//关不放大弹窗
+	$(".closs_enlarge_box").click(function(){
+		$enlarge_box.css({"display":"none"});
+	})
+	
+	//图片放大弹窗后js效果
+	var $share_box_3 =$(".share_box_3");
+	var $show_share_2 = $(".show_share_2")	
+	console.log( $share_box_3.css("width"))
+	$show_share_2.click(function(){
+		if( $share_box_3.css("width") === (0+"px") ){
+			
+			$share_box_3.animate({"width":180})
+		}else{
+			$share_box_3.animate({"width":0})
+		}
+	})
+	
+	
+	
+	
+	
+})

@@ -1,0 +1,11 @@
+{
+    "html5": {
+        "syntax": "Packages/HTML/HTML.tmLanguage"
+        // ,"extension": "html" # default_extension
+    },
+    "attr": {
+        "author": "Your Name" ,
+        "email": "iqianduan@126.com",
+        "link": "http://www.iqianduan.cn"
+    }
+}

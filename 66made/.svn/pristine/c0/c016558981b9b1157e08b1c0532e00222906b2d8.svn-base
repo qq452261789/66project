@@ -1,0 +1,111 @@
+/* 
+* @Author: Marte
+* @Date:   2016-10-09 17:56:08
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-10-10 10:37:48
+*/
+#header {
+	width: 100%;
+	height: 90px;
+	background-color: #0c3c60;
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+	line-height: 90px;
+	position: relative;
+}
+
+#log {
+	margin-left: 6%;
+	height: 100%;
+	width: 55%;
+	text-align: center;
+	display: block;
+	position: relative;
+	float: left;
+}
+#log img{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.show_nav{
+    height:50px;
+    width:50px;
+    background: url(../../images/mobile_model-1/background/nav_bg.png) center no-repeat;
+    margin-right: 10%;
+    margin-top: 18px;
+}
+.closs_nav{
+	display: none;
+	height:50px;
+    width:50px;
+    margin-right: 10%;
+    margin-top: 18px;
+     background: url(../../images/mobile_model-1/background/closs_nav_bg.png) center no-repeat;
+}
+.nav_box{
+	position: absolute;
+	background: rgba(12,60,96,0.9);
+	left: 6%;
+	width: 88%;
+	top: 70px;
+	z-index: 10;
+	border: 1px solid #86a9c5;
+	display: none;
+	height: 0;
+	overflow: hidden;
+	}
+.nav_box a{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 1.5rem;
+	text-align: left;
+	text-indent: 10%;
+	border-bottom: 1px solid #86a9c5;
+}
+.nav_box a:last-child{
+	border-bottom: none;
+}
+#footer{
+	padding: 30px 6%;
+	text-align: center;
+	background: #0C3C60;
+}
+#footer a{
+	color: #fff;
+	font-size: 1.4rem;
+	display: block;
+	margin: 0 auto;
+	padding-left: 10px;
+}
+#footer a span:nth-of-type(2){
+	text-decoration: underline;
+}
+#footer img{
+	width: auto;
+	height: auto;
+	display: inline-block
+}
+.share_box{
+	margin-top:10px
+}
+.share_box span{
+	display: inline-block;
+	width: 18px;
+	height: 15px;
+	margin-left: 15px;
+	
+}
+.share_box span:nth-of-type(1){
+	
+	background: url(../../images/mobile_model-1/background/share_bg.png)  no-repeat;
+}
+.share_box span:nth-of-type(2){
+	background: url(../../images/mobile_model-1/background/share_bg.png) -39px no-repeat;
+}
+.share_box span:nth-of-type(3){
+	background: url(../../images/mobile_model-1/background/share_bg.png) -77px no-repeat;
+}

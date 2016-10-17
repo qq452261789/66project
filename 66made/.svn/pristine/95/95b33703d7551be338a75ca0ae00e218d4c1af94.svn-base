@@ -1,0 +1,94 @@
+body{
+    min-width: 1110px;
+}
+#contact_box{
+    position:relative;
+    width: 100%;
+    height:660px;
+    background:url(../../images/model-2/background/contact_bg.png) no-repeat;
+    background-position: center center;
+    background-size:cover;
+    overflow:hidden;
+}
+#contact_box>div{
+    width:1110px;
+    margin:0 auto;
+}
+#contact_box div .contact_text{
+    box-sizing: border-box;
+    float: right;
+    margin-top: 50px;
+    padding: 50px;
+    padding-bottom: 0;
+    width:475px;
+    height:535px;
+    background-color: #fff;
+}
+#contact_box div .contact_text div{
+    height: 360px;
+    padding-right: 5px;
+}
+#contact_box div .contact_text div p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#contact_box div .contact_text div>p:nth-of-type(odd){
+    width:100%;
+    font-size: 14px;
+    color:#5e5d5d;
+}
+#contact_box div .contact_text div>p:nth-of-type(1){
+    width:100%;
+    font-size: 28px;
+    color:#bab9b9;
+}
+#contact_box div .contact_text div>p:nth-of-type(even){
+    width:100%;
+    margin-top: 15px;
+    font-size: 14px;
+    color:#5e5d5d;
+}
+#contact_box div .contact_text div form input{
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding:5px;
+    width:100%;
+    border:1px solid #aca9a9;
+    font-size: 12px;
+}
+#contact_box div .contact_text div form input:nth-of-type(1){
+    margin-top: 30px;
+}
+#contact_box div .contact_text div form input:focus{
+    border: 1px solid #8b0000;
+}
+#contact_box div .contact_text div form textarea{
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding:5px;
+    width:100%;
+    height: 125px;
+    border:1px solid #aca9a9;
+    font-size: 12px;
+    resize:none;
+    outline:none;
+}
+#contact_box div .contact_text div form textarea:focus{
+    border: 1px solid #8b0000;
+}
+#contact_box div .contact_text div form p{
+    display: none;
+    float:left;
+    width:90%;
+    color:#8b0000;
+}
+#contact_box div .contact_text div form input:last-child{
+    float:right;
+    width:10%;
+    background-color: #4595f7;
+    font-size: 12px;
+    color:#fff;
+    border:none;
+    outline:none;
+}

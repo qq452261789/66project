@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" /> -->
+        <link rel="stylesheet" href="../../css/public/base.css" />
+        <link rel="stylesheet" href="../../css/mobile_model-1/services.css" />
+    </head>
+    <body>
+        <div class="mobile_model">
+            <div id="clients_box">
+                <div class="clients_title">
+                    <p>服务</p>
+                    <div></div>
+                    <p>我是一个段落。点击这里添加你自己的文本和编辑我。这很容易。只需单击“编辑文本”或双击我添加您自己的内容，并作出更改的字体。我是一个伟大的地方，让你讲一个故t事，让你的用户知道一点关于你的。</p>
+                </div>
+                <ul class="clients_list">
+                    <li>
+                        <div>
+                            <img src="../../images/model-1/active/discuss_3.jpg" alt="services" />
+                        </div>
+                        <div>
+                            <div>
+                                <p>企业战略</p><span></span>
+                            </div>
+                            <p>1 hr</p>
+                            <p>描述你在这里的服务。什么使它伟大？使用简短有力的文字告诉人们你能提供什么，他们将得到的好处。一个伟大的描述获取读者的情绪，并使他们更可能去提前和书。</p>
+                        </div>
+                       <button>立即预定</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script ></script>
+    </body>
+</html>

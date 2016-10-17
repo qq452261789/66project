@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>客户展示</title>
+		<link rel="stylesheet" type="text/css" href="../../css/public/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/model-2/clientshowcase.css"/>
+	</head>
+	<body>
+		<div id="header">
+			<header class="edit_text">客户展示</header>
+			<div class="small_title edit_text">通过轻松创建相册网站，他们一定会喜欢打动你的客户。</div>
+		</div>
+		<ul class="show_ul clearfix">
+			<li>
+				<div class="img_box">
+					<img class="edit_text" src="../../images/model-2/active/show_1.png"/>
+				</div>
+				<p class="img_them edit_text">旅游组织者</p>
+				<p class="img_time edit_text">2013.09.15</p>
+			</li>
+			<li>
+				<div class="img_box">
+					<img class="edit_text" src="../../images/model-2/active/show_2.png"/>
+				</div>
+				<p class="img_them edit_text">建筑册子</p>
+				<p class="img_time edit_text">2016.02.22</p>
+			</li>
+			<li class="margin_right">
+				<div class="img_box">
+					<img class="edit_text" src="../../images/model-2/active/show_3.png"/>
+				</div>
+				<p class="img_them edit_text">旧金山湾杂志</p>
+				<p class="img_time edit_text">2043.08.30</p>
+			</li>
+			<li>
+				<div class="img_box">
+					<img class="edit_text" src="../../images/model-2/active/show_4.png"/>
+				</div>
+				<p class="img_them edit_text">旅游组织者</p>
+				<p class="img_time edit_text">2003.08.18</p>
+			</li>
+			<li>
+				<div class="img_box">
+					<img class="edit_text" src="../../images/model-2/active/show_5.png"/>
+				</div>
+				<p class="img_them edit_text">车的故事</p>
+				<p class="img_time edit_text">2011.03.028</p>
+			</li>
+			<li class="margin_right">
+				<div class="img_box">
+					<img class="edit_text" src="../../images/model-2/active/show_6.png"/>
+				</div>
+				<p class="img_them edit_text">孤独的行者</p>
+				<p class="img_time edit_text">2013.3.14</p>
+			</li>
+			<li>
+				<div class="img_box">
+					<img class="edit_text" src="../../images/model-2/active/show_7.png"/>
+				</div>
+				<p class="img_them edit_text">萨尔＆理查德</p>
+				<p class="img_time edit_text">2013.3.23</p>
+			</li>
+			<li>
+				<div class="img_box">
+					<img class="edit_text" src="../../images/model-2/active/show_8.png"/>
+				</div>
+				<p class="img_them edit_text">卢卡斯和艾伦</p>
+				<p class="img_time edit_text">2015.3.18</p>
+			</li>
+			<li class="margin_right">
+				<div class="img_box">
+					<img class="edit_text" src="../../images/model-2/active/show_9.png"/>
+				</div>
+				<p class="img_them edit_text">维多利亚和丹尼尔</p>
+				<p class="img_time edit_text">2014.3.28</p>
+			</li>
+			<li>
+				<div class="img_box">
+					<img class="edit_text" src="../../images/model-2/active/show_10.png"/>
+				</div>
+				<p class="img_them edit_text">杰克＆露丝</p>
+				<p class="img_time edit_text">2016.3.18</p>
+			</li>
+			<li>
+				<div class="img_box">
+					<img class="edit_text" src="../../images/model-2/active/show_11.png"/>
+				</div>
+				<p class="img_them edit_text">冰杂志，山巴尔多</p>
+				<p class="img_time edit_text">2017.10.30</p>
+			</li>
+			<li class="margin_right">
+				<div class="img_box">
+					<img class="edit_text" src="../../images/model-2/active/show_12.png"/>
+				</div>
+				<p class="img_them edit_text">徒步旅行杂志，黑森林</p>
+				<p class="img_time edit_text">2016.09.05</p>
+			</li>
+		</ul>
+		
+			
+		
+	</body>
+</html>

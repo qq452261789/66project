@@ -1,0 +1,20 @@
+{
+    "env": {
+     "GOROOT":"H:\\webserver\\go64", //go的安装路径
+     //"GOBIN":"H:\\webserver\\go32\\bin", //设置后 go install会把生成的可执行文件放在系统go/bin/下
+     "GOPATH": "%GS_GOPATH%", //您go的工作路径
+     "GOARCH":"amd64", //系统变量里面的 GOHOSTARCH ，386为32位平台,amd64为 64位平台
+     "GOOS":"windows", //系统里面的GOOS
+     "PATH":"%GOROOT%\\bin;%PATH%"
+    },
+    "autocomplete_suggest_imports": true,
+    "use_gs_gopath": true,
+    "comp_lint_enabled": true,   //打开这个才有下面的 comp_lint_commands标签里面的内容    
+    "comp_lint_commands": [
+        {"cmd": ["go", "install"]}
+    ],
+    "on_save": [
+        {"cmd":"gs_comp_lint"}   //当按保存时以cmd自动执行的命令
+    ]
+    //"env": {"path":"$GOROOT/bin:$PATH" }, //linux
+}
