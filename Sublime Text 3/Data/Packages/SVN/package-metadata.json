@@ -1,0 +1,1 @@
+{"description": "Full-featured commercial Subversion plugin with a focus on usability", "url": "https://wbond.net/sublime_packages/svn", "dependencies": [], "sublime_text": ">=3000", "platforms": ["windows"], "version": "1.7.2+2"}
