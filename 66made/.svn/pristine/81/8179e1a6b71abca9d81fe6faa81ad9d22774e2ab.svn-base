@@ -1,0 +1,2718 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>66编辑器</title>
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/user_web.css" />
+	</head>
+
+	<body>
+		<div id="header" class="clearfix">
+			<!--导航部分-->
+			<h1><a href="http://66made.com" target="_blank"></a></h1>
+			<div id="in_page" class="left">
+				<!--默认显示的首页-->
+				<div id="in_page_1" class="clearfix">
+					<span id="in_page_1_bg_1">
+						<!--页数背景   1-->
+					</span>
+					<span id="in_page_1_bg_2">
+						页数：首页
+					</span>
+					<span id="in_page_1_bg_3">
+						<!--页数背景   2-->
+					</span>
+				</div>
+
+				<!--点击的时候出现搜索框-->
+				<div id="in_page_2">
+					<span id="">
+						
+					</span>
+
+					<input type="text" name="" id="" value="" placeholder="find a page" />
+				</div>
+			</div>
+
+			<div id="status" class="left clearfix">
+				<span id="">
+					当前
+				</span>
+				<span id="">
+					工具
+				</span>
+				<span id="">
+					帮助
+				</span>
+				<span id="_upgrade">
+					升级
+				</span>
+			</div>
+			<div id="controller">
+				<span id="">
+					<!--123-->
+				</span>
+			</div>
+
+			<div id="edit" class="clearfix">
+				<!--1-->
+				<span id="enlarge">
+					
+				</span>
+				<!--2-->
+				<span id="go_back">
+					
+				</span>
+				<!--3-->
+				<span id="go_next">
+					
+				</span>
+				<!--4-->
+				<span id="phone_mode">
+					<!--手机模式-->
+				</span>
+				<!--5-->
+				<span id="save_web_status">
+					保存
+				</span>
+				<!--6-->
+				<span id="preview">
+					预览
+				</span>
+				<!--7-->
+				<span id="publish_web">
+					发布
+				</span>
+			</div>
+		</div>
+		<!--导航编辑器弹窗-->
+		<div id="nav_edict" class="clearfix">
+			<!--导航编辑器头部-->
+			<div id="nav_edict_h" class="clearfix">
+				<p>
+					<!--小三角-->
+				</p>
+				<span>
+					网页
+				</span>
+				<span id="">
+					
+				</span>
+				<span id="closs_nav_edict">
+					<!--关闭按钮-->
+				</span>
+			</div>
+			<!--导航编辑器超链接-->
+			<div id="nav_edict_c">
+				<ul id="nav_edict_c_ul">
+					<li>
+						<p href="">
+							首页
+						</p>
+						<span>
+							<!--背景图  home-->
+						</span>
+						<div id="">
+							<!--背景图  圆形-->
+						</div>
+						<div id="" class="show_small_nav_edit">
+							...
+						</div>
+					</li>
+					<li>
+						<p href="">
+							服务
+						</p>
+						<span>
+							<!--背景图  1-->
+						</span>
+						<div id="">
+							<!--背景图  圆形-->
+						</div>
+						<div id="" class="show_small_nav_edit">
+							...
+						</div>
+					</li>
+					<li>
+						<p href="">
+							我们的工作
+						</p>
+						<span>
+							<!--超链接背景图-->
+						</span>
+						<div id="">
+							<!--背景图  圆形-->
+						</div>
+						<div id="" class="show_small_nav_edit">
+							...
+						</div>
+					</li>
+					<li>
+						<p href="">
+							关于我们
+						</p>
+						<span>
+							<!--超链接背景图-->
+						</span>
+
+						<div id="">
+							<!--背景图  圆形-->
+						</div>
+						<div id="" class="show_small_nav_edit">
+							...
+						</div>
+					</li>
+					<li>
+						<p href="">
+							联系我们
+						</p>
+						<span>
+							<!--超链接背景图-->
+						</span>
+						<div id="">
+							<!--背景图  圆形-->
+						</div>
+						<div id="" class="show_small_nav_edit">
+							...
+						</div>
+					</li>
+					<li>
+						<p href="">
+							网上订购
+						</p>
+						<span>
+							<!--超链接背景图-->
+						</span>
+						<div id="">
+							<!--背景图  圆形-->
+						</div>
+						<div id="" class="show_small_nav_edit">
+							...
+						</div>
+					</li>
+				</ul>
+
+			</div>
+			<!--添加页面-->
+			<div id="nav_edict_f" class="clearfix">
+				<!--添加页面input框-->
+				<div id="add_page" class="clearfix">
+					<button id="add_page_btn" type="button">+  添加页面</button>
+				</div>
+				<!--添加页面 隐藏框-->
+				<div id="add_page_box" class="clearfix">
+					<div id="for_page" class="clearfix">
+						<span id="" class="left">
+							<!-- 页面 背景-->
+						</span>
+						<div id="" class="left  clearfix">
+							<p>页面</p>
+							<p>添加了新的页面</p>
+						</div>
+					</div>
+					<div id="for_link" class="clearfix">
+						<span id="" class="left">
+							<!-- 页面 背景-->
+						</span>
+						<div id="" class="left  clearfix">
+							<p>链接</p>
+							<p>链接添加到您的菜单</p>
+						</div>
+					</div>
+					<div id="for_top" class="clearfix">
+						<span id="" class="left">
+							<!-- 页面 背景-->
+						</span>
+						<div id="" class="left  clearfix">
+							<p>菜单头</p>
+							<p>一个不可点击标题下包的网页和链接</p>
+						</div>
+					</div>
+					<div id="jiantou_1">
+						<!-- 箭头提示-->
+					</div>
+				</div>
+			</div>
+			<div id="change_page" class="clearfix">
+				<span id="for_car" class="left">
+					<!-- 页面 背景 小汽车-->
+				</span>
+				<p class="left">
+					页面转换
+				</p>
+				<p class="left" id="show_pos">
+					出在
+				</p>
+				<!--出在弹框-->
+				<div id="out_page" class="clearfix">
+					<div id="out_page_a">
+						<span>
+							网页转换
+						</span>
+						<span id="">
+							  <!--帮助-->
+						</span>
+						<span id="closs_out_page">
+							    <!--关闭-->
+						</span>
+					</div>
+					<div id="out_page_b" class="clearfix">
+						<div id="" class="clearfix">
+							<span id="">
+								<img src="../images/danxian.png"/>
+							</span>
+							<cite>
+								无
+							</cite>
+
+						</div>
+						<div id="" class="clearfix">
+							<span id="">
+								<img class="_heng"  src="../images/heng_1.png"/>
+							</span>
+							<cite>
+								横向
+							</cite>
+						</div>
+						<div id="" class="clearfix">
+							<span id="">
+								<img class="_chuizhi" src="../images/chuizhi_1.png"/>
+							</span>
+							<cite>
+								垂直
+							</cite>
+						</div>
+						<div id="" class="clearfix">
+							<span id="">
+								<img class="tanru" src="../images/tanchutanchu.png"/>
+							</span>
+							<cite>
+								谈入谈出
+							</cite>
+						</div>
+						<div id="" class="clearfix">
+							<span id="">
+								<img src="../images/chuzai_1.png"/>
+							</span>
+							<cite>
+								出在
+							</cite>
+						</div>
+					</div>
+					<!--提示  小箭头-->
+					<div id="jiant_2">
+						<img src="../images/jiantou_2.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--小导航编辑部分    弹窗-->
+		<div id="small_nav_edit">
+			<span id="">
+				<!--小箭头提示-->
+			</span>
+			<p class="small_nav_edit_p_1 small_nav_edit_bg_1 small_nav_edit_p">
+				页面信息
+			</p>
+			<p class="small_nav_edit_p_2 small_nav_edit_bg_1 small_nav_edit_p">
+				布局
+			</p>
+			<p class="small_nav_edit_p_3 small_nav_edit_bg_1 small_nav_edit_p">
+				权限
+			</p>
+			<p class="small_nav_edit_p_4 small_nav_edit_bg_1 small_nav_edit_p">
+				网页收索引擎优化
+			</p>
+			<div id="" class="under_line_p small_nav_edit_p">
+				<!--分界线-->
+			</div>
+			<p class="small_nav_edit_p_5 small_nav_edit_bg_2 small_nav_edit_p">
+				设置
+			</p>
+			<p class="small_nav_edit_p_6 small_nav_edit_bg_3 small_nav_edit_p">
+				改名
+			</p>
+			<p class="small_nav_edit_p_7 small_nav_edit_bg_4 small_nav_edit_p">
+				重复
+			</p>
+			<p class="small_nav_edit_p_8 small_nav_edit_bg_5 small_nav_edit_p">
+				隐藏
+			</p>
+			<p class="small_nav_edit_p_9 small_nav_edit_bg_6 small_nav_edit_p">
+				删除
+			</p>
+		</div>
+
+		<!--状态栏弹窗部分-->
+		<div id="alert_status" class="clearfix">
+			<!--当前弹框-->
+			<a href="javascript:void(0)" id="_for_now" class="status_alert clearfix">
+				<div id="_for_now_left" class="left clearfix">
+					<span id="" class="">
+						<!--箭头提示部分-->
+					</span>
+					<p class="_for_now_left_p2">
+						保存
+					</p>
+					<p class="_for_now_left_p2">
+						预览
+					</p>
+					<p class="_for_now_left_p4">
+						得到反馈
+					</p>
+					<p class="_for_now_left_p2">
+						发布
+					</p>
+					<p class="_for_now_left_p7">
+						查看发布的网站
+					</p>
+					<p class="_for_now_left_p3">
+						链接域
+					</p>
+					<p class="_for_now_left_p2">
+						升级
+					</p class="_for_now_left_p1">
+					<div id="edit_phone">
+						<p class="_for_now_left_p4">
+							手机编辑
+						</p>
+					</div>
+					<p class="_for_now_left_p4">
+						图像锐化
+					</p>
+					<p class="_for_now_left_p5">
+						我的仪表板
+					</p>
+					<p class="_for_now_left_p4">
+						网站管理
+					</p>
+					<p class="_for_now_left_p4">
+						网站历史
+					</p>
+					<p class="_for_now_left_p5">
+						退出编辑器
+					</p>
+				</div>
+				<div id="_for_now_right" class="left clearfix">
+					<ul id="_for_now_right_ul" class="clearfix">
+						<li>
+							<span id="" class="for_save_span">
+								
+							</span>
+							<p class="_for_now_right_p1">
+								保存你的工作
+							</p>
+							<p class="_for_now_right_p2">
+								来吧，保存您到目前为止所做的工作。
+							</p>
+						</li>
+					</ul>
+				</div>
+			</a>
+			<!--工具弹窗-->
+			<a href="javascript:void(0)" id="_for_tool" class="status_alert clearfix">
+				<div id="_for_tool_left" class="left clearfix">
+					<span id="">
+						<!--头部背景图-->
+					</span>
+					<p>
+						<label for="">
+							<input type="checkbox" checked="checked" name="" id="" value="" /> 
+							工具栏
+						</label>
+					</p>
+					<p>
+						<label for="">
+							<input type="checkbox" name="" id="" value="" /> 
+							统治者
+						</label>
+					</p>
+					<p>
+						<label for="">
+							<input type="checkbox" checked="checked" name="" id="" value="" /> 
+							网格线
+						</label>
+					</p>
+					<p class="_for_tool_left_last_p">
+						<label for="">
+							<input type="checkbox" checked="checked" name="" id="" value="" /> 
+							捕捉到对象
+						</label>
+					</p>
+				</div>
+				<div id="_for_tool_right" class="clearfix left">
+					<ul id="_for_tool_right_ul" class="clearfix">
+						<li class="clearfix">
+							<span id="" class="__for_tool_right_span">
+								<!--头部背景图-->
+							</span>
+							<div id="">
+								<p class="_for_tool_right_p_1">
+									工具栏
+								</p>
+								<p class="_for_tool_right_p_2">
+									使用工具栏轻松搞定你的网页对齐，定位和大小完美的所有元素。
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</a>
+			<!--帮助弹窗-->
+			<a href="javascript:void(0)" id="_for_help" class="status_alert clearfix">
+				<div id="_for_help_left" class="left clearfix">
+					<span id="" class="_for_help_left_span">
+						<!--头部小箭头-->
+					</span>
+					<p class="_for_help_left_1">
+						编辑器支持中心
+					</p>
+					<p class="_for_help_left_2">
+						键盘快捷键
+					</p>
+					<div id="" class="_for_help_left_div">
+						<p class="_for_help_left_3">
+							链接域
+						</p>
+						<p class="_for_help_left_4">
+							快速在网上找到（SEO）
+						</p>
+					</div>
+					<div id="" class="_for_help_left_div_2">
+						<p class="_for_help_left_5">
+							给予反馈
+						</p>
+					</div>
+					<p class="_for_help_left_6">
+						使用条款
+					</p>
+					<p class="_for_help_left_7">
+						隐私政策
+					</p>
+				</div>
+				<div id="_for_help_right" class="left clearfix">
+					<ul id="_for_help_right_ul" class="clearfix">
+						<li>
+							<span class="_for_help_right_span_1">
+								
+							</span>
+							<p class="_for_help_right_p_1">
+								所以你需要的帮助
+							</p>
+							<p class="_for_help_right_p_2">
+								一步一步的帮助让您的网站顺利建立和运行。
+							</p>
+						</li>
+					</ul>
+				</div>
+			</a>
+			<!--升级弹窗-->
+			<a href="javascript:void(0)" id="_for_upgrade" class="status_alert clearfix">
+				<span id="_for_upgrade_span"></span>
+				<div id="_for_upgrade_left" class="left clearfix">
+					<div class="_for_upgrade_left_div_1">
+						升级到无限的年限和储存！
+					</div>
+					<p class="_for_upgrade_left_p">
+						获取一个免费域名链接到您的网站
+					</p>
+					<p class="_for_upgrade_left_p">
+						享受无限的贷款和额外的储存空间
+					</p>
+					<p class="_for_upgrade_left_p">
+						链接谷歌Analytics（分析）
+					</p>
+					<p class="_for_upgrade_left_p">
+						删除66科技品牌广告
+					</p>
+					<div id="" class="_for_upgrade_left_div_2">
+						去升级，通过节省您的网站启动
+					</div>
+					<div id="save_to_web">
+						保存到站点
+					</div>
+				</div>
+				<div id="_for_upgrade_right" class="left clearfix">
+
+				</div>
+			</a>
+			<!--点击编辑器消失病预览网页-->
+		</div>
+		<!--手机模式弹窗-->
+		<a id="phone_alert" href="javascript:void(0)">
+			<span id="" class="phone_alert_span">
+				<!--提示小箭头-->
+			</span>
+			<div id="phone_alert_left" class="left clearfix">
+				<p class="computer_model">
+					编辑桌面视图
+					<span id="">
+						<!--模式选择背景-->
+					</span>
+				</p>
+				<p class="phone_model">
+					编辑手机浏览
+					<span id="">
+						<!--模式选择背景-->
+					</span>
+				</p>
+				<div id="" class="choice_mobile">
+					<span id="" class="choice_mobile_span1">
+						
+					</span>
+					<span id="" class="choice_mobile_span2">
+						
+					</span> 优化您的移动端网站。
+				</div>
+			</div>
+			<div id="phone_alert_right" class="left clearfix">
+				<span id="phone_alert_right_bg">
+					
+				</span>
+				<p class="phone_alert_right_p1">
+					所有设备上看起来都很美观
+				</p>
+				<p class="phone_alert_right_p2">
+					66科技可以很容易地优化您的 网站的移动。
+				</p>
+			</div>
+		</a>
+		<!--保存弹窗-->
+		<div id="save_alert">
+			<div id="sever_mask">
+				<!--保存弹窗遮罩层-->
+			</div>
+			<div id="save_alert_content">
+				<div id="save_alert_content_top">
+					保存你的工作
+					<span id="closs_save_alert" class="">
+						
+					</span>
+				</div>
+				<div id="save_alert_content_center">
+					<p>
+						当你创建你的网站，这是一个好主意，定 期保存您的工作。
+					</p>
+				</div>
+				<div id="save_web">
+					确认保存
+				</div>
+			</div>
+		</div>
+		<!--发布弹窗-->
+		<div id="publish_alert">
+			<div id="publish_mask">
+				<!--遮罩层-->
+			</div>
+			<div id="publish_control">
+				<div id="publish_control_top">
+					<span id="closs_publish">
+						<!--关闭发布弹窗-->
+					</span>
+					<p class="publish_control_top_p_1">
+						在您发布网站之前，请选择一个域
+					</p>
+					<p class="publish_control_top_p_2">
+						您选择的域将是您的网站地址
+					</p>
+				</div>
+				<div id="free_domain" class="domain">
+					<span id="domain_selected_1" class="domain_selected">
+						<!--选中背景和默认背景-->
+					</span>
+					<p class="domain_p_1">
+						免费获得made.66dache.com域
+					</p>
+					<div id="user_domain">
+						<span id="user_domain_bg">
+							<!--小背景-->
+						</span>
+						<div id="user_domain_val">
+							<p id="user_domain_name" class="left">
+								http://xiaomoyi.made.66dache.com/
+							</p>
+							<input id="user_domain_id" class="left" value="mysite">
+
+							</input>
+						</div>
+					</div>
+				</div>
+				<div id="customer_domain" class="domain">
+					<span id="domain_selected_2" class="domain_selected">
+						<!--选中背景和默认背景-->
+					</span>
+					<p class="customer_domain_p_1">
+						链接到自己的定制域名
+					</p>
+					<p class="customer_domain_p_2">
+						例如链接到http://www.66made.com
+					</p>
+				</div>
+				<div id="sure_save">
+					保存并确认
+				</div>
+			</div>
+		</div>
+		<!--编辑器代码部分-->
+		<ul id="edit_ul" class="clearfix">
+			<li class="edit_ul_li_1">
+				<p class="action  left" id="p">
+					背景设置
+				</p>
+				<!--背景设置 隐藏框-->
+			</li>
+			<li class="edit_ul_li_2">
+
+				<p class="action left">
+					添加元素
+				</p>
+			</li>
+			<li class="edit_ul_li_3">
+
+				<p class="action left">
+					应用市场
+				</p>
+			</li>
+			<li class="edit_ul_li_4">
+
+				<p class="action left">
+					我的上传
+				</p>
+			</li>
+			<li class="edit_ul_li_5">
+
+				<p class="action left">
+					编写博客
+				</p>
+			</li>
+			<li class="edit_ul_li_6">
+
+				<p class="action left">
+					服务预订
+				</p>
+			</li>
+		</ul>
+		<!--隐藏框            添加背景-->
+		<div id="for_bg" class="clearfix edit">
+			<div id="_for_small_bg">
+				<!--放置  背景图-->
+			</div>
+			<div id="_for_small_bg_2">
+				<!--放置  背景图-->
+			</div>
+			<div id="for_bg_a" class="clearfix">
+				<p class="left">页面背景</p>
+				<span id="bg_help" class="left">
+					  <!--帮助--> 
+				</span>
+				<span id="closs_for_bg" class="left closs_edit">
+					<!--关闭框-->		
+				</span>
+			</div>
+			<div id="for_bg_b" class="clearfix">
+				<img src="../images/bg_top.png" />
+				<div class="clearfix" id="for_bg_b_a">
+
+					<button type="button">
+						<!--设置-->
+					</button>
+
+					<button type="button">
+						<!--播放-->
+					</button>
+				</div>
+			</div>
+			<div id="for_bg_b_b">
+				<div id="" class="btn_div left ">
+					<button type="button">
+						颜色
+					</button>
+				</div>
+				<div id="" class="btn_div left clearfix">
+					<button type="button ">
+						图片
+					</button>
+				</div>
+				<div id="" class="btn_div left clearfix">
+					<button type="button">
+						视频
+					</button>
+				</div>
+			</div>
+			<div id="for_bg_b_c">
+				<p>
+					选择页面背景
+				</p>
+				<span id="_tishi">
+							<!--感叹号   提示 -->
+						</span>
+				<div id="bg_tishi">
+					<p>令人惊赞的图片和视频背景，完美的任何页面</p>
+					<div id="">
+						<!--提示小角标-->
+					</div>
+				</div>
+				<div id="for_border">
+					<!--线条-->
+				</div>
+			</div>
+			<div id="for_bg_b_d" class="clearfix">
+				<ul id="for_bg_img" class="clearfix">
+					<!--1-->
+					<li>
+						<img src="../images/bg_img_1.png" />
+						<div class="bg_name">
+							极简主义壁纸
+						</div>
+					</li>
+					<!--2-->
+					<li class="margin_30">
+						<img src="../images/bg_img_2.png" />
+						<div class="bg_name">
+							抽象色彩油墨
+						</div>
+					</li>
+					<!--3-->
+					<li>
+						<img src="../images/bg_img_3.png" />
+						<div class="bg_name">
+							纽约日出雾霾
+						</div>
+					</li>
+					<!--4-->
+					<li>
+						<img src="../images/bg_img_4.png" />
+						<div class="bg_name">
+							今夜星城
+						</div>
+					</li>
+					<!--5-->
+					<li class="margin_30">
+						<img src="../images/bg_img_5.png" />
+						<div class="bg_name">
+							清新壁纸
+						</div>
+					</li>
+					<!--6-->
+					<li>
+						<img src="../images/bg_img_6.png" />
+						<div class="bg_name">
+							雨嘉年华
+						</div>
+					</li>
+					<!--1-->
+					<li>
+						<img src="../images/bg_img_1.png" />
+						<div class="bg_name">
+							极简主义壁纸
+						</div>
+					</li>
+					<!--2-->
+					<li class="margin_30">
+						<img src="../images/bg_img_2.png" />
+						<div class="bg_name">
+							抽象色彩油墨
+						</div>
+					</li>
+					<!--3-->
+					<li>
+						<img src="../images/bg_img_3.png" />
+						<div class="bg_name">
+							纽约日出雾霾
+						</div>
+					</li>
+					<!--4-->
+					<li>
+						<img src="../images/bg_img_4.png" />
+						<div class="bg_name">
+							今夜星城
+						</div>
+					</li>
+					<!--5-->
+					<li class="margin_30">
+						<img src="../images/bg_img_5.png" />
+						<div class="bg_name">
+							清新壁纸
+						</div>
+					</li>
+					<!--6-->
+					<li>
+						<img src="../images/bg_img_6.png" />
+						<div class="bg_name">
+							雨嘉年华
+						</div>
+					</li>
+					<!--1-->
+					<li>
+						<img src="../images/bg_img_1.png" />
+						<div class="bg_name">
+							极简主义壁纸
+						</div>
+					</li>
+					<!--2-->
+					<li class="margin_30">
+						<img src="../images/bg_img_2.png" />
+						<div class="bg_name">
+							抽象色彩油墨
+						</div>
+					</li>
+					<!--3-->
+					<li>
+						<img src="../images/bg_img_3.png" />
+						<div class="bg_name">
+							纽约日出雾霾
+						</div>
+					</li>
+					<!--4-->
+					<li>
+						<img src="../images/bg_img_4.png" />
+						<div class="bg_name">
+							今夜星城
+						</div>
+					</li>
+					<!--5-->
+					<li class="margin_30">
+						<img src="../images/bg_img_5.png" />
+						<div class="bg_name">
+							清新壁纸
+						</div>
+					</li>
+					<!--6-->
+					<li>
+						<img src="../images/bg_img_6.png" />
+						<div class="bg_name">
+							雨嘉年华
+						</div>
+					</li>
+					<!--1-->
+					<li>
+						<img src="../images/bg_img_1.png" />
+						<div class="bg_name">
+							极简主义壁纸
+						</div>
+					</li>
+					<!--2-->
+					<li class="margin_30">
+						<img src="../images/bg_img_2.png" />
+						<div class="bg_name">
+							抽象色彩油墨
+						</div>
+					</li>
+					<!--3-->
+					<li>
+						<img src="../images/bg_img_3.png" />
+						<div class="bg_name">
+							纽约日出雾霾
+						</div>
+					</li>
+					<!--4-->
+					<li>
+						<img src="../images/bg_img_4.png" />
+						<div class="bg_name">
+							今夜星城
+						</div>
+					</li>
+					<!--5-->
+					<li class="margin_30">
+						<img src="../images/bg_img_5.png" />
+						<div class="bg_name">
+							清新壁纸
+						</div>
+					</li>
+					<!--6-->
+					<li>
+						<img src="../images/bg_img_6.png" />
+						<div class="bg_name">
+							雨嘉年华
+						</div>
+					</li>
+					<!--1-->
+					<li>
+						<img src="../images/bg_img_1.png" />
+						<div class="bg_name">
+							极简主义壁纸
+						</div>
+					</li>
+					<!--2-->
+					<li class="margin_30">
+						<img src="../images/bg_img_2.png" />
+						<div class="bg_name">
+							抽象色彩油墨
+						</div>
+					</li>
+					<!--3-->
+					<li>
+						<img src="../images/bg_img_3.png" />
+						<div class="bg_name">
+							纽约日出雾霾
+						</div>
+					</li>
+					<!--4-->
+					<li>
+						<img src="../images/bg_img_4.png" />
+						<div class="bg_name">
+							今夜星城
+						</div>
+					</li>
+					<!--5-->
+					<li class="margin_30">
+						<img src="../images/bg_img_5.png" />
+						<div class="bg_name">
+							清新壁纸
+						</div>
+					</li>
+					<!--6-->
+					<li>
+						<img src="../images/bg_img_6.png" />
+						<div class="bg_name">
+							雨嘉年华
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div id="for_bg_b_f">
+				<div id="for_bg_b_f_a">
+					<!--遮罩层-->
+				</div>
+				<p>
+					适用于其他页面
+				</p>
+			</div>
+		</div>
+		<!--添加元素隐藏框-->
+		<div id="for_add" class="clearfix edit">
+			<div id="_small_bg">
+				<!--放背小景图 -->
+			</div>
+			<!--添加元素导航-->
+			<div id="for_add_nav" class="clearfix left">
+				<div class="clearfix">
+					文本
+				</div>
+				<div class="clearfix">
+					图片
+				</div>
+				<div class="clearfix">
+					画廊
+				</div>
+				<div class="clearfix">
+					幻灯片
+				</div>
+				<div class="clearfix">
+					按钮
+				</div>
+				<div class="clearfix">
+					框
+				</div>
+				<div class="clearfix">
+					跳闸
+				</div>
+				<div class="clearfix">
+					形状
+				</div>
+				<div class="clearfix">
+					视频
+				</div>
+				<div class="clearfix">
+					音乐
+				</div>
+				<div class="clearfix">
+					社会
+				</div>
+				<div class="clearfix">
+					联系
+				</div>
+				<div class="clearfix">
+					菜单
+				</div>
+				<div class="clearfix">
+					名单
+				</div>
+				<div class="clearfix">
+					博客
+				</div>
+				<div class="clearfix">
+					商店
+				</div>
+				<div class="clearfix">
+					更多
+				</div>
+			</div>
+			<!--添加内容隐藏框-->
+			<div id="for_add_box" class="clearfix left">
+				<!--头部公共部分-->
+				<p id="for_add_box_1">
+					<span id="closs_add" class="closs_edit">
+						<!--关闭按钮-->
+					</span>
+				</p>
+				<!--添加文本 1-->
+				<div id="for_add_box_a" class="for_add_box clearfix">
+					<div id="" class="bass_height">
+						添加文本
+						<span id="text_help" class="help_bg">							
+						<!--帮助-->
+						</span>
+					</div>
+					<div id="overflow_y_2">
+						<div id="" class="bass_height_2">
+							<p class="">
+								主题文字
+							</p>
+							<div id="" class="_gantan">
+								<!--提示-->
+							</div>
+							<div class="_line_1">
+								<!--背景线-->
+							</div>
+						</div>
+						<div id="div_title">
+							<h2 id="title_website">网站标题</h2>
+							<h2 id="title_page">网页标题</h2>
+							<h2 id="title_big">大标题</h2>
+							<h4 id="title_small">小标题</h4>
+
+							<p class="family_normal">
+								我是一个段落，点击此处添加自己的文字和编辑我，这很容易。
+							</p>
+							<p class="change_font_family">
+								我是一个段落，点击此处添加自己的文字和编辑我，这很容易。
+							</p>
+						</div>
+						<div id="" class="bass_height_2">
+							<p class="">
+								标题
+							</p>
+							<div class="_line_1">
+								<!--背景线-->
+							</div>
+							<div id="" class="_gantan">
+								<!--小提示-->
+							</div>
+						</div>
+						<div id="english_title">
+							<div id="" class="margin_botton_15">
+								<img src="../images/font_bg_1.png" />
+							</div>
+							<div id="" class="margin_botton_15">
+								<img src="../images/font_bg_2.png" />
+							</div>
+							<div id="" class="margin_botton_15">
+								<img src="../images/font_bg_3.png" />
+							</div>
+							<div id="" class="margin_botton_15">
+								<img src="../images/font_bg_4.png" />
+							</div>
+							<div id="" class="margin_botton_15">
+								<img src="../images/font_bg_5.png" />
+							</div>
+							<div id="" class="margin_botton_15">
+								<img src="../images/font_bg_6.png" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--添加图片 2 -->
+				<div id="for_add_box_b" class="for_add_box clearfix">
+					<div id="" class="bass_height">
+						添加图片
+						<span id="img_help" class="help_bg">
+							
+						</span>
+					</div>
+					<div id="overflow_y" class="overflow_y">
+						<div id="" class="bass_height_2">
+							<p class="">
+								我的上传
+							</p>
+							<div id="" class="_gantan">
+								<!--提示-->
+							</div>
+							<div class="_line_1">
+								<!--背景线-->
+							</div>
+						</div>
+						<div id="mg_bot_20" class="my_picture clearfix">
+							<div class="_picture_bg left">
+								<img src="../images/my_pictrue.png" />
+							</div>
+							<div class="_picture_text left">
+								<p>
+									我的上传图片
+								</p>
+								<p>
+									上传并添加自己的照片到您的网站
+								</p>
+							</div>
+							<div class="_tishi_r">
+								<!--提示小图标-->
+							</div>
+						</div>
+
+						<div id="" class="bass_height_2">
+							<p class="">
+								图片集
+							</p>
+							<div id="" class="_gantan">
+								<!--提示-->
+							</div>
+							<div class="_line_1">
+								<!--背景线-->
+							</div>
+						</div>
+						<div id="pictrue_more" class="clearfix">
+							<ul>
+								<li class="pictrue_more_li">
+									<div id="" class="left _picture_bg">
+										<img src="../images/more_pictrue_1.png" />
+									</div>
+									<div id="" class="_picture_text left">
+										<p>
+											免费66图片
+										</p>
+										<p>
+											美丽的免费图像在网站上使用。
+										</p>
+									</div>
+									<div id="" class="_tishi_r">
+										<!--提示小图标-->
+									</div>
+								</li>
+								<li class="pictrue_more_li">
+									<div id="" class="left _picture_bg">
+										<img src="../images/more_pictrue_2.png" />
+									</div>
+									<div id="" class="_picture_text left">
+										<p>
+											免费66图片剪贴画
+										</p>
+										<p>
+											免费的剪贴画和剪纸选择。
+										</p>
+									</div>
+									<div id="" class="_tishi_r">
+										<!--提示小图标-->
+									</div>
+								</li>
+								<li class="pictrue_more_li">
+									<div id="" class="left _picture_bg">
+										<img src="../images/more_pictrue_3.png" />
+									</div>
+									<div id="" class="_picture_text left">
+										<p>
+											图网图片
+										</p>
+										<p>
+											高质量的图像，以购买并拥有
+										</p>
+									</div>
+									<div id="" class="_tishi_r">
+										<!--提示小图标-->
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div id="padding_top_20" class="bass_height_2 clearfix">
+							<p class="">
+								我的社会形象
+							</p>
+							<div id="" class="_gantan">
+								<!--提示-->
+							</div>
+							<div class="_line_1">
+								<!--背景线-->
+							</div>
+						</div>
+						<div id="" class="my_picture clearfix">
+							<div class="_picture_bg left">
+								<img src="../images/my_pictrue.png" />
+							</div>
+							<div class="_picture_text left">
+								<p>
+									我的上传图片
+								</p>
+								<p>
+									上传并添加自己的照片到您的网站
+								</p>
+							</div>
+							<div class="_tishi_r">
+								<!--提示小图标-->
+							</div>
+						</div>
+						<div id="" class="my_picture clearfix">
+							<div class="_picture_bg left">
+								<img src="../images/my_pictrue.png" />
+							</div>
+							<div class="_picture_text left">
+								<p>
+									我的上传图片
+								</p>
+								<p>
+									上传并添加自己的照片到您的网站
+								</p>
+							</div>
+							<div class="_tishi_r">
+								<!--提示小图标-->
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!--添加画廊  3 -->
+				<div id="for_add_box_c" class="for_add_box clearfix">
+					<div id="" class="bass_height">
+						添加画廊
+						<span id="more_img_help" class="help_bg">
+							
+						</span>
+					</div>
+					<!--设置滚动条-->
+					<div id="" class="_h_716 overflow_y">
+						<!--公共小标题部分-->
+						<div id="" class="bass_height_2">
+							<p class="">
+								电网画廊
+							</p>
+							<div id="" class="_gantan">
+								<!--提示-->
+							</div>
+							<div class="_line_1">
+								<!--背景线-->
+							</div>
+						</div>
+						<!--电网画廊  框-->
+						<div id="_web_pictrue" class="clearfix">
+							<!--电网画廊  左框-->
+							<div id="_web_pictrue_a" class="left clearfix">
+								<div id="_pubu" class="hualang">
+									<div id="_pubu_1">
+										<div id="" class="left clearfix">
+											<div id="" class="">
+												<img src="../images/hualang_1.png" />
+												<p>
+													<img src="../images/img_title_1.png" />
+												</p>
+											</div>
+											<div id="">
+												<img src="../images/hualang_3.png" />
+												<p>
+													<img src="../images/img_title_2.png" />
+												</p>
+											</div>
+										</div>
+										<div id="" class="clearfix left">
+											<div id="" class="">
+												<img src="../images/hualang_2.png" />
+												<p>
+													<img src="../images/img_title_3.png" />
+												</p>
+											</div>
+											<div id="">
+												<img src="../images/hualang_4.png" />
+												<p>
+													<img src="../images/img_title_1.png" />
+												</p>
+											</div>
+										</div>
+										<div id="" class="clearfix left">
+											<div id="" class="">
+												<img src="../images/hualang_5.png" />
+												<p>
+													<img src="../images/img_title_2.png" />
+												</p>
+											</div>
+											<div id="">
+												<img src="../images/hualang_1.png" />
+												<p>
+													<img src="../images/img_title_3.png" />
+												</p>
+											</div>
+										</div>
+									</div>
+									<div id="" class="_zhuti">
+										石工
+									</div>
+								</div>
+								<div id="_fangx" class="hualang clearfix">
+									<ul>
+										<li class="left">
+											<img src="../images/fang_1.png" />
+										</li>
+										<li class="left margin_l_5 margin_r_5">
+											<img src="../images/fang_1.png" />
+										</li>
+										<li class="left">
+											<img src="../images/fang_1.png" />
+										</li>
+										<li class="left">
+											<img src="../images/fang_1.png" />
+										</li>
+										<li class="left margin_l_5 margin_r_5">
+											<img src="../images/fang_2.png" />
+										</li>
+										<li class="left">
+											<img src="../images/fang_1.png" />
+										</li>
+										<li class="left">
+											<img src="../images/fang_1.png" />
+										</li>
+										<li class="left margin_l_5 margin_r_5">
+											<img src="../images/fang_2.png" />
+										</li>
+										<li class="left">
+											<img src="../images/fang_1.png" />
+										</li>
+									</ul>
+									<div id="" class="__zhuti">
+										网络（纵向）
+									</div>
+								</div>
+								<div id="_fangx_2" class="hualang clearfix">
+									<ul id="_fangx_ul">
+										<li class="left">
+											<img src="../images/fang_1.png" />
+											<div id="" class="bg_black">
+												<!--遮罩层-->
+
+											</div>
+											<div class="baisi">
+												<!--文字过小只能用图片替换当背景-->
+											</div>
+											<p>
+												图片名
+											</p>
+										</li>
+										<li class="left margin_l_5 margin_r_5">
+											<img src="../images/fang_1.png" />
+											<div id="" class="bg_black">
+												<!--遮罩层-->
+
+											</div>
+											<div class="baisi">
+												<!--文字过小只能用图片替换当背景-->
+											</div>
+											<p>
+												图片名
+											</p>
+										</li>
+										<li class="left">
+											<img src="../images/fang_1.png" />
+											<div id="" class="bg_black">
+												<!--遮罩层-->
+
+											</div>
+											<div class="baisi">
+												<!--文字过小只能用图片替换当背景-->
+											</div>
+											<p>
+												图片名
+											</p>
+										</li>
+										<li class="left">
+											<img src="../images/fang_1.png" />
+											<div id="" class="bg_black">
+												<!--遮罩层-->
+
+											</div>
+											<div class="baisi">
+												<!--文字过小只能用图片替换当背景-->
+											</div>
+											<p>
+												图片名
+											</p>
+										</li>
+										<li class="left margin_l_5 margin_r_5">
+											<img src="../images/fang_2.png" />
+											<div id="" class="bg_black">
+												<!--遮罩层-->
+
+											</div>
+											<div class="baisi">
+												<!--文字过小只能用图片替换当背景-->
+											</div>
+											<p>
+												图片名
+											</p>
+										</li>
+										<li class="left">
+											<img src="../images/fang_1.png" />
+											<div id="" class="bg_black">
+												<!--遮罩层-->
+
+											</div>
+											<div class="baisi">
+												<!--文字过小只能用图片替换当背景-->
+											</div>
+											<p>
+												图片名
+											</p>
+										</li>
+										<li class="left">
+											<img src="../images/fang_1.png" />
+											<div id="" class="bg_black">
+												<!--遮罩层-->
+
+											</div>
+											<div class="baisi">
+												<!--文字过小只能用图片替换当背景-->
+											</div>
+											<p>
+												图片名
+											</p>
+										</li>
+										<li class="left margin_l_5 margin_r_5">
+											<img src="../images/fang_2.png" />
+											<div id="" class="bg_black">
+												<!--遮罩层-->
+
+											</div>
+											<div class="baisi">
+												<!--文字过小只能用图片替换当背景-->
+											</div>
+											<p>
+												图片名
+											</p>
+										</li>
+										<li class="left">
+											<img src="../images/fang_1.png" />
+											<div id="" class="bg_black">
+												<!--遮罩层-->
+
+											</div>
+											<div class="baisi">
+												<!--文字过小只能用图片替换当背景-->
+											</div>
+											<p>
+												图片名
+											</p>
+										</li>
+									</ul>
+									<div id="" class="__zhuti">
+										网络（潇洒）
+									</div>
+								</div>
+								<div id="_fangx" class="hualang clearfix">
+									<ul>
+										<li class="left">
+											<img src="../images/fang_5.png" />
+										</li>
+										<li class="left margin_l_5 margin_r_5">
+											<img src="../images/fang_1.png" />
+										</li>
+										<li class="left">
+											<img src="../images/fang_6.png" />
+										</li>
+										<li class="left">
+											<img src="../images/fang_1.png" />
+										</li>
+										<li class="left margin_l_5 margin_r_5">
+											<img src="../images/fang_4.png" />
+										</li>
+										<li class="left">
+											<img src="../images/fang_3.png" />
+										</li>
+										<li class="left">
+											<img src="../images/fang_1.png" />
+										</li>
+										<li class="left margin_l_5 margin_r_5">
+											<img src="../images/fang_2.png" />
+										</li>
+										<li class="left">
+											<img src="../images/fang_4.png" />
+										</li>
+									</ul>
+									<div id="" class="__zhuti">
+										动画网络（展示）
+									</div>
+								</div>
+							</div>
+							<!--电网画廊  右框-->
+							<div id="_web_pictrue_b" class="left clearfix">
+								<div id="_web_pictrue_b_a" class="clearfix _web_pictrue_1">
+									<div id="_pingtu" class="hualang clearfix">
+										<div id="pingtu_1" class="left clearfix">
+											<img src="../images/pingtu_1.png" />
+											<img src="../images/pingtu_2.png" />
+											<img src="../images/pingtu_3.png" />
+											<img src="../images/pingtu_4.png" />
+										</div>
+										<div id="pingtu_2" class="left clearfix">
+											<div id="pingtu_2_a">
+												<img src="../images/pingtu_3.png" />
+												<img src="../images/pingtu_3.png" />
+												<img src="../images/pingtu_2.png" />
+											</div>
+											<div id="pingtu_2_b">
+												<img src="../images/pingtu_8.png" />
+												<img src="../images/pingtu_6.png" />
+											</div>
+										</div>
+									</div>
+									<div id="" class="__zhuti">
+										拼贴（经典）
+									</div>
+								</div>
+								<!--网络框架-->
+								<div id="_web_pictrue_b_b" class="clearfix _web_pictrue_1">
+									<div id="_web_pictrue_b_b_a" class="clearfix">
+										<div id="" class="clearfix left">
+											<div id="" class="web_page ">
+												<img src="../images/pingtu_1.png" />
+											</div>
+											<p>
+												<img src="../images/img_title_1.png" />
+											</p>
+										</div>
+										<div id="" class="clearfix left margin_rl_5">
+											<div id="" class="web_page ">
+												<img src="../images/hualang_5.png" />
+											</div>
+											<p>
+												<img src="../images/img_title_2.png" />
+											</p>
+										</div>
+										<div id="" class="clearfix left">
+											<div id="" class="web_page ">
+												<img src="../images/hualang_7.png" />
+											</div>
+											<p>
+												<img src="../images/img_title_3.png" />
+											</p>
+										</div>
+										<div id="" class="clearfix left">
+											<div id="" class="web_page ">
+												<img src="../images/hualang_3.png" />
+											</div>
+											<p>
+												<img src="../images/img_title_2.png" />
+											</p>
+										</div>
+										<div id="" class="clearfix left margin_rl_5">
+											<div id="" class="web_page ">
+												<img src="../images/pingtu_1.png" />
+											</div>
+											<p>
+												<img src="../images/img_title_1.png" />
+											</p>
+										</div>
+										<div id="" class="clearfix left">
+											<div id="" class="web_page ">
+												<img src="../images/hualang_9.png" />
+											</div>
+											<p>
+												<img src="../images/img_title_3.png" />
+											</p>
+										</div>
+										<div id="" class="clearfix left">
+											<div id="" class="web_page ">
+												<img src="../images/pingtu_1.png" />
+											</div>
+											<p>
+												<img src="../images/img_title_1.png" />
+											</p>
+										</div>
+										<div id="" class="clearfix left margin_rl_5">
+											<div id="" class="web_page ">
+												<img src="../images/pingtu_3.png" />
+											</div>
+											<p>
+												<img src="../images/img_title_1.png" />
+											</p>
+										</div>
+										<div id="" class="clearfix left">
+											<div id="" class="web_page ">
+												<img src="../images/pingtu_8.png" />
+											</div>
+											<p>
+												<img src="../images/img_title_2.png" />
+											</p>
+										</div>
+									</div>
+									<div class="clearfix">
+										网络(框架)
+									</div>
+								</div>
+								<!--网络（精选）-->
+								<div id="_web_pictrue_b_c" class="clearfix _web_pictrue_1">
+									<div id="_jingxuan">
+										<ul>
+											<li><img src="../images/jingxuan_1.png" /></li>
+											<li class="margin_rl_5"><img src="../images/jingxuan_2.png" /></li>
+											<li><img src="../images/jingxuan_3.png" /></li>
+											<li><img src="../images/jingxuan_4.png" /></li>
+											<li class="margin_rl_5"><img src="../images/jingxuan_5.png" /></li>
+											<li><img src="../images/jingxuan_5.png" /></li>
+											<li><img src="../images/jingxuan_7.png" /></li>
+											<li class="margin_rl_5"><img src="../images/jingxuan_8.png" /></li>
+											<li><img src="../images/jingxuan_9.png" /></li>
+										</ul>
+									</div>
+									<div id="" class="margin_t_5">
+										网络（精选）
+									</div>
+								</div>
+								<!--动画风格（展示）-->
+								<div id="_web_pictrue_b_c" class="clearfix _web_pictrue_1">
+									<div id="" class="hualang clearfix">
+										<ul>
+											<li class="left">
+												<img src="../images/fang_5.png" />
+											</li>
+											<li class="left margin_l_5 margin_r_5">
+												<img src="../images/fang_1.png" />
+											</li>
+											<li class="left">
+												<img src="../images/fang_2.png" />
+											</li>
+											<li class="left">
+												<img src="../images/fang_4.png" />
+											</li>
+											<li class="left margin_l_5 margin_r_5">
+												<img src="../images/fang_6.png" />
+											</li>
+											<li class="left">
+												<img src="../images/fang_4.png" />
+											</li>
+											<li class="left">
+												<img src="../images/fang_1.png" />
+											</li>
+											<li class="left margin_l_5 margin_r_5">
+												<img src="../images/fang_6.png" />
+											</li>
+											<li class="left">
+												<img src="../images/fang_3.png" />
+											</li>
+										</ul>
+									</div>
+									<div id="" class="__zhuti">
+										动画风格（展示）
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div id="" class="bass_height_2">
+						<p class="">
+							全宽画廊
+						</p>
+						<div id="" class="_gantan">
+							<!--提示-->
+						</div>
+						<div class="_line_1">
+							<!--背景线-->
+						</div>
+					</div>
+				</div>
+				<!--幻灯片      4-->
+				<div id="for_add_box_d" class="for_add_box clearfix">
+					<div id="" class="bass_height">
+						添加幻灯片
+						<span id="silder_help" class="help_bg">
+							
+						</span>
+					</div>
+					<!--设置滚动条-->
+					<div id="" class="overflow_y">
+						<div id="" class="bass_height_2">
+							<p class="">
+								全宽幻灯片
+							</p>
+							<div id="" class="_gantan">
+								<!--提示-->
+							</div>
+							<div class="_line_1">
+								<!--背景线-->
+							</div>
+						</div>
+						<!--全宽幻灯片 内容-->
+						<div id="img_slide">
+							<ul id="">
+								<li>
+									<div id="" class="slider_div_1">
+										<img src="../images/img/silder_1.png" />
+									</div>
+									<div id="" class="slider_div_2 slider_div_a">
+										<p>
+											我们是
+										</p>
+										<p>
+											最新热点
+										</p>
+									</div>
+									<!--下一个图片-->
+									<div id="" class="btn_next_1">
+										<img src="../images/background/next_1.png" />
+									</div>
+									<!--上一张图片-->
+									<div id="" class="btn_prev_1">
+										<img src="../images/background/prev_1.png" />
+									</div>
+									<div id="" class="_btn_span">
+										<span id="" class="_first_span">
+												
+										</span>
+										<span id="">
+											
+										</span>
+										<span id="">
+											
+										</span>
+									</div>
+									<p id="" class="slider_p">
+										关于（最新热点）
+									</p>
+								</li>
+								<li>
+									<div id="" class="slider_div_1">
+										<img src="../images/img/silder_2.png" />
+									</div>
+									<div id="" class="slider_div_2 slider_div_b">
+										<p>
+											FALL 2023
+										</p>
+										<p>
+											查看集合
+										</p>
+									</div>
+									<!--下一个图片-->
+									<div id="" class="btn_next_2">
+										<img src="../images/next_2.png" />
+									</div>
+									<!--上一张图片-->
+									<div id="" class="btn_prev_1">
+										<img src="../images/prev_2.png" />
+									</div>
+									<div id="" class="_btn_span">
+										<span id="" class="_first_span">
+												
+										</span>
+										<span id="">
+											
+										</span>
+										<span id="">
+											
+										</span>
+									</div>
+									<p id="" class="slider_p">
+										我们的产品（男装）
+									</p>
+								</li>
+								<li>
+									<div id="" class="slider_div_1">
+										<img src="../images/img/silder_3.jpg" />
+									</div>
+									<div id="" class="slider_div_2 slider_div_c">
+										<p>
+											标题
+										</p>
+									</div>
+									<!--下一个图片-->
+									<div id="" class="btn_next_1">
+										<img src="../images/background/next_1.png" />
+									</div>
+									<!--上一张图片-->
+									<div id="" class="btn_prev_1">
+										<img src="../images/background/prev_1.png" />
+									</div>
+									<div id="" class="_btn_span">
+										<span id="" class="_first_span">
+												
+										</span>
+										<span id="">
+											
+										</span>
+										<span id="">
+											
+										</span>
+									</div>
+									<p id="" class="slider_p">
+										投资组合（全景）
+									</p>
+								</li>
+								<li>
+									<div id="" class="slider_div_1">
+										<img src="../images/img/silder_4.jpg" />
+									</div>
+									<div id="" class="slider_div_2 slider_div_d">
+										<p>
+											你的
+										</p>
+										<p>
+											据说在这里
+										</p>
+									</div>
+									<!--下一个图片-->
+									<div id="" class="btn_next_1">
+										<img src="../images/background/next_1.png" />
+									</div>
+									<!--上一张图片-->
+									<div id="" class="btn_prev_1">
+										<img src="../images/background/prev_1.png" />
+									</div>
+									<div id="" class="_btn_span">
+										<span id="" class="_first_span">
+												
+										</span>
+										<span id="">
+											
+										</span>
+										<span id="">
+											
+										</span>
+									</div>
+									<p id="" class="slider_p">
+										关于（您的故事）
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div id="" class="bass_height_2">
+							<p class="">
+								幻箱幻灯片
+							</p>
+							<div id="" class="_gantan">
+								<!--提示-->
+							</div>
+							<div class="_line_1">
+								<!--背景线-->
+							</div>
+						</div>
+						<!--幻箱幻灯片 内容部分-->
+						<div id="img_slide_2">
+							幻箱幻灯片 内容部分
+						</div>
+					</div>
+				</div>
+				<!--按钮      5-->
+				<div id="for_add_box_e" class="for_add_box clearfix">
+					<div id="" class="bass_height">
+						添加按钮
+						<span id="silder_button" class="help_bg">
+							
+						</span>
+					</div>
+					<div id="" class="_h_716 overflow_y clearfix">
+						<div id="" class="bass_height_2">
+							<p class="">
+								主题按钮
+							</p>
+							<div id="" class="_gantan">
+								<!--提示-->
+							</div>
+							<div class="_line_1">
+								<!--背景线-->
+							</div>
+						</div>
+						<div id="theme_btn" class="add_bass_title">
+							<div id="" class="theme_btn_1">
+								按钮
+							</div>
+							<div id="" class="theme_btn_2">
+								按钮
+							</div>
+							<div id="" class="theme_btn_3">
+								按钮
+							</div>
+							<div id="" class="theme_btn_4">
+								按钮
+							</div>
+						</div>
+						<div id="" class="bass_height_2">
+							<p class="">
+								文本按钮
+							</p>
+							<div id="" class="_gantan">
+								<!--提示-->
+							</div>
+							<div class="_line_1">
+								<!--背景线-->
+							</div>
+						</div>
+						<div id="text_btn" class="add_bass_title">
+							<div id="" class="text_btn_box_1">
+								<div id="" class="text_btn_1">
+									联系我们
+								</div>
+								<div id="" class="text_btn_2">
+									阅读更多
+								</div>
+							</div>
+							<div id="" class="text_btn_box_2">
+								<div id="" class="text_btn_3">
+									发售
+								</div>
+								<div id="" class="text_btn_4">
+									前往
+								</div>
+								<div id="" class="text_btn_5">
+									商店
+								</div>
+							</div>
+							<div id="" class="text_btn_box_3 clearfix">
+								<div id="" class="text_btn_box_3_left left">
+									<div id="" class="text_btn_6">
+										发现更多
+									</div>
+									<div id="" class="text_btn_box_3_left_center">
+										<div id="" class="text_btn_7">
+											捐赠
+										</div>
+										<div id="" class="text_btn_8">
+											点击
+										</div>
+									</div>
+									<div id="" class="text_btn_9">
+										阅读更多
+									</div>
+								</div>
+								<div id="" class="text_btn_box_3_right right">
+									<div id="" class="text_btn_10">
+										继续
+									</div>
+									<div id="" class="text_btn_11">
+										登入
+									</div>
+								</div>
+							</div>
+							<div id="" class="text_btn_box_4">
+								<div id="" class="text_btn_12">
+									我尝试
+								</div>
+								<div id="" class="text_btn_13">
+									去商店
+								</div>
+							</div>
+							<div id="" class="text_btn_box_5">
+								<div id="" class="text_btn_box_5_left left">
+									<div id="" class="text_btn_14">
+										商店
+									</div>
+								</div>
+								<div id="" class="text_btn_box_5_right right">
+									<div id="" class="text_btn_box_5_right_top">
+										<div id="" class="text_btn_15">
+											下载
+										</div>
+										<div id="" class="text_btn_16">
+											在线订购
+										</div>
+									</div>
+									<div id="" class="text_btn_box_5_right_buttom">
+										<div id="" class="text_btn_17">
+											点击这里
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="" class="bass_height_2">
+							<p class="">
+								图标按钮
+							</p>
+							<div id="" class="_gantan">
+								<!--提示-->
+							</div>
+							<div class="_line_1">
+								<!--背景线-->
+							</div>
+						</div>
+						<div id="img_btn" class="add_bass_title">
+
+						</div>
+						<div id="" class="bass_height_2">
+							<p class="">
+								相关应用
+							</p>
+							<div id="" class="_gantan">
+								<!--提示-->
+							</div>
+							<div class="_line_1">
+								<!--背景线-->
+							</div>
+						</div>
+
+						<div id="more_btn" class="add_bass_title">
+
+						</div>
+					</div>
+
+				</div>
+				<!--框      6-->
+				<div id="for_add_box_f" class="for_add_box clearfix">
+					添加框
+				</div>
+				<!--添加 跳闸  7-->
+				<div id="for_add_box_g" class="for_add_box clearfix">
+					跳闸
+				</div>
+				<!--形状  8-->
+				<div id="for_add_box_h" class="for_add_box clearfix">
+					形状
+				</div>
+				<!--视屏 9-->
+				<div id="for_add_box_i" class="for_add_box clearfix">
+					视频
+				</div>
+				<!--音乐  10-->
+				<div id="for_add_box_j" class="for_add_box clearfix">
+					音乐
+				</div>
+				<!--社会 11-->
+				<div id="for_add_box_k" class="for_add_box clearfix">
+					社会
+				</div>
+				<!--联系 12-->
+				<div id="for_add_box_o" class="for_add_box clearfix">
+					联系
+				</div>
+				<!--菜单 13-->
+				<div id="for_add_box_p" class="for_add_box clearfix">
+					菜单
+				</div>
+				<!--名单 14-->
+				<div id="for_add_box_q" class="for_add_box clearfix">
+					名单
+				</div>
+				<!--15 博客-->
+				<div id="for_add_box_r" class="for_add_box clearfix">
+					博客
+				</div>
+				<!--16商店-->
+				<div id="for_add_box_l" class="for_add_box clearfix">
+					商店
+				</div>
+				<!--17更多-->
+				<div id="for_add_box_n" class="for_add_box clearfix">
+					更多
+				</div>
+			</div>
+		</div>
+		<!--应用市场-->
+		<div id="for_market" class="clearfix edit">
+			<span id="for_market_bg_a">
+				<!--左边小背景图-->
+			</span>
+			<div id="for_market_a">
+				<p>
+					66应用市场
+				</p>
+				<span id="for_market_help">
+					
+				</span>
+				<span id="for_market_closs" class="closs_edit">
+					
+				</span>
+			</div>
+			<div id="for_market_b" class="clearfix overflow_y">
+				<div id="for_market_b_1">
+					<div id=" " class="market_assortment">
+						分类
+					</div>
+					<div id=" " class="market_input_div">
+						<input type="text" name="" id="market_input" placeholder="你想去添加您的网站？" value="" />
+						<input type="button" name="" id="market_btn" value="" />
+					</div>
+				</div>
+				<div id="for_market_b_2" class="clearfix">
+					<span id="closs_for_market_b_2">
+						<!--关闭按钮-->
+					</span>
+					<div id="market_app_div_1" class="clearfix">
+						<p class="market_app_title_1">
+							5个强大的应用程序为您的企业
+						</p>
+						<p class="market_app_title_2">
+							没有合适的应用？
+							<a href="#">找到适合的应用服务网站</a>
+						</p>
+					</div>
+					<div id="market_app_div_2" class="clearfix">
+						<p class="market_install_app">
+							安装
+						</p>
+						<div id="bookings_bg">
+
+						</div>
+						<p id="market_bookings">
+							66科技预定
+						</p>
+						<p id="market_open_app">
+							打开应用
+						</p>
+					</div>
+					<div id="for_market_b_3" class="clearfix">
+						<div id="market_app_list_a" class="market_app_list">
+							<span id="" class="market_app_list_span market_app_list_span_1">
+								<!--生成魔术表单背景-->
+							</span>
+							<p class="market_app_list_p">
+								魔术表单生成器
+							</p>
+							<div id="add_to_web_a" class="add_to_web">
+								+ 添加到网站
+							</div>
+							<div id="" class="add_record clearfix">
+								<div id="add_record_left" class="left">
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<p class="left">
+										(119)
+									</p>
+								</div>
+								<div id="" class="right">
+									<p id="" class="updown_record">
+										153790
+									</p>
+								</div>
+							</div>
+						</div>
+						<div id="market_app_list_b" class="market_app_list">
+							<span id="" class="market_app_list_span market_app_list_span_2 ">
+								<!--生成注释背景-->
+							</span>
+							<p class="market_app_list_p">
+								注释
+							</p>
+							<div id="add_to_web_b" class="add_to_web">
+								+ 添加到网站
+							</div>
+							<div id="" class="add_record clearfix">
+								<div id="add_record_left" class="left">
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<p class="left">
+										(5200)
+									</p>
+								</div>
+								<div id="" class="right">
+									<p id="" class="updown_record">
+										153790
+									</p>
+								</div>
+							</div>
+						</div>
+						<div id="market_app_list_c" class="market_app_list">
+							<span id="" class="market_app_list_span market_app_list_span_3 ">
+								<!--faceb弹窗样式背景-->
+							</span>
+							<p class="market_app_list_p">
+								facebook的弹出式一样
+							</p>
+							<div id="add_to_web_c" class="add_to_web">
+								+ 添加到网站
+							</div>
+							<div id="" class="add_record clearfix">
+								<div id="add_record_left" class="left">
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<p class="left">
+										(889)
+									</p>
+								</div>
+								<div id="" class="right">
+									<p id="" class="updown_record">
+										1520790
+									</p>
+								</div>
+							</div>
+						</div>
+						<div id="market_app_list_d" class="market_app_list">
+							<span id="" class="market_app_list_span market_app_list_span_4">
+								<!--生成注释背景-->
+							</span>
+							<p class="market_app_list_p">
+								获得66订户
+							</p>
+							<div id="add_to_web_b" class="add_to_web">
+								+ 添加到网站
+							</div>
+							<div id="" class="add_record clearfix">
+								<div id="add_record_left" class="left">
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<div id="" class="comment_start">
+										<!--评论等级  小星星-->
+									</div>
+									<p class="left">
+										(850)
+									</p>
+								</div>
+								<div id="" class="right">
+									<p id="" class="updown_record">
+										193360
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<!--我的上传-->
+		<div id="for_upload" class="clearfix edit">
+			<span id="for_upload_small_bg">
+				<!--小背景-->
+			</span>
+			<div id="for_upload_top">
+				我的上传
+				<span id="uploa_help">
+					<!--上传帮助-->
+				</span>
+				<span id="uploa_closs" class="closs_edit">
+					<!--上传关闭-->
+				</span>
+			</div>
+			<div id="upload_img" class="upload_div clearfix">
+				图片
+				<span class="small_prompt"></span>
+			</div>
+			<div id="upload_video" class="upload_div clearfix">
+				影片
+				<span class="small_prompt"></span>
+			</div>
+			<div id="upload_song" class="upload_div clearfix">
+				单曲
+				<span class="small_prompt"></span>
+			</div>
+			<div id="upload_file" class="upload_div clearfix">
+				文件
+				<span class="small_prompt"></span>
+			</div>
+		</div>
+		<!--博客-->
+		<div id="for_boke" class="clearfix edit">
+			<span id="for_boke_small_bg">
+				
+			</span>
+			<div id="boke_left" class="left">
+				<p class="boke_left_p_1">
+					博客管理
+				</p>
+				<p class="boke_left_p_2">
+					博客网页
+				</p>
+				<p class="boke_left_p_3">
+					添加博客元素
+				</p>
+				<p class="boke_left_p_4">
+					了解更多
+				</p>
+			</div>
+			<div id="boke_right" class="left">
+				<div id="boke_manage">
+					博客管理
+					<span id="boke_help">
+						<!--博客帮助-->
+					</span>
+					<span id="closs_boke" class="closs_edit">
+						<!--关闭博客按钮-->
+					</span>
+				</div>
+				<div id="" class="boke_manage_bg">
+					<!--背景图-->
+
+				</div>
+				<p class="boke_right_p_1">
+					你想做点什么？
+				</p>
+				<p class="boke_right_p_2">
+					添加新的博客文章
+				</p>
+				<p class="boke_right_p_3">
+					管理博客
+				</p>
+			</div>
+		</div>
+		<!--预定-->
+		<div id="for_reserve" class="clearfix edit">
+			<span id="for_reserve_small_bg">
+				
+			</span>
+			<span id="closs_reserve" class="closs_edit">
+				<!--关闭预定按钮-->
+			</span>
+		</div>
+		<!--文本编辑器部分-->
+		<div id="edit_text" class="clearfix">
+			<!--文本编辑框第一部分-->
+			<div id="edit_text_h" class="clearfix">
+				<span id="">
+					?
+				</span>
+				<span id="d_edit_text">
+					&nbsp;
+				</span>
+				<span id="">
+					x
+				</span>
+			</div>
+			<!--文本编辑框第二部份-->
+			<div id="edit_text_c" class="clearfix">
+				<span id="">
+						<!--复制-->
+						<img src="../images/copy_1.png"/>
+				</span>
+				<span id="">
+						<!--粘贴-->
+					<img src="../images/past_1.png"/>
+				</span>
+				<span id="">
+						<img src="../images/copy_2.png"/>
+					</span>
+				<!--删除-->
+				<span id="">
+					<img src="../images/del_1.png"/>
+				</span>
+			</div>
+			<!--文本编辑框第三部份-->
+			<div id="edit_text_s" class="clearfix">
+				<span id="">
+						<!--安排-->
+						<img src="../images/anpai_1.png"/>
+						<img src="../images/sanjiao_r.png"/>
+						
+						<!--安排弹窗-->
+						<div id="" class="clearfix">
+							
+							<cite>
+								<!--弹窗出现 第一个-->
+							</cite>
+							
+							<cite>
+								<!--弹窗出现 第2个-->
+							</cite>
+							
+							<cite>
+								<!--弹窗出现 第3个-->
+							</cite>
+							
+							<cite>
+								<!--弹窗出现 第4个-->
+							</cite>
+							
+						</div>
+						
+					</span>
+				<span id="">
+						<!--对齐-->
+						<img src="../images/line_right.png"/>						
+						<img src="../images/sanjiao_r.png"/>
+						<!--文本对齐 弹窗-->
+						<div id="" class="clearfix">
+							<cite>
+								<!--对齐出现 第一个 左对齐-->
+							</cite>
+							
+							<cite>
+								<!--对齐出现 第二个 居中对齐-->
+							</cite>
+							
+							<cite>
+								<!--对齐出现 第三个 右对齐-->
+							</cite>
+							
+							<cite>
+								<!--对齐出现 第四个 右水平对齐-->
+							</cite>
+							<cite>
+								<!--对齐出现 第五个 水平对齐-->	
+							</cite>
+							<cite>
+								<!--对齐出现 第六个 左水平对齐-->	
+							</cite>
+						</div>
+					</span>
+
+				<!--分布-->
+				<span id="">
+						<img src="../images/line_center.png"/>
+						<img src="../images/sanjiao_r.png"/>
+						<!--分布弹窗-->
+						<div id="">
+							<cite>
+								<!--垂直分布-->
+							</cite>
+							<cite>
+								<!--楼梯分布-->
+							</cite>
+							<cite>
+								<!--水平分布-->
+							</cite>
+						</div>
+					</span>
+				<!--比配大小-->
+				<span id="">
+						<img src="../images/line_dingyi.png"/>
+						<img src="../images/sanjiao_r.png"/>
+							<!--比配弹窗-->
+						<div id="">
+							<cite>
+								<!--比配弹窗 1-->
+							</cite>
+							<cite>
+								<!--比配弹窗 2-->
+							</cite>
+							<cite>
+								<!--比配弹窗 3-->
+							</cite>
+						</div>
+					</span>
+			</div>
+			<!--文本编辑框第四部份    旋转角度-->
+			<div id="edit_text_t" class="clearfix">
+				<span id="">
+					
+				</span>
+				<p>
+					<a href="javascript:void(0)">
+						0
+					</a>
+					<sup id="">
+						。
+					</sup>
+				</p>
+			</div>
+
+			<!--文本编辑框第五部份    尺度-->
+			<div id="edit_text_f" class="clearfix">
+				<div>
+					尺寸
+				</div>
+				<div>
+					<span id="">
+						W :
+					</span>
+					<i id="">
+						900
+					</i>
+				</div>
+				<div>
+					<span id="">
+						H :
+					</span>
+					<i id="">
+						800
+					</i>
+				</div>
+			</div>
+			<!--文本编辑框第6部份    位置信息-->
+			<div id="edit_text_x">
+				<div>
+					位置
+				</div>
+				<div class="clearfix">
+					<span id="">
+						X :
+					</span>
+					<i id="">
+						50
+					</i>
+				</div>
+				<div>
+					<span id="">
+						Y :
+					</span>
+					<i id="">
+						800
+					</i>
+				</div>
+			</div>
+			<!--文本编辑框第尾部    显示所有也页数-->
+			<div id="edit_text_l">
+				<div>
+					显示所有页
+				</div>
+				<div id="show_all_page">
+
+					<span id="">
+						<!--点击隐藏所有页-->
+					</span>
+					<span id="">
+						<!--点击显示所有页-->
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<!--添加文本帮助弹窗-->
+		<div id="add_text_help_alert">
+			<div id="add_text_help_top">
+				<p>
+					编辑帮助
+				</p>
+				<span id="closs_add_text_help_alert">
+					<!--关闭文本弹窗按钮-->
+				</span>
+			</div>
+			<div id="add_text_help_second">
+				<div id="add_text_help_input_box">
+					<input type="text" name="" id="" value="" placeholder="在这里输入您的问题" />
+				</div>
+			</div>
+			<div id="add_text_help_three">
+				<div id="help_text_edit_1">
+					<p class="help_text_edit_1_p_1">
+						文本
+					</p>
+					<p class="help_text_edit_1_p_2">
+						开始写您的网页内容！
+					</p>
+				</div>
+
+				<div id="help_text_edit_2">
+					<p class="help_text_edit_2_p_1">
+						编辑文本 :
+					</p>
+					<ul>
+						<li>
+							输入自己的文本
+						</li>
+						<li>
+							改变字体
+						</li>
+						<li>
+							改变大小
+						</li>
+					</ul>
+				</div>
+				<div id="help_text_edit_3">
+					<p class="help_text_edit_3_p_1">
+						动画：
+					</p>
+					<ul>
+						<li>
+							为你的文本制作动画
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!--基本参考线-->
+		<div id="">
+			<div id="line_1">
+				<!--第一条  左边界线-->
+			</div>
+			<div id="line_2">
+				<!--第2条 右边界先-->
+			</div>
+			<div id="line_3">
+
+			</div>
+			<div id="line_4">
+				<!--第4条-->
+			</div>
+
+			<div id="line_5">
+				<!--导航拉伸线-->
+				<!-- 第三条   上边界 -->
+				<div id="line_nav">
+					<!---->
+				</div>
+			</div>
+		</div>
+
+		<!--客户编辑框内容部分-->
+		<div id="user_nav">
+			<div id="user_nav_center" class="clearfix">
+				<div id="user_nav_log" class="left">
+					<a href="#">
+						<img src="../images/img/log_2.jpg" />
+					</a>
+				</div>
+				<div id="_nav_box" class="right">
+					<a href="#">
+						首页
+					</a>
+					<a href="#">
+						服务
+					</a>
+					<a href="#">
+						我们的工作
+					</a>
+					<a href="#">
+						关于我们
+					</a>
+					<a href="#">
+						联系我们
+					</a>
+					<a href="#">
+						网上订购
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="user_banner">
+			<div id="">
+
+			</div>
+		</div>
+		<div id="user_main">
+			<div id="">
+
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/bass-js/jquery-1.12.0.js"></script>
+	<script type="text/javascript" src="../js/bass-js/main.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
+	<script type="text/javascript" src="../js/index_2.js"></script>
+
+</html>

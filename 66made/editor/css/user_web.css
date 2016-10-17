@@ -1,0 +1,66 @@
+#user_nav{
+	width:100% ;
+	margin: 0 auto;
+	height: 60px;
+	background: #2b5672;
+	z-index: 1;	
+	margin-top: 5px;
+}
+#user_nav_center{
+	width: 1260px;
+	margin: 0 auto;
+	height: 100%;
+	overflow: hidden;
+	position: relative;	
+	}
+#user_nav_center a{
+	color: #fff;
+	margin-left: 10px;
+	line-height: 35px;
+	}
+#_nav_box{
+	position: absolute;
+	height: 35px;
+	left: 800px;
+	top:8px;
+	line-height: 35px;
+}
+
+#user_nav_log a{
+	display: block;
+	height: 45px;
+	width: 180px;
+	position: absolute;
+	left: 35px;
+	top: 8px;
+}
+#user_nav_log a img{
+	height: 100%;
+	width: 100%;
+	
+}
+
+/*banner 部分样式 */
+
+#user_banner{
+	width: 100%;
+	display: block;
+	background: url(../images/bannder_bg_2.png) no-repeat;
+	height: 800px;
+	-moz-background-size:100% 100%;  
+    background-size:100% 100%;  
+}
+#user_main{
+	height: 300px;
+	background: #0099EF;
+}
+
+
+
+
+
+
+
+
+
+

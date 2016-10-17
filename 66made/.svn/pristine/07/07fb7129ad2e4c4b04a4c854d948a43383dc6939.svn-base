@@ -1,0 +1,138 @@
+html,
+body,
+input,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+tutton,
+input {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+img {
+	border: none;
+}
+
+button:focus {
+	outline: none;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+body {
+	font: 12px "微软雅黑";
+}
+
+ul,
+li {
+	list-style: none
+}
+.clearfix:after{	
+    display: "block";
+    clear:both;
+    height:0;
+    content: "";
+    visibility: hidden;
+    overflow:hidden;
+}
+
+.margin_b_10{
+	margin-bottom: 10px;
+}
+.margin_t_10{
+	margin-top: 10px;
+}
+.margin_l_10{
+	margin-left: 5px;
+}
+.margin_r_10{
+	margin-right: 5px;
+}
+.margin_b_5{
+	margin-bottom: 5px;
+}
+.margin_t_5{
+	margin-top: 5px;
+}
+.margin_l_5{
+	margin-left: 5px;
+}
+.margin_r_5{
+	margin-right: 5px;
+}
+.margin_rl_5{
+	margin:0 5px;
+}
+.margin_tb_5{
+	margin:5px 0;
+}
+.margin_rl_10{
+	margin:0 10px;
+}
+.margin_tb_5{
+	margin:10px 0;
+}
+.maigin_5{
+	margin: 5px;
+}
+.maigin_10{
+	margin: 10px;
+}
+.maigin_t_15{
+	margin-top: 15px;
+}
+.maigin_b_15{
+	margin-bottom: 15px;
+}
+.maigin_l_15{
+	margin-left: 15px;
+}
+.maigin_r_15{
+	margin-right: 15px;
+}
+.maigin_15{
+	margin: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
